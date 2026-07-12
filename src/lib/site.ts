@@ -5,7 +5,7 @@ export const SITE = {
   // canonical/og:url links and the sitemap. Override per-environment with
   // VITE_SITE_URL (e.g. a staging URL) without touching any code.
   url: (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, "") ||
-    "https://mydentistkanpur.in",
+    "https://mydentistkanpur.com",
   // Google Search Console HTML-tag verification code. Leave VITE_GSC_VERIFICATION
   // unset until you have one — the meta tag is omitted entirely when empty,
   // so nothing fake ever ships.
