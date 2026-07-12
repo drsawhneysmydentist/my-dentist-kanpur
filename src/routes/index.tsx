@@ -52,9 +52,9 @@ import iconZoom from "@/assets/icon-zoom.webp";
 import iconSmileDesign from "@/assets/icon-smile-design.webp";
 
 const PAGE_TITLE =
-  "Best Dentist in Kanpur | My Dentist Kakadeo | MDS Specialists | Dr. Asheesh Sawhny";
+  "Best Dentist in Kanpur | MDS Specialists | My Dentist";
 const PAGE_DESC =
-  "Best dental clinic in Kanpur — My Dentist, Kakadeo. Led by MDS Endodontist & AAID-Certified Implantologist Dr. Asheesh Sawhny and MDS Orthodontist Dr. Karuna Singh Sawhny. Painless RCT, dental implants, braces, teeth whitening & emergency dentistry in Kanpur. Open evenings & Sundays. 226+ verified 5-star reviews.";
+  "Best dental clinic in Kanpur - My Dentist, Kakadeo. MDS specialists: painless RCT, implants, braces, teeth whitening & emergency care. Open evenings & Sundays.";
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
@@ -62,7 +62,7 @@ const localBusinessJsonLd = {
   name: "MY DENTIST",
   alternateName: ["My Dentist Kakadeo", "My Dentist Kanpur", "Dr Sawhney's My Dentist"],
   description: PAGE_DESC,
-  url: "https://mydentistkanpur.in",
+  url: "https://mydentistkanpur.com",
   telephone: SITE.phone,
   email: SITE.email,
   priceRange: "₹₹",
