@@ -6,12 +6,10 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
-
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
 # Static assets — long cache, immutable
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
-
 # Favicon and icons — moderate cache
 /favicon.ico
   Cache-Control: public, max-age=86400
@@ -27,7 +25,6 @@
   Cache-Control: public, max-age=86400
 /android-chrome-512x512.png
   Cache-Control: public, max-age=86400
-
 # Manifest and robots — short cache
 /site.webmanifest
   Cache-Control: public, max-age=3600
