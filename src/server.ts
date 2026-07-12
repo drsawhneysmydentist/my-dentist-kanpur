@@ -30,11 +30,11 @@ const SECURITY_HEADERS: Record<string, string> = {
   // – No eval, no inline scripts except those injected by the framework
   "Content-Security-Policy": [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline'",          // TanStack injects inline hydration scripts
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "font-src 'self' https://fonts.gstatic.com",
-    "img-src 'self' data: blob:",
-    "connect-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",          // TanStack injects inline hydration scripts; GA4 tag loader
+"style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+"font-src 'self' https://fonts.gstatic.com",
+"img-src 'self' data: blob:",
+"connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com",
     "frame-src https://www.google.com",            // Google Maps embed iframe (Contact page)
     "frame-ancestors 'none'",                      // Belt-and-suspenders with X-Frame-Options
     "base-uri 'self'",
