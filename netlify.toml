@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # vite@8 and nitro both require Node ^20.19 or >=22.12
+  NODE_VERSION = "22"
