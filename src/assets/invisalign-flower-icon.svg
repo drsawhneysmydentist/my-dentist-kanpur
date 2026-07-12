@@ -1,0 +1,14 @@
+<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Invisalign">
+  <g fill="#0089C6">
+    <ellipse cx="48" cy="24" rx="12" ry="18"/>
+    <ellipse cx="48" cy="72" rx="12" ry="18"/>
+    <ellipse cx="24" cy="48" rx="18" ry="12"/>
+    <ellipse cx="72" cy="48" rx="18" ry="12"/>
+    <ellipse cx="30" cy="30" rx="10" ry="15" transform="rotate(-45 30 30)"/>
+    <ellipse cx="66" cy="66" rx="10" ry="15" transform="rotate(-45 66 66)"/>
+    <ellipse cx="66" cy="30" rx="10" ry="15" transform="rotate(45 66 30)"/>
+    <ellipse cx="30" cy="66" rx="10" ry="15" transform="rotate(45 30 66)"/>
+  </g>
+  <circle cx="48" cy="48" r="10" fill="#FFFFFF"/>
+  <circle cx="48" cy="48" r="6" fill="#0089C6"/>
+</svg>
