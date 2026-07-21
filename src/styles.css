@@ -284,4 +284,79 @@
     transform: translateZ(0);
     will-change: auto;
   }
+
+  /* ---------------------------------------------------------------- */
+  /* Premium blog article extras — tables, callouts, reading progress */
+  /* ---------------------------------------------------------------- */
+  .table-wrap {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    min-width: 480px;
+  }
+
+  .table-wrap thead th {
+    background: var(--color-aqua-soft);
+    color: var(--color-aqua-deep);
+    text-align: left;
+    font-family: var(--font-display);
+    font-weight: 600;
+    padding: 0.85rem 1.1rem;
+    white-space: nowrap;
+  }
+
+  .table-wrap tbody td {
+    padding: 0.85rem 1.1rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-muted-foreground);
+    vertical-align: top;
+  }
+
+  .table-wrap tbody tr:hover {
+    background: color-mix(in oklch, var(--color-aqua-soft) 40%, transparent);
+  }
+
+  .table-wrap tbody td strong {
+    color: var(--color-foreground);
+  }
+
+  .callout {
+    margin-top: 1.75rem;
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-bone);
+  }
+
+  .callout p {
+    margin-top: 0 !important;
+  }
+
+  .callout-warning {
+    border-color: color-mix(in oklch, var(--color-aqua) 40%, var(--color-border));
+    background: var(--color-aqua-soft);
+  }
+
+  .callout-warning strong {
+    color: var(--color-aqua-deep);
+  }
+
+  .reading-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--gradient-aqua);
+    z-index: 60;
+    transform-origin: 0 50%;
+  }
 }

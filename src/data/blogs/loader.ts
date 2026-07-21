@@ -13,6 +13,7 @@ const contentMap: Record<
   "how-to-prevent-tooth-decay": () => import("./how-to-prevent-tooth-decay"),
   "dental-implants-vs-bridges": () => import("./dental-implants-vs-bridges"),
   "root-canal-myths-debunked": () => import("./root-canal-myths-debunked"),
+  "best-dentist-in-kanpur": () => import("./best-dentist-in-kanpur"),
 };
 
 export async function loadBlogContent(slug: string): Promise<string | null> {
