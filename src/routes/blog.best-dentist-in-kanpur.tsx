@@ -16,6 +16,7 @@ import { sortedBlogs, type BlogMeta } from "@/data/blogs/index";
 import { content, faqs, toc } from "@/data/blogs/best-dentist-in-kanpur";
 import { SITE } from "@/lib/site";
 import doctorsPortrait from "@/assets/dr-asheesh-karuna-dentsply.webp";
+import authorAvatar from "@/assets/dr-asheesh.webp";
 
 const META: BlogMeta = {
   slug: "best-dentist-in-kanpur",
@@ -195,7 +196,7 @@ function BestDentistKanpurBlogPage() {
                 className="flex items-center gap-2.5 hover:text-foreground"
               >
                 <img
-                  src={doctorsPortrait}
+                  src={authorAvatar}
                   alt={META.author ?? "Author"}
                   width={36}
                   height={36}
