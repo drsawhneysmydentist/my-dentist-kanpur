@@ -32,6 +32,7 @@ export function BlogCard({ blog }: { blog: BlogMeta }) {
             width={600}
             height={400}
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            style={{ objectPosition: blog.imagePosition ?? "center" }}
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src =
                 "/images/blogs/placeholder.svg";
