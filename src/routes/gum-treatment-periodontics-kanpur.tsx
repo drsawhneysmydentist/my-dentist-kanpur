@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-periodontics.webp";
 import serviceImg2 from "@/assets/service-periodontics-2.webp";
 
-const TITLE = "Gum Treatment Kanpur | Scaling Polishing Kanpur | Periodontics Specialist | My Dentist Kakadeo";
+const TITLE = "Gum Treatment Kanpur | Scaling Polishing Kanpur | Periodontics Specialist | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
-  "Gum treatment and periodontics in Kanpur at My Dentist, Kakadeo. Specialist diagnosis and treatment of gum disease, scaling, polishing, and periodontitis by Dr. Asheesh Sawhny. Most trusted dental clinic serving Naveen Nagar, Pandu Nagar, and Kanpur.";
+  "Gum treatment and periodontics in Kanpur at Dr Sawhney’s My Dentist, Kakadeo. Specialist diagnosis and treatment of gum disease, scaling, polishing, and periodontitis by Dr. Asheesh Sawhny. Most trusted dental clinic serving Naveen Nagar, Pandu Nagar, and Kanpur.";
 
 const SIGNS = [
   "Bleeding gums when brushing, flossing, or eating",
@@ -82,7 +82,7 @@ const serviceJsonLd = {
   bodyLocation: "Gums, Mouth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -119,7 +119,7 @@ function GumTreatmentPage() {
       <PageHeader
         eyebrow="Periodontics · Kakadeo, Kanpur"
         title={<>Gum Treatment in Kanpur — <span className="italic text-aqua-deep">specialist periodontal care.</span></>}
-        intro="Gum health assessed at every check-up at MY DENTIST, Kakadeo, with the same clinical rigour applied to teeth themselves."
+        intro="Gum health assessed at every check-up at DR SAWHNEY’S MY DENTIST, Kakadeo, with the same clinical rigour applied to teeth themselves."
       />
 
       {/* What is periodontics */}
@@ -164,7 +164,7 @@ function GumTreatmentPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg}
-                alt="Periodontal gum treatment at MY DENTIST Kanpur"
+                alt="Periodontal gum treatment at DR SAWHNEY’S MY DENTIST Kanpur"
                 className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover object-center"
                 loading="eager"
                 decoding="async"
@@ -202,7 +202,7 @@ function GumTreatmentPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Services
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Gum treatment services at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Gum treatment services at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -263,7 +263,7 @@ function GumTreatmentPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The gum treatment process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The gum treatment process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -306,7 +306,7 @@ function GumTreatmentPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your gum care specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS) leads periodontal care at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS) leads periodontal care at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -342,7 +342,7 @@ function GumTreatmentPage() {
             <div className="overflow-hidden rounded-[2rem] bg-bone shadow-luxe">
               <img
                 src={serviceImg2}
-                alt="Gum treatment before and after results at MY DENTIST Kakadeo Kanpur"
+                alt="Gum treatment before and after results at DR SAWHNEY’S MY DENTIST Kakadeo Kanpur"
                 className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-contain object-center"
                 loading="lazy"
                 decoding="async"
@@ -392,7 +392,7 @@ function GumTreatmentPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your gum health assessment at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your gum health assessment at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Early diagnosis preserves more bone and more teeth — the sooner you start, the better the outcome.

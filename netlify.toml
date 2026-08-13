@@ -5,3 +5,13 @@
 [build.environment]
   # vite@8 and nitro both require Node ^20.19 or >=22.12
   NODE_VERSION = "22"
+
+# Route everything that isn't a static asset in the publish directory to the
+# Nitro SSR function, so blog post pages (and every other route) resolve
+# correctly on direct URL access and on browser refresh, not just via
+# client-side <Link> navigation. Netlify only applies this when no matching
+# static file exists, so images/assets/etc. are served as before.
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200

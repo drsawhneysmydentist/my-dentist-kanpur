@@ -52,15 +52,15 @@ import iconZoom from "@/assets/icon-zoom.webp";
 import iconSmileDesign from "@/assets/icon-smile-design.webp";
 
 const PAGE_TITLE =
-  "Best Dentist in Kanpur | MDS Specialists | My Dentist";
+  "Best Dentist in Kanpur | MDS Specialists | Dr Sawhney’s My Dentist";
 const PAGE_DESC =
-  "Best dental clinic in Kanpur - My Dentist, Kakadeo. MDS specialists: painless RCT, implants, braces, teeth whitening & emergency care. Open evenings & Sundays.";
+  "Best dental clinic in Kanpur - Dr Sawhney’s My Dentist, Kakadeo. MDS specialists: painless RCT, implants, braces, teeth whitening & emergency care. Open evenings & Sundays.";
 
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
-  name: "MY DENTIST",
-  alternateName: ["My Dentist Kakadeo", "My Dentist Kanpur", "Dr Sawhney's My Dentist"],
+  name: "DR SAWHNEY’S MY DENTIST",
+  alternateName: ["Dr Sawhney’s My Dentist Kakadeo", "Dr Sawhney’s My Dentist Kanpur", "My Dentist"],
   description: PAGE_DESC,
   url: "https://mydentistkanpur.com",
   telephone: SITE.phone,
@@ -209,7 +209,7 @@ function Hero() {
       <div className="relative min-h-[640px] h-auto w-full overflow-hidden rounded-[2rem] md:h-[92vh] md:min-h-0 md:rounded-[2.5rem]">
         <motion.img
           src={heroDesktop}
-          alt="Best dental clinic in Kakadeo Kanpur — My Dentist, specialist-led care by MDS doctors"
+          alt="Best dental clinic in Kakadeo Kanpur — Dr Sawhney’s My Dentist, specialist-led care by MDS doctors"
           style={{ y, scale, objectPosition: "center 35%" }}
           className="absolute inset-0 hidden h-full w-full object-cover md:block"
           fetchPriority="high"
@@ -218,7 +218,7 @@ function Hero() {
         />
         <motion.img
           src={heroMobile}
-          alt="Best dental clinic in Kakadeo Kanpur — My Dentist, specialist-led care by MDS doctors"
+          alt="Best dental clinic in Kakadeo Kanpur — Dr Sawhney’s My Dentist, specialist-led care by MDS doctors"
           style={{ y, scale, objectPosition: "center 30%" }}
           className="absolute inset-0 h-full w-full object-cover md:hidden"
           fetchPriority="high"
@@ -260,7 +260,7 @@ function Hero() {
             transition={{ duration: 0.9, delay: 0.6 }}
             className="mt-4 max-w-[90%] text-sm leading-relaxed text-white/85 sm:max-w-md md:mt-6 md:max-w-lg md:text-base lg:max-w-xl xl:max-w-[600px] xl:text-lg"
           >
-            At My Dentist, Kakadeo, you are in the care of <span className="font-semibold text-aqua-soft">a comprehensive team of specialist doctors</span> — 
+            At Dr Sawhney’s My Dentist, Kakadeo, you are in the care of <span className="font-semibold text-aqua-soft">a comprehensive team of specialist doctors</span> — 
             <span className="font-semibold">Dr. Asheesh K. Sawhny</span> (Principal & Professor, 21-year veteran endodontist) 
             and <span className="font-semibold">Dr. Karuna Singh Sawhny</span> (Professor of Orthodontics). 
             Every treatment is delivered at the <span className="italic">advanced specialist level.</span>
@@ -520,16 +520,16 @@ function AboutSection() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> About the Clinic
             </div>
             <h2 className="mt-6 max-w-2xl font-display text-5xl md:text-6xl">
-              About My Dentist — Kanpur's <span className="italic text-aqua-deep">Super Specialty</span> Dental Clinic
+              About Dr Sawhney’s My Dentist — Kanpur's <span className="italic text-aqua-deep">Super Specialty</span> Dental Clinic
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="max-w-md space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                There are dental clinics, and then there is <span className="font-semibold text-aqua-deep">My Dentist.</span>
+                There are dental clinics, and then there is <span className="font-semibold text-aqua-deep">Dr Sawhney’s My Dentist.</span>
               </p>
               <p>
-                Located in the heart of Kakadeo, My Dentist was built on one belief: <span className="font-semibold">every patient deserves specialist-level care</span> — not a referral, not a compromise. Our clinic houses <span className="font-semibold">a comprehensive team of specialist dental doctors</span> providing advanced, expert-led dental care under one roof.
+                Located in the heart of Kakadeo, Dr Sawhney’s My Dentist was built on one belief: <span className="font-semibold">every patient deserves specialist-level care</span> — not a referral, not a compromise. Our clinic houses <span className="font-semibold">a comprehensive team of specialist dental doctors</span> providing advanced, expert-led dental care under one roof.
               </p>
               <p className="font-medium text-foreground">
                 <span className="font-bold text-aqua-deep">226 verified patient reviews.</span> The people of Kanpur have already made their verdict.
@@ -571,7 +571,7 @@ function ServicesPreview() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Services
             </div>
           <h2 className="mt-6 max-w-3xl font-display text-5xl md:text-7xl">
-            Treatments & <span className="italic text-aqua-deep">Specialties</span> at My Dentist
+            Treatments & <span className="italic text-aqua-deep">Specialties</span> at Dr Sawhney’s My Dentist
           </h2>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
             <span className="font-semibold text-aqua-deep">43 procedures. Team of Specialists Under One Roof in Kakadeo, Kanpur.</span> Every service is led by a qualified specialist.
@@ -654,7 +654,7 @@ function WhyUs() {
                   </span>
                 </div>
                 <p className="mt-5 max-w-xs text-lg leading-snug">
-                  Severe pain, swelling or broken tooth? Call MY DENTIST — we
+                  Severe pain, swelling or broken tooth? Call DR SAWHNEY’S MY DENTIST — we
                   prioritise same-day emergency dental care in Kanpur.
                 </p>
                 <div className="mt-6 flex items-center justify-between">
@@ -861,7 +861,7 @@ function Testimonials() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Patient Stories
             </div>
             <h2 className="mt-6 font-display text-5xl md:text-6xl">
-              What patients say about <span className="italic text-aqua-deep">MY DENTIST.</span>
+              What patients say about <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
             <div className="mt-8 flex items-center gap-6">
               <div className="font-display text-6xl">
@@ -1008,7 +1008,7 @@ function LocationCoverage() {
               Proudly serving patients across <span className="italic text-aqua-deep">Kanpur.</span>
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-              MY DENTIST is conveniently located in Kakadeo and welcomes patients from Pandu Nagar,
+              DR SAWHNEY’S MY DENTIST is conveniently located in Kakadeo and welcomes patients from Pandu Nagar,
               Naveen Nagar, Sharda Nagar, Sarvodaya Nagar, and across Kanpur — including patients
               near Panacea Hospital and Dwivedi Hospital. Specialist dental care, close to home.
             </p>
@@ -1049,7 +1049,7 @@ function CtaStrip() {
                 <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Same-day appointments
               </div>
               <h2 className="mt-6 max-w-2xl font-display text-5xl md:text-6xl">
-                Book your appointment at <span className="italic text-aqua">MY DENTIST</span> today.
+                Book your appointment at <span className="italic text-aqua">DR SAWHNEY’S MY DENTIST</span> today.
               </h2>
               <div className="mt-5 flex flex-wrap items-center gap-x-8 gap-y-2 text-sm text-white/65">
                 <span className="inline-flex items-center gap-2"><MapPin className="h-4 w-4" /> {SITE.shortAddress}</span>

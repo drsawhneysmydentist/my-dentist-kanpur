@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-root-canal.webp";
 import serviceImg2 from "@/assets/service-root-canal-2.webp";
 
-const TITLE = "Root Canal Treatment in Kanpur | Painless RCT | Single Visit | MDS Endodontist | My Dentist Kakadeo";
+const TITLE = "Root Canal Treatment in Kanpur | Painless RCT | Single Visit | MDS Endodontist | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
-  "Painless root canal treatment in Kanpur by Dr. Asheesh K. Sawhny — MDS Endodontist & AAID-Certified Implantologist with 21+ years experience. Single-sitting RCT available at My Dentist, Kakadeo, Kanpur. Serving patients from Pandu Nagar, Naveen Nagar, Sharda Nagar & all of Kanpur.";
+  "Painless root canal treatment in Kanpur by Dr. Asheesh K. Sawhny — MDS Endodontist & AAID-Certified Implantologist with 21+ years experience. Single-sitting RCT available at Dr Sawhney’s My Dentist, Kakadeo, Kanpur. Serving patients from Pandu Nagar, Naveen Nagar, Sharda Nagar & all of Kanpur.";
 
 const SIGNS = [
   "Persistent toothache, especially when biting or applying pressure",
@@ -69,7 +69,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -86,7 +86,7 @@ export const Route = createFileRoute("/root-canal-treatment-kanpur")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "root canal treatment Kanpur, painless RCT Kanpur, single visit root canal Kanpur, single sitting RCT Kanpur, endodontist Kanpur, root canal treatment cost Kanpur, MDS endodontist Kakadeo, best dentist for root canal Kanpur, My Dentist Kakadeo" },
+      { name: "keywords", content: "root canal treatment Kanpur, painless RCT Kanpur, single visit root canal Kanpur, single sitting RCT Kanpur, endodontist Kanpur, root canal treatment cost Kanpur, MDS endodontist Kakadeo, best dentist for root canal Kanpur, Dr Sawhney’s My Dentist Kakadeo" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/root-canal-treatment-kanpur` },
@@ -106,7 +106,7 @@ function RootCanalPage() {
       <PageHeader
         eyebrow="Root Canal Treatment · Kakadeo, Kanpur"
         title={<>Root Canal Treatment in Kanpur — <span className="italic text-aqua-deep">by a specialist endodontist.</span></>}
-        intro="Pain-free RCT at MY DENTIST, Kakadeo, performed by an MDS-qualified endodontist with 21+ years of clinical experience."
+        intro="Pain-free RCT at DR SAWHNEY’S MY DENTIST, Kakadeo, performed by an MDS-qualified endodontist with 21+ years of clinical experience."
       />
 
       {/* What is RCT */}
@@ -119,7 +119,7 @@ function RootCanalPage() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Root Canal Treatment (RCT) saves a severely infected or damaged tooth by removing the infected pulp — the soft tissue inside the tooth containing nerves and blood vessels — cleaning and disinfecting the canals, and sealing the tooth to prevent reinfection.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`Despite its reputation, a root canal performed by a specialist is a routine, comfortable procedure. It relieves the pain caused by infection — it does not cause it. At My Dentist, RCT is performed by a qualified MDS Endodontist, not a general practitioner offering it as a side service.`} /></p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`Despite its reputation, a root canal performed by a specialist is a routine, comfortable procedure. It relieves the pain caused by infection — it does not cause it. At Dr Sawhney’s My Dentist, RCT is performed by a qualified MDS Endodontist, not a general practitioner offering it as a side service.`} /></p>
           </Reveal>
         </div>
       </section>
@@ -129,7 +129,7 @@ function RootCanalPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg} alt="Root canal treatment at MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg} alt="Root canal treatment at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -235,7 +235,7 @@ function RootCanalPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              What to expect at MY DENTIST for <span className="italic text-aqua-deep">RCT.</span>
+              What to expect at DR SAWHNEY’S MY DENTIST for <span className="italic text-aqua-deep">RCT.</span>
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
               Comprehensive diagnosis, treatment planning, specialist care and post-treatment guidance — every step is explained before it happens.
@@ -262,7 +262,7 @@ function RootCanalPage() {
                 A <span className="italic text-aqua">specialist endodontist,</span> not a general practitioner.
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-background/70">
-                <span className="font-bold text-white">21+ years</span> of clinical experience, an <span className="font-bold text-white">MDS in Conservative Dentistry &amp; Endodontics</span>, and AAID Implant Certification — root canal treatment at MY DENTIST is led by genuine specialist expertise.
+                <span className="font-bold text-white">21+ years</span> of clinical experience, an <span className="font-bold text-white">MDS in Conservative Dentistry &amp; Endodontics</span>, and AAID Implant Certification — root canal treatment at DR SAWHNEY’S MY DENTIST is led by genuine specialist expertise.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 {SITE.reasons.map((r) => (
@@ -281,7 +281,7 @@ function RootCanalPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your root canal specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS) leads endodontic care at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS) leads endodontic care at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -355,7 +355,7 @@ function RootCanalPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your root canal consultation at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your root canal consultation at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Specialist diagnosis, transparent pricing and pain-free treatment — every time.

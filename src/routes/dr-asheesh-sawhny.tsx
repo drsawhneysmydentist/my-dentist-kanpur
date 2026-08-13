@@ -18,7 +18,7 @@ const jsonLd = {
   name: DOC.name,
   medicalSpecialty: ["Dentistry", "Endodontics", "Implantology"],
   jobTitle: "Principal & Professor, Rama Dental College",
-  worksFor: { "@type": "Dentist", name: "MY DENTIST", url: SITE.url },
+  worksFor: { "@type": "Dentist", name: "DR SAWHNEY’S MY DENTIST", url: SITE.url },
   alumniOf: ["Dharwad University", "KLE Belgaum"],
   url: `${SITE.url}/dr-asheesh-sawhny`,
   image: "/og-image.jpg",
@@ -205,7 +205,7 @@ function DoctorPage() {
                   His clinical philosophy rests on three pillars: <span className="font-semibold">technical precision</span> honed over two decades of specialist practice, <span className="font-semibold">honest diagnosis</span> that respects every patient's time and trust, and <span className="font-semibold">compassionate concern</span> that puts comfort first — whether it's a routine check-up or a complex Root Canal in Kakadeo, Kanpur.
                 </p>
                 <p>
-                  Dr. Sawhny combines microscope-assisted precision with a teaching mindset — the same academic rigour he instills in dental students at Rama Dental College flows directly into every treatment he delivers at My Dentist, Kanpur.
+                  Dr. Sawhny combines microscope-assisted precision with a teaching mindset — the same academic rigour he instills in dental students at Rama Dental College flows directly into every treatment he delivers at Dr Sawhney’s My Dentist, Kanpur.
                 </p>
               </div>
             </div>
@@ -357,7 +357,7 @@ function DoctorPage() {
               <div>
                 <h3 className="font-display text-3xl">Consult Dr. Asheesh K. Sawhny</h3>
                 <p className="mt-2 text-sm text-background/70">
-                  Book a specialist consultation at MY DENTIST, Kanpur.
+                  Book a specialist consultation at DR SAWHNEY’S MY DENTIST, Kanpur.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">

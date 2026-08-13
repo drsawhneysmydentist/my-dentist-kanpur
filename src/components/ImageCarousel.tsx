@@ -225,7 +225,7 @@ export function ImageCarousel() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Inside Our Clinic
             </div>
             <h2 className="mt-6 max-w-xl font-display text-4xl md:text-5xl">
-              A Glimpse of <span className="italic text-aqua-deep">Life at My Dentist</span>
+              A Glimpse of <span className="italic text-aqua-deep">Life at Dr Sawhney’s My Dentist</span>
             </h2>
           </div>
 

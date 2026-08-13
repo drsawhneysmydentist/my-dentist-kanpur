@@ -40,12 +40,12 @@ export const Route = createFileRoute("/contact")({
     meta: [
       {
         title:
-          "Book Dentist Appointment Kanpur | Contact My Dentist Kakadeo | Naveen Nagar Kanpur",
+          "Book Dentist Appointment Kanpur | Contact Dr Sawhney’s My Dentist Kakadeo | Naveen Nagar Kanpur",
       },
       {
         name: "description",
         content:
-          "Book a dentist appointment in Kanpur at My Dentist, Kakadeo — Naveen Nagar, near Panacea Hospital. Same-day emergency appointments available. Open Mon–Sat 4–9 PM, Sun 11 AM–2 PM. Call +91 98385 00100.",
+          "Book a dentist appointment in Kanpur at Dr Sawhney’s My Dentist, Kakadeo — Naveen Nagar, near Panacea Hospital. Same-day emergency appointments available. Open Mon–Sat 4–9 PM, Sun 11 AM–2 PM. Call +91 98385 00100.",
       },
       {
         name: "keywords",
@@ -54,7 +54,7 @@ export const Route = createFileRoute("/contact")({
       },
       {
         property: "og:title",
-        content: "Book Dentist Appointment Kanpur | My Dentist Kakadeo",
+        content: "Book Dentist Appointment Kanpur | Dr Sawhney’s My Dentist Kakadeo",
       },
       { property: "og:url", content: `${SITE.url}/contact` },
     ],
@@ -87,7 +87,7 @@ function ContactPage() {
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
               Treatments available at{" "}
-              <span className="italic text-aqua-deep">MY DENTIST.</span>
+              <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
               All under one roof, without referrals.
@@ -167,7 +167,7 @@ function ContactPage() {
                   setSent(true);
 
                   const lines = [
-                    "Hello My Dentist,",
+                    "Hello Dr Sawhney’s My Dentist,",
                     "I would like to book a consultation.",
                     `Name: ${name}`,
                     `Mobile: ${phone}`,
@@ -347,7 +347,7 @@ function ContactPage() {
               >
                 <div className="aspect-video w-full">
                   <iframe
-                    title="Clinic location — My Dentist Kakadeo Kanpur"
+                    title="Clinic location — Dr Sawhney’s My Dentist Kakadeo Kanpur"
                     src={MAP_EMBED_SRC}
                     className="h-full w-full"
                     style={{ border: 0 }}

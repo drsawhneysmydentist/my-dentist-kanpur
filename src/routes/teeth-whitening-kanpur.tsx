@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-teeth-whitening.webp";
 import serviceImg2 from "@/assets/service-teeth-whitening-2.webp";
 
-const TITLE = "Teeth Whitening in Kanpur | Professional Smile Whitening | Cosmetic Dentist Kanpur | My Dentist Kakadeo";
+const TITLE = "Teeth Whitening in Kanpur | Professional Smile Whitening | Cosmetic Dentist Kanpur | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
-  "Professional teeth whitening in Kanpur at My Dentist, Kakadeo. Clinically supervised, customised whitening by Dr. Asheesh K. Sawhny — cosmetic dentist Kanpur. Safe, effective and long-lasting results for a brighter smile.";
+  "Professional teeth whitening in Kanpur at Dr Sawhney’s My Dentist, Kakadeo. Clinically supervised, customised whitening by Dr. Asheesh K. Sawhny — cosmetic dentist Kanpur. Safe, effective and long-lasting results for a brighter smile.";
 
 const REASONS = [
   "Yellowing of teeth from age, tea, coffee, or cola",
@@ -73,7 +73,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -90,7 +90,7 @@ export const Route = createFileRoute("/teeth-whitening-kanpur")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "teeth whitening Kanpur, dental whitening Kakadeo, professional teeth whitening Kanpur, MY DENTIST" },
+      { name: "keywords", content: "teeth whitening Kanpur, dental whitening Kakadeo, professional teeth whitening Kanpur, DR SAWHNEY’S MY DENTIST" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/teeth-whitening-kanpur` },
@@ -110,7 +110,7 @@ function TeethWhiteningPage() {
       <PageHeader
         eyebrow="Teeth Whitening · Kakadeo, Kanpur"
         title={<>Teeth Whitening in Kanpur — <span className="italic text-aqua-deep">clinically supervised, safe results.</span></>}
-        intro="Professional whitening at MY DENTIST, Kakadeo — including the premium Philips Zoom system — prescription-strength, customised to your teeth, under the direct supervision of Dr. Asheesh K. Sawhny."
+        intro="Professional whitening at DR SAWHNEY’S MY DENTIST, Kakadeo — including the premium Philips Zoom system — prescription-strength, customised to your teeth, under the direct supervision of Dr. Asheesh K. Sawhny."
       />
 
       {/* What is professional whitening */}
@@ -135,7 +135,7 @@ function TeethWhiteningPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg}
-                alt="Professional teeth whitening at MY DENTIST Kanpur"
+                alt="Professional teeth whitening at DR SAWHNEY’S MY DENTIST Kanpur"
                 className="aspect-[1400/934] w-full object-cover object-center"
                 loading="eager"
                 decoding="async"
@@ -153,7 +153,7 @@ function TeethWhiteningPage() {
             <h2 className="mt-6 font-display text-4xl md:text-5xl">
               Why professional whitening is <span className="italic text-aqua-deep">different.</span>
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At MY DENTIST, whitening is not a retail transaction. Dr. Sawhny assesses enamel health, existing restorations, sensitivity and staining type first — then customises the protocol accordingly.`} /></p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At DR SAWHNEY’S MY DENTIST, whitening is not a retail transaction. Dr. Sawhny assesses enamel health, existing restorations, sensitivity and staining type first — then customises the protocol accordingly.`} /></p>
           </Reveal>
         </div>
       </section>
@@ -210,7 +210,7 @@ function TeethWhiteningPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The whitening process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The whitening process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -272,7 +272,7 @@ function TeethWhiteningPage() {
                 <span className="italic text-aqua">Clinically supervised,</span> not a retail transaction.
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-background/70">
-                No whitening proceeds at MY DENTIST without a dental examination first — honest guidance, every time.
+                No whitening proceeds at DR SAWHNEY’S MY DENTIST without a dental examination first — honest guidance, every time.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 {SITE.reasons.map((r) => (
@@ -291,7 +291,7 @@ function TeethWhiteningPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your whitening specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS) supervises whitening care at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS) supervises whitening care at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -327,7 +327,7 @@ function TeethWhiteningPage() {
             <div className="overflow-hidden rounded-[2rem] bg-bone shadow-luxe">
               <img
                 src={serviceImg2}
-                alt="Teeth whitening before and after results at MY DENTIST Kakadeo Kanpur"
+                alt="Teeth whitening before and after results at DR SAWHNEY’S MY DENTIST Kakadeo Kanpur"
                 className="aspect-[1280/1000] w-full object-contain object-center"
                 loading="lazy"
                 decoding="async"
@@ -377,7 +377,7 @@ function TeethWhiteningPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your whitening consultation at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your whitening consultation at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Safe, customised, clinically supervised whitening — with honest guidance every step of the way.

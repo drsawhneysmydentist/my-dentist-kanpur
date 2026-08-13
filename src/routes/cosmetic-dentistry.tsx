@@ -9,17 +9,17 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-cosmetic.webp";
 import serviceImg2 from "@/assets/service-cosmetic-2.webp";
 
-const TITLE = "Cosmetic Dentist Kanpur | Smile Design | Veneers | Teeth Whitening Kanpur | MY DENTIST Kakadeo";
+const TITLE = "Cosmetic Dentist Kanpur | Smile Design | Veneers | Teeth Whitening Kanpur | DR SAWHNEY’S MY DENTIST Kakadeo";
 const DESC =
-  "Best cosmetic dentist in Kanpur at MY DENTIST, Kakadeo — smile makeovers, smile design, porcelain veneers, teeth whitening Kanpur, dental crowns, zirconia crowns and dental bonding. Transform your smile with specialist cosmetic dentistry in Kanpur.";
+  "Best cosmetic dentist in Kanpur at DR SAWHNEY’S MY DENTIST, Kakadeo — smile makeovers, smile design, porcelain veneers, teeth whitening Kanpur, dental crowns, zirconia crowns and dental bonding. Transform your smile with specialist cosmetic dentistry in Kanpur.";
 
 const FAQS = [
-  { q: "How much does a smile makeover cost at MY DENTIST Kanpur?", a: "Smile makeover costs at MY DENTIST vary depending on the combination of treatments required. A basic whitening or bonding session starts from approximately ₹5,000, while a full smile makeover with veneers may range from ₹40,000 to ₹1,50,000 or more depending on the number of teeth and materials chosen. Every patient receives a detailed, written treatment plan with transparent pricing after the cosmetic consultation." },
-  { q: "Is teeth whitening safe and how long does it last?", a: "Clinical teeth whitening at MY DENTIST is completely safe when performed under specialist supervision. We use professionally formulated whitening gels that do not damage enamel. Results typically last 1 to 2 years depending on your diet, oral hygiene and habits like smoking or excessive tea and coffee consumption. Touch-up sessions are quick and affordable to maintain your brightness." },
-  { q: "What is the difference between veneers and bonding?", a: "Veneers are thin, custom-crafted porcelain shells that are permanently bonded to the front surface of your teeth, offering superior durability, stain resistance and aesthetic control. Dental bonding uses a tooth-coloured composite resin applied directly and shaped by hand — it is faster and more affordable but less durable and more prone to staining over time. At MY DENTIST Kanpur, our specialists help you choose the option that best fits your goals and budget." },
-  { q: "Can cosmetic dentistry fix crooked teeth without braces?", a: "Yes. For mild to moderate alignment issues, porcelain veneers or composite bonding at MY DENTIST can create the appearance of straight, even teeth without orthodontic treatment. However, for significant crowding or bite problems, we may recommend Invisalign clear aligners or braces first, followed by cosmetic refinement. Every case is evaluated individually by our specialists in Kakadeo, Kanpur." },
-  { q: "How many visits does a smile makeover take?", a: "Most cosmetic smile makeovers at MY DENTIST are completed in 2 to 4 visits over 2 to 3 weeks. The process begins with a digital smile design consultation where you see a preview of your new smile. Veneers typically require two visits — one for preparation and one for final placement. Whitening and bonding can often be completed in a single appointment." },
-  { q: "Do you offer tooth jewellery?", a: "Yes. Tooth jewellery — a small, dentist-applied crystal or gem bonded to the tooth surface — is available at MY DENTIST as a quick, reversible cosmetic accent, usually completed in a single short visit." },
+  { q: "How much does a smile makeover cost at DR SAWHNEY’S MY DENTIST Kanpur?", a: "Smile makeover costs at DR SAWHNEY’S MY DENTIST vary depending on the combination of treatments required. A basic whitening or bonding session starts from approximately ₹5,000, while a full smile makeover with veneers may range from ₹40,000 to ₹1,50,000 or more depending on the number of teeth and materials chosen. Every patient receives a detailed, written treatment plan with transparent pricing after the cosmetic consultation." },
+  { q: "Is teeth whitening safe and how long does it last?", a: "Clinical teeth whitening at DR SAWHNEY’S MY DENTIST is completely safe when performed under specialist supervision. We use professionally formulated whitening gels that do not damage enamel. Results typically last 1 to 2 years depending on your diet, oral hygiene and habits like smoking or excessive tea and coffee consumption. Touch-up sessions are quick and affordable to maintain your brightness." },
+  { q: "What is the difference between veneers and bonding?", a: "Veneers are thin, custom-crafted porcelain shells that are permanently bonded to the front surface of your teeth, offering superior durability, stain resistance and aesthetic control. Dental bonding uses a tooth-coloured composite resin applied directly and shaped by hand — it is faster and more affordable but less durable and more prone to staining over time. At DR SAWHNEY’S MY DENTIST Kanpur, our specialists help you choose the option that best fits your goals and budget." },
+  { q: "Can cosmetic dentistry fix crooked teeth without braces?", a: "Yes. For mild to moderate alignment issues, porcelain veneers or composite bonding at DR SAWHNEY’S MY DENTIST can create the appearance of straight, even teeth without orthodontic treatment. However, for significant crowding or bite problems, we may recommend Invisalign clear aligners or braces first, followed by cosmetic refinement. Every case is evaluated individually by our specialists in Kakadeo, Kanpur." },
+  { q: "How many visits does a smile makeover take?", a: "Most cosmetic smile makeovers at DR SAWHNEY’S MY DENTIST are completed in 2 to 4 visits over 2 to 3 weeks. The process begins with a digital smile design consultation where you see a preview of your new smile. Veneers typically require two visits — one for preparation and one for final placement. Whitening and bonding can often be completed in a single appointment." },
+  { q: "Do you offer tooth jewellery?", a: "Yes. Tooth jewellery — a small, dentist-applied crystal or gem bonded to the tooth surface — is available at DR SAWHNEY’S MY DENTIST as a quick, reversible cosmetic accent, usually completed in a single short visit." },
 ];
 
 const faqJsonLd = {
@@ -41,7 +41,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -57,7 +57,7 @@ const SIGNS = [
   "Discoloured, stained or yellowed teeth that make you self-conscious about smiling openly in photos or social situations",
   "Chipped, cracked or worn teeth that catch your tongue or make you hide your smile when meeting new people",
   "Gaps between your teeth (diastema) or uneven tooth sizes that draw attention away from your eyes and face",
-  "Gummy smile where excess gum tissue makes teeth appear short — a condition easily corrected with gum contouring at MY DENTIST",
+  "Gummy smile where excess gum tissue makes teeth appear short — a condition easily corrected with gum contouring at DR SAWHNEY’S MY DENTIST",
   "Old, visible metal fillings or discoloured dental work that contrasts sharply with your natural teeth",
   "A smile that simply does not match the person you are — and you want a specialist to design the smile you have always wanted",
 ];
@@ -72,12 +72,12 @@ const CAUSES = [
 ];
 
 const BENEFITS = [
-  { title: "Confidence that transforms", desc: "A well-designed smile changes how you speak, laugh, eat and interact with the world. Patients at MY DENTIST consistently report a dramatic boost in social and professional confidence after cosmetic treatment." },
+  { title: "Confidence that transforms", desc: "A well-designed smile changes how you speak, laugh, eat and interact with the world. Patients at DR SAWHNEY’S MY DENTIST consistently report a dramatic boost in social and professional confidence after cosmetic treatment." },
   { title: "Natural-looking results", desc: "Our specialists use digital smile design to match veneers, crowns and bonding to your face shape, lip line, skin tone and personality — never a generic, cookie-cutter look." },
-  { title: "Minimally invasive options", desc: "Modern cosmetic dentistry at MY DENTIST Kanpur prioritises tooth conservation. No-prep and minimal-prep veneers, enamel-safe whitening and composite bonding preserve maximum natural tooth structure." },
-  { title: "Long-lasting transformation", desc: "Porcelain veneers placed at MY DENTIST last 10 to 15 years or more. Professional whitening results persist for 1 to 2 years with simple maintenance. These are investments that deliver years of daily satisfaction." },
+  { title: "Minimally invasive options", desc: "Modern cosmetic dentistry at DR SAWHNEY’S MY DENTIST Kanpur prioritises tooth conservation. No-prep and minimal-prep veneers, enamel-safe whitening and composite bonding preserve maximum natural tooth structure." },
+  { title: "Long-lasting transformation", desc: "Porcelain veneers placed at DR SAWHNEY’S MY DENTIST last 10 to 15 years or more. Professional whitening results persist for 1 to 2 years with simple maintenance. These are investments that deliver years of daily satisfaction." },
   { title: "Digital preview before treatment", desc: "Our digital smile design software lets you see a preview of your new smile before any tooth is touched. You participate in the design process and approve the result before treatment begins." },
-  { title: "Quick treatment timelines", desc: "Many cosmetic procedures at MY DENTIST are completed in just 1 to 2 visits. Professional whitening takes under an hour. Veneers require only a preparation visit and a placement visit, typically within 7 to 10 days." },
+  { title: "Quick treatment timelines", desc: "Many cosmetic procedures at DR SAWHNEY’S MY DENTIST are completed in just 1 to 2 visits. Professional whitening takes under an hour. Veneers require only a preparation visit and a placement visit, typically within 7 to 10 days." },
 ];
 
 const PROCESS = [
@@ -101,7 +101,7 @@ export const Route = createFileRoute("/cosmetic-dentistry")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "cosmetic dentist Kanpur, smile makeover Kanpur, teeth whitening Kanpur, veneers Kanpur, dental bonding Kakadeo, best cosmetic dentistry MY DENTIST" },
+      { name: "keywords", content: "cosmetic dentist Kanpur, smile makeover Kanpur, teeth whitening Kanpur, veneers Kanpur, dental bonding Kakadeo, best cosmetic dentistry DR SAWHNEY’S MY DENTIST" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/cosmetic-dentistry` },
@@ -121,7 +121,7 @@ function CosmeticDentistryPage() {
       <PageHeader
         eyebrow="Cosmetic Dentistry · Kakadeo, Kanpur"
         title={<>Cosmetic Dentistry in Kanpur — <span className="italic text-aqua-deep">your best smile, designed.</span></>}
-        intro="Smile makeovers, porcelain veneers, teeth whitening, gum contouring and dental bonding at MY DENTIST, Kakadeo, Kanpur. Specialist cosmetic dentistry designed around your face, your story and your confidence."
+        intro="Smile makeovers, porcelain veneers, teeth whitening, gum contouring and dental bonding at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. Specialist cosmetic dentistry designed around your face, your story and your confidence."
       />
 
       {/* Introduction */}
@@ -135,15 +135,15 @@ function CosmeticDentistryPage() {
               A smile crafted in <span className="italic text-aqua-deep">millimetres.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Cosmetic dentistry at MY DENTIST is not about generic templates — it is about designing a smile that belongs to you. Our cosmetic specialists in Kakadeo, Kanpur combine digital smile design technology with artistic judgement to plan veneers, whitening, bonding and gum contouring that harmonise with your face shape, skin tone, lip line and personality.
+              Cosmetic dentistry at DR SAWHNEY’S MY DENTIST is not about generic templates — it is about designing a smile that belongs to you. Our cosmetic specialists in Kakadeo, Kanpur combine digital smile design technology with artistic judgement to plan veneers, whitening, bonding and gum contouring that harmonise with your face shape, skin tone, lip line and personality.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Whether you want a complete smile transformation or a simple refinement, every cosmetic treatment at MY DENTIST begins with a digital preview. You see the proposed result before any tooth is touched, participate in the design decisions and approve every detail before treatment begins. This patient-first approach ensures results that feel genuinely yours — natural, confident and lasting.
+              Whether you want a complete smile transformation or a simple refinement, every cosmetic treatment at DR SAWHNEY’S MY DENTIST begins with a digital preview. You see the proposed result before any tooth is touched, participate in the design decisions and approve every detail before treatment begins. This patient-first approach ensures results that feel genuinely yours — natural, confident and lasting.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg} alt="Cosmetic teeth whitening and smile design at MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg} alt="Cosmetic teeth whitening and smile design at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
         </div>
@@ -176,7 +176,7 @@ function CosmeticDentistryPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg2} alt="Smile makeover result at MY DENTIST cosmetic dentistry Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg2} alt="Smile makeover result at DR SAWHNEY’S MY DENTIST cosmetic dentistry Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -187,7 +187,7 @@ function CosmeticDentistryPage() {
               What affects your <span className="italic text-aqua-deep">smile.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Understanding what has affected your smile helps our cosmetic specialists at MY DENTIST Kakadeo recommend the most effective and efficient treatment. Every smile concern has a specific cause — and the right procedure to address it.
+              Understanding what has affected your smile helps our cosmetic specialists at DR SAWHNEY’S MY DENTIST Kakadeo recommend the most effective and efficient treatment. Every smile concern has a specific cause — and the right procedure to address it.
             </p>
             <ul className="mt-8 space-y-4">
               {CAUSES.map((c, i) => (
@@ -209,7 +209,7 @@ function CosmeticDentistryPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Benefits
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              What cosmetic treatment at <span className="italic text-aqua-deep">MY DENTIST delivers.</span>
+              What cosmetic treatment at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST delivers.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -289,7 +289,7 @@ function CosmeticDentistryPage() {
               Cosmetic <span className="italic text-aqua-deep">technology.</span>
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              MY DENTIST Kakadeo uses internationally recognised cosmetic dental technology to design, preview and deliver smile transformations with pixel-level precision.
+              DR SAWHNEY’S MY DENTIST Kakadeo uses internationally recognised cosmetic dental technology to design, preview and deliver smile transformations with pixel-level precision.
             </p>
             <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {TECHNOLOGY.map((t) => {
@@ -323,10 +323,10 @@ function CosmeticDentistryPage() {
           <Reveal>
             <div className="rounded-3xl bg-foreground p-8 text-background md:p-14">
               <h2 className="font-display text-4xl md:text-5xl">
-                Why choose MY DENTIST for <span className="italic text-aqua">cosmetic dentistry in Kanpur?</span>
+                Why choose DR SAWHNEY’S MY DENTIST for <span className="italic text-aqua">cosmetic dentistry in Kanpur?</span>
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-background/70">
-                MY DENTIST is Kakadeo's leading cosmetic dentistry destination. Our specialists combine digital smile design expertise, internationally sourced materials and a deeply patient-centred approach to deliver results that are natural, lasting and authentically yours. Every smile makeover is a collaboration — not a production line.
+                DR SAWHNEY’S MY DENTIST is Kakadeo's leading cosmetic dentistry destination. Our specialists combine digital smile design expertise, internationally sourced materials and a deeply patient-centred approach to deliver results that are natural, lasting and authentically yours. Every smile makeover is a collaboration — not a production line.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 {SITE.reasons.map((r) => (
@@ -346,7 +346,7 @@ function CosmeticDentistryPage() {
               <div>
                 <h3 className="font-display text-2xl">Meet your cosmetic dentistry specialist</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Dr. Asheesh K. Sawhny (BDS, MDS) and Dr. Karuna Singh Sawhny (BDS, MDS) design and deliver cosmetic treatments at MY DENTIST, Kanpur — from whitening and bonding to full smile makeovers.
+                  Dr. Asheesh K. Sawhny (BDS, MDS) and Dr. Karuna Singh Sawhny (BDS, MDS) design and deliver cosmetic treatments at DR SAWHNEY’S MY DENTIST, Kanpur — from whitening and bonding to full smile makeovers.
                 </p>
               </div>
               <div className="flex gap-3">
@@ -411,7 +411,7 @@ function CosmeticDentistryPage() {
               Ready for your <span className="italic text-aqua-deep">smile transformation?</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Book a cosmetic consultation at MY DENTIST, Kakadeo, Kanpur. See a digital preview of your new smile and choose the treatment that is right for you.
+              Book a cosmetic consultation at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. See a digital preview of your new smile and choose the treatment that is right for you.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <MagneticButton to="/contact" hash="consultation-form" variant="dark">Book Appointment →</MagneticButton>

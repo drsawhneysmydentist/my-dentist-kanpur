@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "MY DENTIST",
+  name: "DR SAWHNEY’S MY DENTIST",
   tagline: "Kanpur's Super Specialty Dental Clinic",
   // Canonical production origin (no trailing slash). Used to build absolute
   // canonical/og:url links and the sitemap. Override per-environment with
@@ -35,7 +35,7 @@ export const SITE = {
   whatsappConsultUrl:
     "https://wa.me/919838500100?text=" +
     encodeURIComponent(
-      "Hello My Dentist Team,\nI would like to book an appointment.\nPlease let me know the available timings.\nThank you.",
+      "Hello Dr Sawhney’s My Dentist Team,\nI would like to book an appointment.\nPlease let me know the available timings.\nThank you.",
     ),
   rating: "5.0",
   reviews: "226+",
@@ -45,14 +45,14 @@ export const SITE = {
       name: "Dr. Asheesh K. Sawhny",
       qualifications: "BDS, MDS",
       role: "Endodontist & Implantologist",
-      bio: "Dr. Asheesh K. Sawhny is an Endodontist and Implantologist at MY DENTIST, known for precise, patient-focused treatment across a wide range of dental procedures.",
+      bio: "Dr. Asheesh K. Sawhny is an Endodontist and Implantologist at DR SAWHNEY’S MY DENTIST, known for precise, patient-focused treatment across a wide range of dental procedures.",
     },
     {
       slug: "dr-karuna-sawhny",
       name: "Dr. Karuna Singh Sawhny",
       qualifications: "BDS, MDS",
       role: "Orthodontist & Invisalign Provider",
-      bio: "Dr. Karuna Singh Sawhny is an Orthodontist and Invisalign Provider at MY DENTIST, dedicated to gentle, modern dental care for patients of all ages.",
+      bio: "Dr. Karuna Singh Sawhny is an Orthodontist and Invisalign Provider at DR SAWHNEY’S MY DENTIST, dedicated to gentle, modern dental care for patients of all ages.",
     },
     {
       slug: "dr-sirjon-mukherji",
@@ -167,44 +167,44 @@ export const SITE = {
   ],
   faqs: [
     {
-      q: "Is My Dentist a specialist clinic?",
-      a: "Yes. Our specialist doctors hold MDS postgraduate degrees — Dr. Asheesh K. Sawhny is an MDS Endodontist and AAID-Certified Implantologist, and Dr. Karuna Singh Sawhny is an MDS Orthodontist. Every treatment at My Dentist, Kakadeo, Kanpur is delivered at the specialist level.",
+      q: "Is Dr Sawhney’s My Dentist a specialist clinic?",
+      a: "Yes. Our specialist doctors hold MDS postgraduate degrees — Dr. Asheesh K. Sawhny is an MDS Endodontist and AAID-Certified Implantologist, and Dr. Karuna Singh Sawhny is an MDS Orthodontist. Every treatment at Dr Sawhney’s My Dentist, Kakadeo, Kanpur is delivered at the specialist level.",
     },
     {
       q: "What is the cost of root canal treatment in Kanpur?",
-      a: "Root canal treatment fees at My Dentist vary by tooth type and case complexity. The consultation fee is ₹500. Painless single-visit RCT is available for straightforward cases. Book an appointment for a transparent, personalised quote.",
+      a: "Root canal treatment fees at Dr Sawhney’s My Dentist vary by tooth type and case complexity. The consultation fee is ₹500. Painless single-visit RCT is available for straightforward cases. Book an appointment for a transparent, personalised quote.",
     },
     {
       q: "Is Dr. Asheesh qualified for dental implants in Kanpur?",
       a: "Yes. Dr. Asheesh K. Sawhny is an American-certified implantologist, credentialed by the American Academy of Implant Dentistry (AAID) — one of very few implantologists in Uttar Pradesh with this international certification.",
     },
     {
-      q: "Does My Dentist offer paediatric dentistry in Kanpur?",
-      a: "Yes. My Dentist provides child-friendly paediatric dental care for children of all ages, including routine check-ups, milk tooth care, and early orthodontic screening. Our specialist doctors welcome children at our Kakadeo clinic.",
+      q: "Does Dr Sawhney’s My Dentist offer paediatric dentistry in Kanpur?",
+      a: "Yes. Dr Sawhney’s My Dentist provides child-friendly paediatric dental care for children of all ages, including routine check-ups, milk tooth care, and early orthodontic screening. Our specialist doctors welcome children at our Kakadeo clinic.",
     },
     {
       q: "What braces and orthodontic treatments are available in Kanpur?",
       a: "Dr. Karuna Singh Sawhny offers Metal Braces, Ceramic Braces, Self-Ligating Braces, Invisalign Clear Aligners and Dentofacial Orthopaedics for children and adults.",
     },
     {
-      q: "What are the clinic timings? Is My Dentist open on Sunday in Kanpur?",
-      a: "My Dentist is open Mon–Sat: 4 PM–9 PM (evening slots available) and Sunday: 11 AM–2 PM. We are one of the few dental clinics in Kanpur open in the evening and on Sundays.",
+      q: "What are the clinic timings? Is Dr Sawhney’s My Dentist open on Sunday in Kanpur?",
+      a: "Dr Sawhney’s My Dentist is open Mon–Sat: 4 PM–9 PM (evening slots available) and Sunday: 11 AM–2 PM. We are one of the few dental clinics in Kanpur open in the evening and on Sundays.",
     },
     {
       q: "What is the cost of dental implants in Kanpur?",
-      a: "Dental implant costs at My Dentist vary by the number of implants, restoration type and preparatory procedures needed. The consultation fee is ₹500. Dr. Asheesh K. Sawhny, our AAID-certified implantologist, provides a personalised quote after assessment.",
+      a: "Dental implant costs at Dr Sawhney’s My Dentist vary by the number of implants, restoration type and preparatory procedures needed. The consultation fee is ₹500. Dr. Asheesh K. Sawhny, our AAID-certified implantologist, provides a personalised quote after assessment.",
     },
     {
-      q: "Why is My Dentist considered among the best dental clinics in Kanpur?",
-      a: "My Dentist, Kakadeo, Kanpur brings together a team of highly experienced specialists under one roof — Dr. Asheesh K. Sawhny (Endodontist & Implantologist), Dr. Karuna Singh Sawhny (Orthodontist & Invisalign Provider), and Dr. Sirjon Mukherji (Internationally Trained Oral & Maxillofacial Surgeon & Implantologist). From root canal treatment and dental implants to braces, Invisalign clear aligners, and advanced oral surgery, every procedure is led by an MDS specialist rather than a general practitioner. This multi-specialty, specialist-led approach, backed by 226+ verified 5-star Google reviews, is why patients consistently rate My Dentist among the best dental clinics in Kanpur.",
+      q: "Why is Dr Sawhney’s My Dentist considered among the best dental clinics in Kanpur?",
+      a: "Dr Sawhney’s My Dentist, Kakadeo, Kanpur brings together a team of highly experienced specialists under one roof — Dr. Asheesh K. Sawhny (Endodontist & Implantologist), Dr. Karuna Singh Sawhny (Orthodontist & Invisalign Provider), and Dr. Sirjon Mukherji (Internationally Trained Oral & Maxillofacial Surgeon & Implantologist). From root canal treatment and dental implants to braces, Invisalign clear aligners, and advanced oral surgery, every procedure is led by an MDS specialist rather than a general practitioner. This multi-specialty, specialist-led approach, backed by 226+ verified 5-star Google reviews, is why patients consistently rate Dr Sawhney’s My Dentist among the best dental clinics in Kanpur.",
     },
     {
-      q: "Does My Dentist offer emergency dental treatment in Kanpur?",
-      a: "Yes. My Dentist provides same-day emergency dental care in Kanpur for severe tooth pain, swelling, trauma, and broken teeth. Call +91 98385 00100 for emergency appointments.",
+      q: "Does Dr Sawhney’s My Dentist offer emergency dental treatment in Kanpur?",
+      a: "Yes. Dr Sawhney’s My Dentist provides same-day emergency dental care in Kanpur for severe tooth pain, swelling, trauma, and broken teeth. Call +91 98385 00100 for emergency appointments.",
     },
     {
-      q: "Where is My Dentist located? Is it near Panacea Hospital or Dwivedi Hospital?",
-      a: "My Dentist is located at 117/L-1/455-A, Naveen Nagar, Kakadeo, Kanpur, Uttar Pradesh – 208025. We are conveniently accessible from Pandu Nagar, Sharda Nagar, Naveen Nagar, and nearby areas including Panacea Hospital and Dwivedi Hospital, Kanpur.",
+      q: "Where is Dr Sawhney’s My Dentist located? Is it near Panacea Hospital or Dwivedi Hospital?",
+      a: "Dr Sawhney’s My Dentist is located at 117/L-1/455-A, Naveen Nagar, Kakadeo, Kanpur, Uttar Pradesh – 208025. We are conveniently accessible from Pandu Nagar, Sharda Nagar, Naveen Nagar, and nearby areas including Panacea Hospital and Dwivedi Hospital, Kanpur.",
     },
   ],
   locations: [
@@ -229,7 +229,7 @@ export const SITE = {
       name: "Shirish Nigam",
       role: "Google Review",
       quote:
-        "I had my tooth extraction at My Dentist, and the experience was very smooth and comfortable. The doctor was professional and made me feel at ease. The staff was also polite and the clinic was well-maintained. Highly recommended!",
+        "I had my tooth extraction at Dr Sawhney’s My Dentist, and the experience was very smooth and comfortable. The doctor was professional and made me feel at ease. The staff was also polite and the clinic was well-maintained. Highly recommended!",
     },
     {
       name: "Dushyant Singh",

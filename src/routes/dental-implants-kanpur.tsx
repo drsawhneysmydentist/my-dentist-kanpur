@@ -9,7 +9,7 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-implants.webp";
 import serviceImg2 from "@/assets/service-implants-2.webp";
 
-const TITLE = "Dental Implants in Kanpur | American-Certified Implantologist | Implant Dentist Kanpur | My Dentist";
+const TITLE = "Dental Implants in Kanpur | American-Certified Implantologist | Implant Dentist Kanpur | Dr Sawhney’s My Dentist";
 const DESC =
   "Dental implants in Kanpur by Dr. Asheesh K. Sawhny — American-certified implantologist (AAID) with 21+ years experience. Best implant dentist in Kakadeo, Kanpur. Single tooth, multiple implants & full arch. Know the dental implant cost in Kanpur — book a ₹500 consultation.";
 
@@ -72,7 +72,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Jaw, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -89,7 +89,7 @@ export const Route = createFileRoute("/dental-implants-kanpur")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "dental implants Kanpur, implant dentist Kanpur, certified implantologist Kanpur, American certified implantologist Kanpur, dental implant cost Kanpur, AAID implantologist Kanpur, tooth implant Kakadeo, full arch implant Kanpur, single tooth implant Kanpur, My Dentist Kakadeo" },
+      { name: "keywords", content: "dental implants Kanpur, implant dentist Kanpur, certified implantologist Kanpur, American certified implantologist Kanpur, dental implant cost Kanpur, AAID implantologist Kanpur, tooth implant Kakadeo, full arch implant Kanpur, single tooth implant Kanpur, Dr Sawhney’s My Dentist Kakadeo" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/dental-implants-kanpur` },
@@ -109,7 +109,7 @@ function DentalImplantsPage() {
       <PageHeader
         eyebrow="Dental Implants · Kakadeo, Kanpur"
         title={<>Dental Implants in Kanpur — <span className="italic text-aqua-deep">AAID-certified specialist.</span></>}
-        intro="Permanent, natural-looking tooth replacement at MY DENTIST, Kakadeo, by an AAID-Certified Implantologist with 21+ years of clinical experience."
+        intro="Permanent, natural-looking tooth replacement at DR SAWHNEY’S MY DENTIST, Kakadeo, by an AAID-Certified Implantologist with 21+ years of clinical experience."
       />
 
       {/* What are dental implants */}
@@ -130,7 +130,7 @@ function DentalImplantsPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg} alt="Dental implant treatment at MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg} alt="Dental implant treatment at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -153,7 +153,7 @@ function DentalImplantsPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Options
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Implant options at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Implant options at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -224,7 +224,7 @@ function DentalImplantsPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The implant process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The implant process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`The full process from placement to final crown typically spans 3–6 months, depending on bone health and individual healing.`} /></p>
           </Reveal>
@@ -245,7 +245,7 @@ function DentalImplantsPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg2} alt="Dental implant candidacy assessment at MY DENTIST Kakadeo" className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg2} alt="Dental implant candidacy assessment at DR SAWHNEY’S MY DENTIST Kakadeo" className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -269,7 +269,7 @@ function DentalImplantsPage() {
                 <span className="italic text-aqua">AAID-Certified.</span> 21+ years of clinical trust.
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-background/70">
-                International certification combined with decades of clinical experience — implants at MY DENTIST are planned and placed with specialist precision.
+                International certification combined with decades of clinical experience — implants at DR SAWHNEY’S MY DENTIST are planned and placed with specialist precision.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 {SITE.reasons.map((r) => (
@@ -288,7 +288,7 @@ function DentalImplantsPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your implant specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS, AAID Certified) leads implant care at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS, AAID Certified) leads implant care at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -348,7 +348,7 @@ function DentalImplantsPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your implant consultation at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your implant consultation at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A specialist assessment, a transparent plan and implants placed with international-certified precision.

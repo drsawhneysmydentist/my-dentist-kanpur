@@ -65,15 +65,15 @@ export function SiteFooter() {
             <div className="flex items-center gap-3">
               <img
                 src={logoBadge}
-                alt="Dr Sawhney's My Dentist logo"
+                alt="Dr Sawhney’s My Dentist logo"
                 className="h-10 w-10 rounded-full object-cover"
                 width={40}
                 height={40}
               />
-              <span className="font-display text-2xl">My Dentist</span>
+              <span className="font-display text-2xl">Dr Sawhney’s My Dentist</span>
             </div>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/55">
-              My Dentist — best dental clinic in Kakadeo, Kanpur. MDS-qualified
+              Dr Sawhney’s My Dentist — best dental clinic in Kakadeo, Kanpur. MDS-qualified
               specialists providing dental implants, painless root canal,
               braces, teeth whitening, smile makeover and emergency dental care.
               Serving Pandu Nagar, Naveen Nagar, Sharda Nagar, Sarvodaya Nagar
@@ -195,7 +195,7 @@ export function SiteFooter() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 md:flex-row md:items-center">
           <div>
-            © {new Date().getFullYear()} Dr Sawhney's My Dentist · Kanpur. All
+            © {new Date().getFullYear()} Dr Sawhney’s My Dentist · Kanpur. All
             rights reserved.
           </div>
           <div className="flex gap-6">

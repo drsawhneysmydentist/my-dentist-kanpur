@@ -109,18 +109,23 @@ export function SiteHeader() {
           <Link
             to="/"
             className="flex items-center gap-2.5 pl-3"
-            aria-label="Dr Sawhney's My Dentist — Home"
+            aria-label="Dr Sawhney’s My Dentist — Home"
           >
             <img
               src={logoBadge}
-              alt="Dr Sawhney's My Dentist logo"
+              alt="Dr Sawhney’s My Dentist logo"
               className="h-9 w-9 rounded-full object-cover shadow-soft"
               width={36}
               height={36}
             />
             <div className="leading-tight">
               <div
-                className={`font-display text-base font-semibold transition-colors duration-500 ${dark ? "text-white" : "text-foreground"}`}
+                className={`font-display text-[11px] font-medium tracking-wide transition-colors duration-500 ${dark ? "text-white/70" : "text-foreground/70"}`}
+              >
+                Dr Sawhney’s
+              </div>
+              <div
+                className={`font-display text-lg font-bold uppercase tracking-wide transition-colors duration-500 ${dark ? "text-amber-300" : "text-amber-600"}`}
               >
                 My Dentist
               </div>

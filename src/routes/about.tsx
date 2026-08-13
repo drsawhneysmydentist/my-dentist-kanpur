@@ -20,14 +20,14 @@ import zoomCompleteSystem from "@/assets/zoom-complete-system-clinic.webp";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About My Dentist Kakadeo Kanpur | Best Dental Clinic Kanpur | MDS Specialists Since 2005" },
+      { title: "About Dr Sawhney’s My Dentist Kakadeo Kanpur | Best Dental Clinic Kanpur | MDS Specialists Since 2005" },
       {
         name: "description",
         content:
-          "About My Dentist — best dental clinic in Kakadeo, Kanpur since 2005. Led by MDS-qualified specialists Dr. Asheesh Sawhny (Endodontist & AAID-Certified Implantologist) and Dr. Karuna Sawhny (Orthodontist). 226+ five-star reviews. Serving Pandu Nagar, Naveen Nagar, Sharda Nagar, and all of Kanpur.",
+          "About Dr Sawhney’s My Dentist — best dental clinic in Kakadeo, Kanpur since 2005. Led by MDS-qualified specialists Dr. Asheesh Sawhny (Endodontist & AAID-Certified Implantologist) and Dr. Karuna Sawhny (Orthodontist). 226+ five-star reviews. Serving Pandu Nagar, Naveen Nagar, Sharda Nagar, and all of Kanpur.",
       },
       { name: "keywords", content: "best dental clinic Kanpur, dentist Kakadeo Kanpur, dental hospital Kanpur, MDS dentist Kakadeo, affordable dental clinic Kanpur, most trusted dental clinic Naveen Nagar Kanpur" },
-      { property: "og:title", content: "About My Dentist Kakadeo Kanpur | Best Dental Clinic" },
+      { property: "og:title", content: "About Dr Sawhney’s My Dentist Kakadeo Kanpur | Best Dental Clinic" },
       { property: "og:url", content: `${SITE.url}/about` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/about` }],
@@ -54,7 +54,7 @@ function AboutPage() {
         }
         intro={
           <>
-            Dr Sawhney's My Dentist is a <span className="font-semibold">modern, family-led super specialty practice</span> in Kakadeo. We blend international clinical standards with the warmth of a neighbourhood clinic — so every visit feels <span className="italic">measured, calm and considered.</span>
+            Dr Sawhney’s My Dentist is a <span className="font-semibold">modern, family-led super specialty practice</span> in Kakadeo. We blend international clinical standards with the warmth of a neighbourhood clinic — so every visit feels <span className="italic">measured, calm and considered.</span>
           </>
         }
       />
@@ -64,7 +64,7 @@ function AboutPage() {
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-[1.4fr_1fr]">
           <Reveal>
             <div className="relative overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={clinic} alt="Modern dental treatment suite with professional dental chair and equipment at MY DENTIST Kakadeo Kanpur" className="h-[460px] w-full object-cover object-center md:h-[560px]" loading="eager" decoding="async" fetchPriority="high" width={940} height={1174} />
+              <img src={clinic} alt="Modern dental treatment suite with professional dental chair and equipment at DR SAWHNEY’S MY DENTIST Kakadeo Kanpur" className="h-[460px] w-full object-cover object-center md:h-[560px]" loading="eager" decoding="async" fetchPriority="high" width={940} height={1174} />
               <div className="absolute bottom-6 left-6 glass rounded-2xl p-4">
                 <div className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Established</div>
                 <div className="mt-1 font-display text-3xl">2005</div>
@@ -73,7 +73,7 @@ function AboutPage() {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="relative h-full overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={smile} alt="MY DENTIST Kakadeo clinic exterior signage" className="h-[460px] w-full object-cover object-center md:h-[560px]" loading="eager" decoding="async" width={1054} height={1171} />
+              <img src={smile} alt="DR SAWHNEY’S MY DENTIST Kakadeo clinic exterior signage" className="h-[460px] w-full object-cover object-center md:h-[560px]" loading="eager" decoding="async" width={1054} height={1171} />
             </div>
           </Reveal>
         </div>
@@ -164,7 +164,7 @@ function AboutPage() {
             <div className="aspect-[4/3] w-full overflow-hidden rounded-[2rem] p-1.5 shadow-luxe bg-background">
               <img
                 src={cerecScanner}
-                alt="Advanced digital dentistry equipment at MY DENTIST Kanpur"
+                alt="Advanced digital dentistry equipment at DR SAWHNEY’S MY DENTIST Kanpur"
                 className="h-full w-full rounded-[1.5rem] object-cover"
                 loading="lazy"
               />
@@ -227,7 +227,7 @@ function AboutPage() {
                   "Comfortable impression-free experience",
                 ],
                 image: primescanPhoto as string | undefined,
-                alt: "Dentsply Sirona Primescan handheld digital intraoral scanner used for 3D dental impressions at My Dentist Kakadeo Kanpur",
+                alt: "Dentsply Sirona Primescan handheld digital intraoral scanner used for 3D dental impressions at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                 images: undefined as { src: string; alt: string }[] | undefined,
               },
               {
@@ -242,7 +242,7 @@ function AboutPage() {
                   "Fast & Accurate Results",
                 ],
                 image: primemillPhoto as string | undefined,
-                alt: "Dentsply Sirona CEREC Primemill chairside CAD/CAM milling unit for same-day ceramic dental restorations at My Dentist Kakadeo Kanpur",
+                alt: "Dentsply Sirona CEREC Primemill chairside CAD/CAM milling unit for same-day ceramic dental restorations at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                 images: undefined as { src: string; alt: string }[] | undefined,
               },
               {
@@ -255,7 +255,7 @@ function AboutPage() {
                   "Natural esthetics",
                 ],
                 image: speedfirePhoto as string | undefined,
-                alt: "CEREC SpeedFire ceramic sintering and glazing furnace for rapid dental restorations at My Dentist Kakadeo Kanpur",
+                alt: "CEREC SpeedFire ceramic sintering and glazing furnace for rapid dental restorations at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                 images: undefined as { src: string; alt: string }[] | undefined,
               },
               {
@@ -268,15 +268,15 @@ function AboutPage() {
                   "Safe & comfortable",
                 ],
                 image: undefined as string | undefined,
-                alt: "Philips Zoom professional in-clinic teeth whitening system at My Dentist Kakadeo Kanpur",
+                alt: "Philips Zoom professional in-clinic teeth whitening system at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                 images: [
                   {
                     src: zoomControlPanel,
-                    alt: "Philips Zoom whitening system control panel showing start, pause, stop and intensity settings at My Dentist Kakadeo Kanpur",
+                    alt: "Philips Zoom whitening system control panel showing start, pause, stop and intensity settings at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                   },
                   {
                     src: zoomCompleteSystem,
-                    alt: "Complete Philips Zoom professional teeth whitening system on its mobile stand in the treatment room at My Dentist Kakadeo Kanpur",
+                    alt: "Complete Philips Zoom professional teeth whitening system on its mobile stand in the treatment room at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                   },
                 ] as { src: string; alt: string }[] | undefined,
               },
@@ -290,15 +290,15 @@ function AboutPage() {
                   "Microscope-assisted dentistry",
                 ],
                 image: undefined as string | undefined,
-                alt: "Carl Zeiss dental operating microscope used for microscope-assisted root canal treatment at My Dentist Kakadeo Kanpur",
+                alt: "Carl Zeiss dental operating microscope used for microscope-assisted root canal treatment at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                 images: [
                   {
                     src: zeissFullSetup,
-                    alt: "Carl Zeiss dental operating microscope — complete mobile setup on wheeled stand at My Dentist Kakadeo Kanpur",
+                    alt: "Carl Zeiss dental operating microscope — complete mobile setup on wheeled stand at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                   },
                   {
                     src: zeissCloseup,
-                    alt: "Close-up of the Carl Zeiss dental microscope's optical eyepieces mounted chairside in clinical working position at My Dentist Kakadeo Kanpur",
+                    alt: "Close-up of the Carl Zeiss dental microscope's optical eyepieces mounted chairside in clinical working position at Dr Sawhney’s My Dentist Kakadeo Kanpur",
                   },
                 ] as { src: string; alt: string }[] | undefined,
               },
@@ -410,7 +410,7 @@ function AboutPage() {
                 Experience modern dentistry with <span className="italic text-aqua-deep">technology you can trust.</span>
               </h3>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                Discover why patients across Kanpur choose My Dentist Kakadeo for advanced
+                Discover why patients across Kanpur choose Dr Sawhney’s My Dentist Kakadeo for advanced
                 digital dental care powered by internationally recognized equipment.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

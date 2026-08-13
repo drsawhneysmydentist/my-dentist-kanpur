@@ -9,16 +9,16 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-oral-surgery.webp";
 import serviceImg2 from "@/assets/service-oral-surgery-2.webp";
 
-const TITLE = "Wisdom Tooth Removal Kanpur | Oral Surgery | Tooth Extraction Kanpur | MY DENTIST Kakadeo";
+const TITLE = "Wisdom Tooth Removal Kanpur | Oral Surgery | Tooth Extraction Kanpur | DR SAWHNEY’S MY DENTIST Kakadeo";
 const DESC =
-  "Wisdom tooth removal and oral surgery in Kanpur at MY DENTIST, Kakadeo — surgical extractions, wisdom tooth extraction, jaw surgery, cyst removal and facial trauma treatment. Painless, safe and sterile oral and maxillofacial surgery in Kanpur.";
+  "Wisdom tooth removal and oral surgery in Kanpur at DR SAWHNEY’S MY DENTIST, Kakadeo — surgical extractions, wisdom tooth extraction, jaw surgery, cyst removal and facial trauma treatment. Painless, safe and sterile oral and maxillofacial surgery in Kanpur.";
 
 const FAQS = [
-  { q: "Is wisdom tooth removal painful at MY DENTIST Kanpur?", a: "No. Wisdom tooth extraction at MY DENTIST is performed under local anaesthesia with optional sedation for anxious patients. Most patients report feeling only mild pressure during the procedure and manage post-operative discomfort with standard over-the-counter pain relief. Our oral surgeons in Kakadeo use minimally invasive techniques that speed up healing and reduce swelling." },
-  { q: "How long does it take to recover from wisdom tooth surgery?", a: "Recovery from a straightforward wisdom tooth extraction at MY DENTIST typically takes 3 to 5 days for routine cases. Surgical extractions involving impacted teeth may require 7 to 10 days. We provide detailed post-operative instructions and a follow-up appointment to ensure smooth, complication-free healing." },
-  { q: "Do you handle impacted wisdom teeth at MY DENTIST?", a: "Yes. Impacted wisdom teeth — including mesio-angular, horizontal and disto-angular impactions — are routinely treated by our oral surgery specialists at MY DENTIST, Kakadeo, Kanpur. We use digital OPG X-rays and CBCT imaging to precisely plan every case before surgery." },
-  { q: "What types of oral surgery does MY DENTIST perform?", a: "MY DENTIST provides a full range of oral and maxillofacial surgical procedures: wisdom tooth extractions, surgical removal of impacted teeth, cyst and tumour removal, jaw fracture repair, pre-prosthetic surgery, bone grafting, sinus lift procedures and dental implant placement. All surgeries are performed in our fully equipped, sterile surgical suite in Kakadeo, Kanpur." },
-  { q: "How much does wisdom tooth removal cost in Kanpur?", a: "At MY DENTIST, wisdom tooth extraction costs in Kanpur start from approximately ₹5,000 for a simple extraction and vary based on the impaction level, surgical complexity and anaesthesia requirements. Surgical extractions for impacted teeth are quoted individually after a digital X-ray assessment. All pricing is transparent and provided in writing before treatment." },
+  { q: "Is wisdom tooth removal painful at DR SAWHNEY’S MY DENTIST Kanpur?", a: "No. Wisdom tooth extraction at DR SAWHNEY’S MY DENTIST is performed under local anaesthesia with optional sedation for anxious patients. Most patients report feeling only mild pressure during the procedure and manage post-operative discomfort with standard over-the-counter pain relief. Our oral surgeons in Kakadeo use minimally invasive techniques that speed up healing and reduce swelling." },
+  { q: "How long does it take to recover from wisdom tooth surgery?", a: "Recovery from a straightforward wisdom tooth extraction at DR SAWHNEY’S MY DENTIST typically takes 3 to 5 days for routine cases. Surgical extractions involving impacted teeth may require 7 to 10 days. We provide detailed post-operative instructions and a follow-up appointment to ensure smooth, complication-free healing." },
+  { q: "Do you handle impacted wisdom teeth at DR SAWHNEY’S MY DENTIST?", a: "Yes. Impacted wisdom teeth — including mesio-angular, horizontal and disto-angular impactions — are routinely treated by our oral surgery specialists at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. We use digital OPG X-rays and CBCT imaging to precisely plan every case before surgery." },
+  { q: "What types of oral surgery does DR SAWHNEY’S MY DENTIST perform?", a: "DR SAWHNEY’S MY DENTIST provides a full range of oral and maxillofacial surgical procedures: wisdom tooth extractions, surgical removal of impacted teeth, cyst and tumour removal, jaw fracture repair, pre-prosthetic surgery, bone grafting, sinus lift procedures and dental implant placement. All surgeries are performed in our fully equipped, sterile surgical suite in Kakadeo, Kanpur." },
+  { q: "How much does wisdom tooth removal cost in Kanpur?", a: "At DR SAWHNEY’S MY DENTIST, wisdom tooth extraction costs in Kanpur start from approximately ₹5,000 for a simple extraction and vary based on the impaction level, surgical complexity and anaesthesia requirements. Surgical extractions for impacted teeth are quoted individually after a digital X-ray assessment. All pricing is transparent and provided in writing before treatment." },
 ];
 
 const faqJsonLd = {
@@ -40,7 +40,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Jaw, Face",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -71,7 +71,7 @@ const CAUSES = [
 ];
 
 const BENEFITS = [
-  { title: "Pain-free extractions", desc: "Modern anaesthesia and minimally invasive surgical techniques ensure comfortable procedures with minimal post-operative discomfort at MY DENTIST Kanpur." },
+  { title: "Pain-free extractions", desc: "Modern anaesthesia and minimally invasive surgical techniques ensure comfortable procedures with minimal post-operative discomfort at DR SAWHNEY’S MY DENTIST Kanpur." },
   { title: "Prevents future complications", desc: "Removing impacted wisdom teeth proactively prevents cysts, infections, crowding and damage to adjacent molars — problems that become more complex and expensive over time." },
   { title: "Faster recovery", desc: "Our oral surgeons use flap designs and bone-removal techniques that minimise tissue trauma, reducing swelling and cutting recovery time by days compared to conventional methods." },
   { title: "Digital surgical planning", desc: "CBCT 3D imaging and digital OPG X-rays allow our surgeons to map nerve proximity, root anatomy and bone density before making a single incision." },
@@ -100,7 +100,7 @@ export const Route = createFileRoute("/oral-and-maxillofacial-surgery")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "oral surgery Kanpur, wisdom tooth removal Kanpur, maxillofacial surgery Kanpur, tooth extraction Kakadeo, jaw surgery Kanpur, dental surgery MY DENTIST" },
+      { name: "keywords", content: "oral surgery Kanpur, wisdom tooth removal Kanpur, maxillofacial surgery Kanpur, tooth extraction Kakadeo, jaw surgery Kanpur, dental surgery DR SAWHNEY’S MY DENTIST" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/oral-and-maxillofacial-surgery` },
@@ -120,7 +120,7 @@ function OralSurgeryPage() {
       <PageHeader
         eyebrow="Oral & Maxillofacial Surgery · Kakadeo, Kanpur"
         title={<>Oral & Maxillofacial Surgery in Kanpur — <span className="italic text-aqua-deep">precise, safe, expert.</span></>}
-        intro="Wisdom tooth removal, surgical extractions, jaw surgery and facial trauma treatment at MY DENTIST, Kakadeo, Kanpur. Performed by experienced oral surgeons using CBCT 3D imaging and minimally invasive techniques."
+        intro="Wisdom tooth removal, surgical extractions, jaw surgery and facial trauma treatment at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. Performed by experienced oral surgeons using CBCT 3D imaging and minimally invasive techniques."
       />
 
       {/* Introduction */}
@@ -130,7 +130,7 @@ function OralSurgeryPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg}
-                alt="3D illustration of oral and maxillofacial jaw surgery with braces at MY DENTIST Kanpur"
+                alt="3D illustration of oral and maxillofacial jaw surgery with braces at DR SAWHNEY’S MY DENTIST Kanpur"
                 className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover object-center"
                 loading="eager"
                 decoding="async"
@@ -148,10 +148,10 @@ function OralSurgeryPage() {
               Expert surgical <span className="italic text-aqua-deep">oral care.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Oral and maxillofacial surgery is the dental specialty that diagnoses and treats conditions affecting the mouth, jaws, face and neck. At MY DENTIST in Kakadeo, Kanpur, our oral surgeons handle everything from straightforward wisdom tooth extractions to complex surgical procedures including cyst removal, bone grafting and pre-prosthetic jaw preparation.
+              Oral and maxillofacial surgery is the dental specialty that diagnoses and treats conditions affecting the mouth, jaws, face and neck. At DR SAWHNEY’S MY DENTIST in Kakadeo, Kanpur, our oral surgeons handle everything from straightforward wisdom tooth extractions to complex surgical procedures including cyst removal, bone grafting and pre-prosthetic jaw preparation.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Every surgical procedure at MY DENTIST is planned using advanced digital imaging — OPG X-rays and CBCT 3D scans — that map your anatomy in three dimensions. This allows our surgeons to identify nerve pathways, assess bone density and plan the safest, least invasive approach before making a single incision. The result is precise surgery, faster healing and significantly reduced post-operative discomfort.
+              Every surgical procedure at DR SAWHNEY’S MY DENTIST is planned using advanced digital imaging — OPG X-rays and CBCT 3D scans — that map your anatomy in three dimensions. This allows our surgeons to identify nerve pathways, assess bone density and plan the safest, least invasive approach before making a single incision. The result is precise surgery, faster healing and significantly reduced post-operative discomfort.
             </p>
           </Reveal>
         </div>
@@ -190,7 +190,7 @@ function OralSurgeryPage() {
               Conditions that require <span className="italic text-aqua-deep">surgical treatment.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Oral surgery becomes necessary when conditions cannot be resolved with conservative dental treatment alone. At MY DENTIST Kanpur, our oral surgeons evaluate each case thoroughly, ensuring surgery is recommended only when it is the most effective and predictable path to resolution.
+              Oral surgery becomes necessary when conditions cannot be resolved with conservative dental treatment alone. At DR SAWHNEY’S MY DENTIST Kanpur, our oral surgeons evaluate each case thoroughly, ensuring surgery is recommended only when it is the most effective and predictable path to resolution.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -214,7 +214,7 @@ function OralSurgeryPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Benefits
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Why surgical treatment at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Why surgical treatment at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -258,7 +258,7 @@ function OralSurgeryPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg2}
-                alt="Sterile surgical suite and technology at MY DENTIST Kakadeo Kanpur"
+                alt="Sterile surgical suite and technology at DR SAWHNEY’S MY DENTIST Kakadeo Kanpur"
                 className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover object-center"
                 loading="lazy"
                 decoding="async"
@@ -275,7 +275,7 @@ function OralSurgeryPage() {
               Surgical <span className="italic text-aqua-deep">technology.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              MY DENTIST's surgical suite in Kakadeo, Kanpur is equipped with advanced imaging and instrumentation that makes oral surgery safer, more precise and significantly less invasive than conventional methods.
+              DR SAWHNEY’S MY DENTIST's surgical suite in Kakadeo, Kanpur is equipped with advanced imaging and instrumentation that makes oral surgery safer, more precise and significantly less invasive than conventional methods.
             </p>
             <ul className="mt-8 grid gap-3">
               {TECHNOLOGY.map((t) => (
@@ -295,10 +295,10 @@ function OralSurgeryPage() {
           <Reveal>
             <div className="rounded-3xl bg-foreground p-8 text-background md:p-14">
               <h2 className="font-display text-4xl md:text-5xl">
-                Why choose MY DENTIST for <span className="italic text-aqua">oral surgery in Kanpur?</span>
+                Why choose DR SAWHNEY’S MY DENTIST for <span className="italic text-aqua">oral surgery in Kanpur?</span>
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-background/70">
-                MY DENTIST is one of the few dental clinics in Kanpur with a fully equipped surgical suite, CBCT 3D imaging and experienced oral surgeons capable of handling both routine and complex surgical cases. From impacted wisdom teeth to bone grafting and cyst removal, every procedure is planned digitally, performed under strict sterile protocol and followed up with personalised aftercare.
+                DR SAWHNEY’S MY DENTIST is one of the few dental clinics in Kanpur with a fully equipped surgical suite, CBCT 3D imaging and experienced oral surgeons capable of handling both routine and complex surgical cases. From impacted wisdom teeth to bone grafting and cyst removal, every procedure is planned digitally, performed under strict sterile protocol and followed up with personalised aftercare.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 {SITE.reasons.map((r) => (
@@ -318,7 +318,7 @@ function OralSurgeryPage() {
               <div>
                 <h3 className="font-display text-2xl">Meet your oral surgery specialist</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Dr. Asheesh K. Sawhny (BDS, MDS) and Dr. Karuna Singh Sawhny (BDS, MDS) manage surgical cases at MY DENTIST, Kanpur — from routine extractions to complex implant and pre-prosthetic surgery.
+                  Dr. Asheesh K. Sawhny (BDS, MDS) and Dr. Karuna Singh Sawhny (BDS, MDS) manage surgical cases at DR SAWHNEY’S MY DENTIST, Kanpur — from routine extractions to complex implant and pre-prosthetic surgery.
                 </p>
               </div>
               <div className="flex gap-3">
@@ -381,7 +381,7 @@ function OralSurgeryPage() {
               Need an oral surgery <span className="italic text-aqua-deep">consultation?</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Book a surgical consultation at MY DENTIST, Kakadeo, Kanpur. We will assess your condition with digital imaging and explain every option clearly before proceeding.
+              Book a surgical consultation at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. We will assess your condition with digital imaging and explain every option clearly before proceeding.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <MagneticButton to="/contact" hash="consultation-form" variant="dark">Book Appointment →</MagneticButton>

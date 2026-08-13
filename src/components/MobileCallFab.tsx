@@ -47,7 +47,7 @@ export function MobileCallFab() {
 
       <motion.a
         href={`tel:${SITE.phone}`}
-        aria-label="Call My Dentist"
+        aria-label="Call Dr Sawhney’s My Dentist"
         initial={{ y: 40, opacity: 0, scale: 0.9 }}
         animate={{ y: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 1.35, ease: [0.22, 1, 0.36, 1] }}

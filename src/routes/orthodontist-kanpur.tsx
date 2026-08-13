@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-orthodontics.webp";
 import serviceImg2 from "@/assets/service-orthodontics-2.webp";
 
-const TITLE = "Orthodontist in Kanpur | Braces & Clear Aligners | Best Braces Kanpur | Dr. Karuna Singh Sawhny | My Dentist";
+const TITLE = "Orthodontist in Kanpur | Braces & Clear Aligners | Best Braces Kanpur | Dr. Karuna Singh Sawhny | Dr Sawhney’s My Dentist";
 const DESC =
-  "Best orthodontist in Kanpur — Dr. Karuna Singh Sawhny, MDS Orthodontics, IOS Member. Metal braces, ceramic braces and clear aligners at My Dentist, Kakadeo, Kanpur. Know the cost of braces in Kanpur — book a ₹300 consultation.";
+  "Best orthodontist in Kanpur — Dr. Karuna Singh Sawhny, MDS Orthodontics, IOS Member. Metal braces, ceramic braces and clear aligners at Dr Sawhney’s My Dentist, Kakadeo, Kanpur. Know the cost of braces in Kanpur — book a ₹500 consultation.";
 
 const SIGNS = [
   "Crowded, overlapping, or crooked teeth",
@@ -53,7 +53,7 @@ const FAQS = [
   { q: "Can adults get orthodontic treatment?", a: "Absolutely. Adults frequently choose ceramic braces or clear aligners for a discreet experience." },
   { q: "Will braces affect eating or speaking?", a: "An adjustment period of 1–2 weeks is normal. Most patients adapt quickly." },
   { q: "Is orthodontic treatment painful?", a: "Mild soreness after adjustments is normal and resolves within 1–2 days — the sensation of teeth moving." },
-  { q: "What is the cost of braces in Kanpur?", a: "Costs vary by braces type and duration. Consultation fee is ₹300 for a personalised, transparent quote." },
+  { q: "What is the cost of braces in Kanpur?", a: "Costs vary by braces type and duration. Consultation fee is ₹500 for a personalised, transparent quote." },
 ];
 
 const faqJsonLd = {
@@ -75,7 +75,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth, Jaw",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -92,7 +92,7 @@ export const Route = createFileRoute("/orthodontist-kanpur")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "orthodontist Kanpur, braces in Kanpur, clear aligners Kanpur, best braces Kanpur, cost of braces Kanpur, ceramic braces Kanpur, MDS orthodontist Kakadeo, recommended orthodontist Kanpur, invisible aligners Kanpur, My Dentist Kakadeo" },
+      { name: "keywords", content: "orthodontist Kanpur, braces in Kanpur, clear aligners Kanpur, best braces Kanpur, cost of braces Kanpur, ceramic braces Kanpur, MDS orthodontist Kakadeo, recommended orthodontist Kanpur, invisible aligners Kanpur, Dr Sawhney’s My Dentist Kakadeo" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/orthodontist-kanpur` },
@@ -112,7 +112,7 @@ function OrthodontistPage() {
       <PageHeader
         eyebrow="Orthodontics · Kakadeo, Kanpur"
         title={<>Orthodontist in Kanpur — <span className="italic text-aqua-deep">MDS-qualified, IOS Member.</span></>}
-        intro="Braces and aligners at MY DENTIST, Kakadeo, led exclusively by Dr. Karuna Singh Sawhny — every case managed directly by her, start to finish."
+        intro="Braces and aligners at DR SAWHNEY’S MY DENTIST, Kakadeo, led exclusively by Dr. Karuna Singh Sawhny — every case managed directly by her, start to finish."
       />
 
       {/* What is orthodontic treatment */}
@@ -125,7 +125,7 @@ function OrthodontistPage() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Orthodontics is the dental specialty focused on diagnosing and correcting misaligned teeth, improper bites, and jaw development issues. Using braces, aligners, or orthopaedic appliances, an orthodontist moves teeth into their correct positions over a planned treatment period.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At MY DENTIST, orthodontic treatment is led exclusively by Dr. Karuna Singh Sawhny — an MDS-qualified orthodontist and member of the Indian Orthodontic Society (IOS). Every case, from first assessment to final retention, is managed directly by her.`} /></p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At DR SAWHNEY’S MY DENTIST, orthodontic treatment is led exclusively by Dr. Karuna Singh Sawhny — an MDS-qualified orthodontist and member of the Indian Orthodontic Society (IOS). Every case, from first assessment to final retention, is managed directly by her.`} /></p>
           </Reveal>
         </div>
       </section>
@@ -157,7 +157,7 @@ function OrthodontistPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg} alt="Orthodontic treatment at MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg} alt="Orthodontic treatment at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -181,7 +181,7 @@ function OrthodontistPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Options
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Orthodontic options at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Orthodontic options at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -217,7 +217,7 @@ function OrthodontistPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg2} alt="Orthodontic treatment before and after results at MY DENTIST Kanpur" className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover object-center" loading="lazy" />
+              <img src={serviceImg2} alt="Orthodontic treatment before and after results at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover object-center" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -225,7 +225,7 @@ function OrthodontistPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Real Results
             </div>
             <h2 className="mt-6 font-display text-4xl md:text-5xl">
-              Real cases, treated at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Real cases, treated at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
         </div>
@@ -261,7 +261,7 @@ function OrthodontistPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The orthodontic process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The orthodontic process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-3">
@@ -304,7 +304,7 @@ function OrthodontistPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your orthodontic specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Karuna Singh Sawhny (BDS, MDS, IOS Member) leads orthodontic care at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Karuna Singh Sawhny (BDS, MDS, IOS Member) leads orthodontic care at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-karuna-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -363,7 +363,7 @@ function OrthodontistPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your orthodontic assessment at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your orthodontic assessment at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Specialist diagnosis, transparent pricing and the full spectrum of braces and aligner options — every time.

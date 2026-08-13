@@ -34,6 +34,10 @@ import patientFamilyVisit from "@/assets/carousel/clinic-patient-family-visit.we
 import awardIdaHonor from "@/assets/carousel/clinic-award-ida-honor.webp";
 import invisalignCertificate from "@/assets/dr-karuna-align-certificate.webp";
 import awardIlluminatiConclave from "@/assets/carousel/clinic-award-illuminati-conclave.webp";
+import clinic14 from "@/assets/carousel/clinic-14.webp";
+import clinic15 from "@/assets/carousel/clinic-15.webp";
+import clinic16 from "@/assets/carousel/clinic-16.webp";
+import clinic17 from "@/assets/carousel/clinic-17.webp";
 
 export interface CarouselImage {
   /** Unique, stable key — used for React keys & infinite-loop cloning */
@@ -45,24 +49,28 @@ export interface CarouselImage {
 }
 
 export const carouselImages: CarouselImage[] = [
-  { id: "n3", src: zeissMicroscope, alt: "Dr. Asheesh K. Sawhny with the Carl Zeiss dental operating microscope at My Dentist Kanpur" },
-  { id: "c1", src: clinic1, alt: "My Dentist Kanpur — clinic moment 1" },
+  { id: "n3", src: zeissMicroscope, alt: "Dr. Asheesh K. Sawhny with the Carl Zeiss dental operating microscope at Dr Sawhney’s My Dentist Kanpur" },
+  { id: "c1", src: clinic1, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 1" },
   { id: "n5", src: drAsheeshPortrait, alt: "Dr. Asheesh K. Sawhny — Principal & Professor, Rama Dental College", objectPosition: "center 20%" },
-  { id: "c2", src: clinic2, alt: "My Dentist Kanpur — clinic moment 2" },
-  { id: "n9", src: cerecTreatmentRoom, alt: "Advanced CEREC digital treatment room at My Dentist Kanpur" },
-  { id: "c3", src: clinic3, alt: "My Dentist Kanpur — clinic moment 3" },
-  { id: "n4", src: patientFamilyVisit, alt: "Dr. Asheesh K. Sawhny with a young patient and Dr. Kashia Siddiqui at My Dentist Kanpur" },
-  { id: "c4", src: clinic4, alt: "My Dentist Kanpur — clinic moment 4" },
+  { id: "c2", src: clinic2, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 2" },
+  { id: "n9", src: cerecTreatmentRoom, alt: "Advanced CEREC digital treatment room at Dr Sawhney’s My Dentist Kanpur" },
+  { id: "c3", src: clinic3, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 3" },
+  { id: "n4", src: patientFamilyVisit, alt: "Dr. Asheesh K. Sawhny with a young patient and Dr. Kashia Siddiqui at Dr Sawhney’s My Dentist Kanpur" },
+  { id: "c4", src: clinic4, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 4" },
   { id: "n6", src: awardIdaHonor, alt: "Indian Dental Association Kanpur Branch honor presented to Dr. Asheesh Sawhny", objectPosition: "center 40%" },
-  { id: "c5", src: clinic5, alt: "My Dentist Kanpur — clinic moment 5" },
-  { id: "c6", src: clinic6, alt: "My Dentist Kanpur — clinic moment 6" },
+  { id: "c5", src: clinic5, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 5" },
+  { id: "c6", src: clinic6, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 6" },
   { id: "n8", src: invisalignCertificate, alt: "Dr. Karuna Singh Sawhny's official Invisalign Training Course certificate" },
-  { id: "c7", src: clinic7, alt: "My Dentist Kanpur — clinic moment 7" },
-  { id: "c8", src: clinic8, alt: "My Dentist Kanpur — clinic moment 8" },
+  { id: "c7", src: clinic7, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 7" },
+  { id: "c8", src: clinic8, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 8" },
   { id: "n7", src: awardIlluminatiConclave, alt: "Rama Group Illuminati Conclave Clinical Excellence Award presented to Dr. Asheesh Sawhny", objectPosition: "center 40%" },
-  { id: "c9", src: clinic9, alt: "My Dentist Kanpur — clinic moment 9" },
-  { id: "c10", src: clinic10, alt: "My Dentist Kanpur — clinic moment 10" },
-  { id: "c11", src: clinic11, alt: "My Dentist Kanpur — clinic moment 11" },
-  { id: "c12", src: clinic12, alt: "My Dentist Kanpur — clinic moment 12", objectPosition: "center 12%" },
-  { id: "c13", src: clinic13, alt: "My Dentist Kanpur — clinic moment 13" },
+  { id: "c9", src: clinic9, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 9" },
+  { id: "c10", src: clinic10, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 10" },
+  { id: "c11", src: clinic11, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 11" },
+  { id: "c12", src: clinic12, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 12", objectPosition: "center 12%" },
+  { id: "c13", src: clinic13, alt: "Dr Sawhney’s My Dentist Kanpur — clinic moment 13" },
+  { id: "c14", src: clinic14, alt: "Dr. Asheesh K. Sawhny with a visiting colleague at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
+  { id: "c15", src: clinic15, alt: "Dr. Asheesh K. Sawhny and Dr. Karuna Sawhny at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
+  { id: "c16", src: clinic16, alt: "Dr. Asheesh K. Sawhny with a visiting dental colleague at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
+  { id: "c17", src: clinic17, alt: "Dr. Asheesh K. Sawhny with a visiting guest at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
 ];

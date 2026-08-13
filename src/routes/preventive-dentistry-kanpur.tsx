@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-preventive.webp";
 import serviceImg2 from "@/assets/service-preventive-2.webp";
 
-const TITLE = "Preventive Dentistry Kanpur | Scaling Polishing Kanpur | Dental Check-up | My Dentist Kakadeo";
+const TITLE = "Preventive Dentistry Kanpur | Scaling Polishing Kanpur | Dental Check-up | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
-  "Preventive dentistry in Kanpur at My Dentist, Kakadeo. Professional dental check-ups, scaling, polishing, fluoride treatment and oral health assessments by MDS specialists. Affordable dental clinic Kanpur — serving Pandu Nagar, Naveen Nagar, Sharda Nagar and all of Kanpur.";
+  "Preventive dentistry in Kanpur at Dr Sawhney’s My Dentist, Kakadeo. Professional dental check-ups, scaling, polishing, fluoride treatment and oral health assessments by MDS specialists. Affordable dental clinic Kanpur — serving Pandu Nagar, Naveen Nagar, Sharda Nagar and all of Kanpur.";
 
 const SIGNS = [
   "It has been more than six months since your last dental visit",
@@ -56,7 +56,7 @@ const FAQS = [
   { q: "My teeth look fine — do I still need a check-up?", a: "Yes. Most serious conditions are invisible until advanced. A clinical examination detects what a mirror cannot." },
   { q: "Is fluoride treatment safe for adults?", a: "Yes. Professionally applied fluoride at clinical doses is safe and effective for adults and children alike." },
   { q: "What happens during an oral cancer screening?", a: "Lips, cheeks, tongue, floor of mouth, palate and throat are examined for unusual patches or lesions — quick and painless." },
-  { q: "How long does a preventive check-up take?", a: "A comprehensive exam with cleaning typically takes 45–60 minutes at My Dentist." },
+  { q: "How long does a preventive check-up take?", a: "A comprehensive exam with cleaning typically takes 45–60 minutes at Dr Sawhney’s My Dentist." },
 ];
 
 const faqJsonLd = {
@@ -78,7 +78,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth, Gums",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -115,7 +115,7 @@ function PreventiveDentistryPage() {
       <PageHeader
         eyebrow="Preventive Dentistry · Kakadeo, Kanpur"
         title={<>Preventive Dentistry in Kanpur — <span className="italic text-aqua-deep">stop problems before they start.</span></>}
-        intro="Structured preventive care at MY DENTIST, Kakadeo, led by MDS-qualified specialists who assess your oral health comprehensively at every visit."
+        intro="Structured preventive care at DR SAWHNEY’S MY DENTIST, Kakadeo, led by MDS-qualified specialists who assess your oral health comprehensively at every visit."
       />
 
       {/* What is preventive dentistry */}
@@ -128,7 +128,7 @@ function PreventiveDentistryPage() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Preventive dentistry is the foundation of lifelong oral health — maintaining teeth, gums and supporting structures in optimal condition through regular professional care, before decay or damage has a chance to develop.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At MY DENTIST, preventive care is not a formality. It is a structured clinical process led by MDS-qualified specialists — patients who attend regular check-ups consistently require less complex, less costly treatment over time.`} /></p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At DR SAWHNEY’S MY DENTIST, preventive care is not a formality. It is a structured clinical process led by MDS-qualified specialists — patients who attend regular check-ups consistently require less complex, less costly treatment over time.`} /></p>
           </Reveal>
         </div>
       </section>
@@ -162,7 +162,7 @@ function PreventiveDentistryPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg}
-                alt="Preventive dental check-up at MY DENTIST Kanpur"
+                alt="Preventive dental check-up at DR SAWHNEY’S MY DENTIST Kanpur"
                 className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover object-center"
                 loading="eager"
                 decoding="async"
@@ -193,7 +193,7 @@ function PreventiveDentistryPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Services
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Preventive services at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Preventive services at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -237,7 +237,7 @@ function PreventiveDentistryPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg2}
-                alt="Dental model held by dentist demonstrating teeth structure at MY DENTIST Kakadeo Kanpur"
+                alt="Dental model held by dentist demonstrating teeth structure at DR SAWHNEY’S MY DENTIST Kakadeo Kanpur"
                 className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover object-center"
                 loading="lazy"
                 decoding="async"
@@ -254,7 +254,7 @@ function PreventiveDentistryPage() {
               Prevention is the <span className="italic text-aqua-deep">smartest investment</span> in your smile.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Most serious dental conditions — decay, gum disease, enamel loss — develop silently over months or years. A structured preventive programme at MY DENTIST catches these early, saving you time, discomfort, and cost down the line.
+              Most serious dental conditions — decay, gum disease, enamel loss — develop silently over months or years. A structured preventive programme at DR SAWHNEY’S MY DENTIST catches these early, saving you time, discomfort, and cost down the line.
             </p>
           </Reveal>
         </div>
@@ -268,7 +268,7 @@ function PreventiveDentistryPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The preventive care process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The preventive care process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -311,7 +311,7 @@ function PreventiveDentistryPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your preventive care specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS) leads preventive care at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS) leads preventive care at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -370,7 +370,7 @@ function PreventiveDentistryPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your dental check-up at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your dental check-up at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Specialist examination, honest guidance, and a plan to protect your smile for life.

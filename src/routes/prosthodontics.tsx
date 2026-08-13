@@ -9,16 +9,16 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-prosthodontics.webp";
 import serviceImg2 from "@/assets/service-prosthodontics-2.webp";
 
-const TITLE = "Dental Crowns Kanpur | Zirconia Crown Kanpur | Dentures Kanpur | Prosthodontics | MY DENTIST";
+const TITLE = "Dental Crowns Kanpur | Zirconia Crown Kanpur | Dentures Kanpur | Prosthodontics | DR SAWHNEY’S MY DENTIST";
 const DESC =
-  "Expert prosthodontics in Kanpur at MY DENTIST, Kakadeo — dental crowns, zirconia crowns, bridges, dentures, veneers and full-mouth rehabilitation. Precision-crafted restorations by specialist prosthodontists. Serving Kanpur, Kakadeo, Pandu Nagar and Naveen Nagar.";
+  "Expert prosthodontics in Kanpur at DR SAWHNEY’S MY DENTIST, Kakadeo — dental crowns, zirconia crowns, bridges, dentures, veneers and full-mouth rehabilitation. Precision-crafted restorations by specialist prosthodontists. Serving Kanpur, Kakadeo, Pandu Nagar and Naveen Nagar.";
 
 const FAQS = [
-  { q: "How long do dental crowns last at MY DENTIST Kanpur?", a: "With proper care, the all-ceramic and zirconia crowns placed at MY DENTIST typically last 12 to 15 years or longer. We use internationally trusted materials and digital precision milling, which ensures a superior fit and significantly extends the lifespan of every restoration we place." },
-  { q: "What is the difference between a crown and a bridge?", a: "A crown is a single-tooth cap that covers a damaged or root-canal-treated tooth to restore its shape, strength and appearance. A bridge uses two or more crowns on adjacent teeth to anchor a false tooth (pontic) in place, replacing one or more missing teeth. Both are crafted at our in-house digital lab at MY DENTIST, Kakadeo, Kanpur." },
-  { q: "Are full dentures better than dental implants?", a: "It depends on your bone health, budget and personal preference. Implants are the gold standard because they prevent bone loss and feel like natural teeth. However, modern implant-supported dentures at MY DENTIST combine the affordability of dentures with the stability of implants — our specialists will recommend the best option during your consultation." },
-  { q: "Is prosthodontic treatment painful?", a: "No. All prosthodontic procedures at MY DENTIST Kanpur are performed under effective local anaesthesia. Crown and bridge preparation, impression-taking and fitting are comfortable. For full-mouth rehabilitation, we plan treatment in phases to keep every visit short, manageable and pain-free." },
-  { q: "How much do crowns and bridges cost in Kanpur?", a: "At MY DENTIST, crown costs in Kanpur start from approximately ₹4,000 depending on the material — metal-free zirconia crowns, E-max all-ceramic crowns and porcelain-fused-to-metal options are all available. You receive a transparent, written cost estimate after your specialist consultation with no hidden charges." },
+  { q: "How long do dental crowns last at DR SAWHNEY’S MY DENTIST Kanpur?", a: "With proper care, the all-ceramic and zirconia crowns placed at DR SAWHNEY’S MY DENTIST typically last 12 to 15 years or longer. We use internationally trusted materials and digital precision milling, which ensures a superior fit and significantly extends the lifespan of every restoration we place." },
+  { q: "What is the difference between a crown and a bridge?", a: "A crown is a single-tooth cap that covers a damaged or root-canal-treated tooth to restore its shape, strength and appearance. A bridge uses two or more crowns on adjacent teeth to anchor a false tooth (pontic) in place, replacing one or more missing teeth. Both are crafted at our in-house digital lab at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur." },
+  { q: "Are full dentures better than dental implants?", a: "It depends on your bone health, budget and personal preference. Implants are the gold standard because they prevent bone loss and feel like natural teeth. However, modern implant-supported dentures at DR SAWHNEY’S MY DENTIST combine the affordability of dentures with the stability of implants — our specialists will recommend the best option during your consultation." },
+  { q: "Is prosthodontic treatment painful?", a: "No. All prosthodontic procedures at DR SAWHNEY’S MY DENTIST Kanpur are performed under effective local anaesthesia. Crown and bridge preparation, impression-taking and fitting are comfortable. For full-mouth rehabilitation, we plan treatment in phases to keep every visit short, manageable and pain-free." },
+  { q: "How much do crowns and bridges cost in Kanpur?", a: "At DR SAWHNEY’S MY DENTIST, crown costs in Kanpur start from approximately ₹4,000 depending on the material — metal-free zirconia crowns, E-max all-ceramic crowns and porcelain-fused-to-metal options are all available. You receive a transparent, written cost estimate after your specialist consultation with no hidden charges." },
 ];
 
 const faqJsonLd = {
@@ -40,7 +40,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth, Jaw",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -100,7 +100,7 @@ export const Route = createFileRoute("/prosthodontics")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "prosthodontics Kanpur, dental crowns Kanpur, dental bridges Kanpur, dentures Kanpur, full mouth rehabilitation Kanpur, best prosthodontist Kakadeo, MY DENTIST" },
+      { name: "keywords", content: "prosthodontics Kanpur, dental crowns Kanpur, dental bridges Kanpur, dentures Kanpur, full mouth rehabilitation Kanpur, best prosthodontist Kakadeo, DR SAWHNEY’S MY DENTIST" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/prosthodontics` },
@@ -120,7 +120,7 @@ function ProsthodonticsPage() {
       <PageHeader
         eyebrow="Prosthodontics · Kakadeo, Kanpur"
         title={<>Prosthodontics in Kanpur — <span className="italic text-aqua-deep">restore, rebuild, smile.</span></>}
-        intro="Expert crowns, bridges, veneers, dentures and full-mouth rehabilitation at MY DENTIST, Kakadeo, Kanpur. Every restoration is digitally planned and precision-crafted to match your natural teeth."
+        intro="Expert crowns, bridges, veneers, dentures and full-mouth rehabilitation at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. Every restoration is digitally planned and precision-crafted to match your natural teeth."
       />
 
       {/* Introduction — image + text split */}
@@ -128,7 +128,7 @@ function ProsthodonticsPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg} alt="Prosthodontic crown and bridge treatment at MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg} alt="Prosthodontic crown and bridge treatment at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -139,10 +139,10 @@ function ProsthodonticsPage() {
               What is <span className="italic text-aqua-deep">prosthodontics?</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Prosthodontics is the branch of dentistry focused on designing, manufacturing and fitting artificial replacements for missing or damaged teeth and oral structures. At MY DENTIST in Kakadeo, Kanpur, our prosthodontic specialists restore both the function and aesthetics of your smile using crowns, bridges, veneers, inlays, onlays, dentures and implant-supported prosthetics.
+              Prosthodontics is the branch of dentistry focused on designing, manufacturing and fitting artificial replacements for missing or damaged teeth and oral structures. At DR SAWHNEY’S MY DENTIST in Kakadeo, Kanpur, our prosthodontic specialists restore both the function and aesthetics of your smile using crowns, bridges, veneers, inlays, onlays, dentures and implant-supported prosthetics.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Whether you need a single crown to protect a root-canal-treated tooth or a complete full-mouth rehabilitation to rebuild years of wear and damage, every treatment at MY DENTIST is planned with digital precision and delivered using internationally trusted materials. Our goal is simple — restorations so natural that nobody can tell the difference.
+              Whether you need a single crown to protect a root-canal-treated tooth or a complete full-mouth rehabilitation to rebuild years of wear and damage, every treatment at DR SAWHNEY’S MY DENTIST is planned with digital precision and delivered using internationally trusted materials. Our goal is simple — restorations so natural that nobody can tell the difference.
             </p>
           </Reveal>
         </div>
@@ -181,7 +181,7 @@ function ProsthodonticsPage() {
               Why teeth need <span className="italic text-aqua-deep">restoration.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Tooth loss and structural damage are rarely caused by a single factor. At MY DENTIST, our prosthodontic specialists evaluate the full picture — your dental history, lifestyle, bite mechanics and overall health — to identify the root causes and design restorations that address them, not just mask the symptoms.
+              Tooth loss and structural damage are rarely caused by a single factor. At DR SAWHNEY’S MY DENTIST, our prosthodontic specialists evaluate the full picture — your dental history, lifestyle, bite mechanics and overall health — to identify the root causes and design restorations that address them, not just mask the symptoms.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -205,7 +205,7 @@ function ProsthodonticsPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Benefits
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Why prosthodontic treatment at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Why prosthodontic treatment at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -247,7 +247,7 @@ function ProsthodonticsPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg2} alt="Digital dental technology for prosthodontics at MY DENTIST Kakadeo" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg2} alt="Digital dental technology for prosthodontics at DR SAWHNEY’S MY DENTIST Kakadeo" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -258,7 +258,7 @@ function ProsthodonticsPage() {
               Advanced <span className="italic text-aqua-deep">technology.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              MY DENTIST invests in internationally recognised prosthodontic technology to ensure every crown, bridge and denture is planned digitally, milled precisely and fitted to micron-level accuracy.
+              DR SAWHNEY’S MY DENTIST invests in internationally recognised prosthodontic technology to ensure every crown, bridge and denture is planned digitally, milled precisely and fitted to micron-level accuracy.
             </p>
             <ul className="mt-8 grid gap-3">
               {TECHNOLOGY.map((t) => (
@@ -272,16 +272,16 @@ function ProsthodonticsPage() {
         </div>
       </section>
 
-      {/* Why Choose MY DENTIST */}
+      {/* Why Choose DR SAWHNEY’S MY DENTIST */}
       <section className="px-6 py-24">
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <div className="rounded-3xl bg-foreground p-8 text-background md:p-14">
               <h2 className="font-display text-4xl md:text-5xl">
-                Why choose MY DENTIST for <span className="italic text-aqua">prosthodontics in Kanpur?</span>
+                Why choose DR SAWHNEY’S MY DENTIST for <span className="italic text-aqua">prosthodontics in Kanpur?</span>
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-background/70">
-                MY DENTIST is Kakadeo's only super-specialty dental clinic with dedicated prosthodontic expertise. Our specialists combine decades of clinical experience with digital planning technology, internationally sourced materials and a patient-first philosophy that prioritises honest diagnosis, transparent pricing and long-lasting results.
+                DR SAWHNEY’S MY DENTIST is Kakadeo's only super-specialty dental clinic with dedicated prosthodontic expertise. Our specialists combine decades of clinical experience with digital planning technology, internationally sourced materials and a patient-first philosophy that prioritises honest diagnosis, transparent pricing and long-lasting results.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 {SITE.reasons.map((r) => (
@@ -301,7 +301,7 @@ function ProsthodonticsPage() {
               <div>
                 <h3 className="font-display text-2xl">Meet your prosthodontic specialist</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Dr. Asheesh K. Sawhny (BDS, MDS) leads prosthodontic care at MY DENTIST, Kanpur — with expertise in crowns, bridges, implants and full-mouth rehabilitation.
+                  Dr. Asheesh K. Sawhny (BDS, MDS) leads prosthodontic care at DR SAWHNEY’S MY DENTIST, Kanpur — with expertise in crowns, bridges, implants and full-mouth rehabilitation.
                 </p>
               </div>
               <div className="flex gap-3">
@@ -364,7 +364,7 @@ function ProsthodonticsPage() {
               Ready to restore <span className="italic text-aqua-deep">your smile?</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Book a specialist prosthodontic consultation at MY DENTIST, Kakadeo, Kanpur. We will assess your teeth, explain every option and give you a transparent treatment plan.
+              Book a specialist prosthodontic consultation at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. We will assess your teeth, explain every option and give you a transparent treatment plan.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <MagneticButton to="/contact" hash="consultation-form" variant="dark">Book Appointment →</MagneticButton>

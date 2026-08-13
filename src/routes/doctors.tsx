@@ -13,13 +13,13 @@ import invisalignBadge from "@/assets/invisalign-official-logo.webp";
 export const Route = createFileRoute("/doctors")({
   head: () => ({
     meta: [
-      { title: "Meet Our Doctors | My Dentist Kakadeo Kanpur | MDS Specialists" },
+      { title: "Meet Our Doctors | Dr Sawhney’s My Dentist Kakadeo Kanpur | MDS Specialists" },
       {
         name: "description",
         content:
-          "Dr. Asheesh Sawhny (MDS Endodontics, AAID Implantologist) and Dr. Karuna Singh Sawhny (MDS Orthodontics, IOS Member) — meet the specialist team at My Dentist, Kakadeo, Kanpur.",
+          "Dr. Asheesh Sawhny (MDS Endodontics, AAID Implantologist) and Dr. Karuna Singh Sawhny (MDS Orthodontics, IOS Member) — meet the specialist team at Dr Sawhney’s My Dentist, Kakadeo, Kanpur.",
       },
-      { property: "og:title", content: "Meet Our Doctors | My Dentist Kakadeo" },
+      { property: "og:title", content: "Meet Our Doctors | Dr Sawhney’s My Dentist Kakadeo" },
       { property: "og:url", content: `${SITE.url}/doctors` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/doctors` }],
@@ -84,7 +84,7 @@ function DoctorsPage() {
         }
         intro={
           <>
-            The Sawhneys lead My Dentist with a quiet conviction — that <span className="font-semibold">great dentistry</span> is part craft, part conversation, and <span className="italic">entirely personal.</span>
+            The Sawhneys lead Dr Sawhney’s My Dentist with a quiet conviction — that <span className="font-semibold">great dentistry</span> is part craft, part conversation, and <span className="italic">entirely personal.</span>
           </>
         }
       />

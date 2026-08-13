@@ -11,13 +11,13 @@ import g5 from "@/assets/service-teeth-whitening.webp";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services · Dental Treatments in Kanpur · My Dentist" },
+      { title: "Services · Dental Treatments in Kanpur · Dr Sawhney’s My Dentist" },
       {
         name: "description",
         content:
-          "Implants, root canal, smile makeovers, braces, whitening, paediatric, gum care and full mouth rehabilitation at Dr Sawhney's My Dentist, Kakadeo.",
+          "Implants, root canal, smile makeovers, braces, whitening, paediatric, gum care and full mouth rehabilitation at Dr Sawhney’s My Dentist, Kakadeo.",
       },
-      { property: "og:title", content: "Dental Services in Kanpur · My Dentist" },
+      { property: "og:title", content: "Dental Services in Kanpur · Dr Sawhney’s My Dentist" },
       { property: "og:url", content: `${SITE.url}/services` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/services` }],

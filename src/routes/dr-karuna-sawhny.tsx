@@ -10,8 +10,8 @@ import karunaAlignCertificate from "@/assets/dr-karuna-align-certificate.webp";
 import iconInvisalign from "@/assets/invisalign-official-logo.webp";
 
 const DOC = SITE.doctors[1];
-const TITLE = `Dr. Karuna Singh Sawhny — MDS Orthodontist Kanpur | Best Braces Specialist | MY DENTIST Kakadeo`;
-const DESC = `Dr. Karuna Singh Sawhny is Kanpur's top MDS Orthodontist, Professor at Rama Dental College, and Indian Orthodontic Society (IOS) member with 14+ years of specialist practice. Best orthodontist in Kanpur for braces, clear aligners and dentofacial orthopaedics at MY DENTIST, Kakadeo.`;
+const TITLE = `Dr. Karuna Singh Sawhny — MDS Orthodontist Kanpur | Best Braces Specialist | DR SAWHNEY’S MY DENTIST Kakadeo`;
+const DESC = `Dr. Karuna Singh Sawhny is Kanpur's top MDS Orthodontist, Professor at Rama Dental College, and Indian Orthodontic Society (IOS) member with 14+ years of specialist practice. Best orthodontist in Kanpur for braces, clear aligners and dentofacial orthopaedics at DR SAWHNEY’S MY DENTIST, Kakadeo.`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -19,7 +19,7 @@ const jsonLd = {
   name: DOC.name,
   medicalSpecialty: ["Dentistry", "Orthodontics", "Dentofacial Orthopaedics"],
   jobTitle: "Professor, Rama Dental College",
-  worksFor: { "@type": "Dentist", name: "MY DENTIST", url: SITE.url },
+  worksFor: { "@type": "Dentist", name: "DR SAWHNEY’S MY DENTIST", url: SITE.url },
   alumniOf: ["Rama Dental College"],
   url: `${SITE.url}/dr-karuna-sawhny`,
   image: "/og-image.jpg",
@@ -296,7 +296,7 @@ function DoctorPage() {
                   <h3 className="font-display text-xl font-bold text-foreground">Official Invisalign Training</h3>
                 </div>
                 <p className="mt-4 text-sm leading-7 text-foreground/75">
-                  Dr. Karuna Singh Sawhny completed her <span className="font-semibold text-foreground">Invisalign Training Course in Kochi, India</span>, reinforcing her expertise in clear aligner treatment and smile correction — and supporting her <span className="font-semibold text-foreground">10+ years of Invisalign experience</span> as a trusted provider at MY DENTIST.
+                  Dr. Karuna Singh Sawhny completed her <span className="font-semibold text-foreground">Invisalign Training Course in Kochi, India</span>, reinforcing her expertise in clear aligner treatment and smile correction — and supporting her <span className="font-semibold text-foreground">10+ years of Invisalign experience</span> as a trusted provider at DR SAWHNEY’S MY DENTIST.
                 </p>
                 <ul className="mt-5 space-y-2.5">
                   <li className="flex items-start gap-2">
@@ -329,7 +329,7 @@ function DoctorPage() {
               <div>
                 <h3 className="font-display text-3xl">Ready for your smile transformation?</h3>
                 <p className="mt-2 text-sm text-background/70">
-                  Book a consultation with Dr. Karuna Singh Sawhny at MY DENTIST, Kanpur.
+                  Book a consultation with Dr. Karuna Singh Sawhny at DR SAWHNEY’S MY DENTIST, Kanpur.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">

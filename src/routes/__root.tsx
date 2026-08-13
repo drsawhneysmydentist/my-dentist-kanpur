@@ -83,14 +83,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           : []),
         {
           title:
-            "My Dentist, Kakadeo — Best Dentist in Kanpur | Specialists",
+            "Dr Sawhney’s My Dentist, Kakadeo — Best Dentist in Kanpur | Specialists",
         },
         {
           name: "description",
           content:
-            "Trusted dentist in Kanpur for dental implants, root canal treatment & braces. My Dentist, Kakadeo — specialist care with evening & Sunday appointments.",
+            "Trusted dentist in Kanpur for dental implants, root canal treatment & braces. Dr Sawhney’s My Dentist, Kakadeo — specialist care with evening & Sunday appointments.",
         },
-        { name: "author", content: "Dr Sawhney's My Dentist" },
+        { name: "author", content: "Dr Sawhney’s My Dentist" },
         { name: "theme-color", content: "#1a1a1a" },
         { name: "msapplication-TileColor", content: "#1a1a1a" },
         {
@@ -100,28 +100,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         {
           property: "og:title",
           content:
-            "My Dentist · Best Dental Clinic in Kakadeo, Kanpur | MDS Specialists",
+            "Dr Sawhney’s My Dentist · Best Dental Clinic in Kanpur | MDS Specialists",
         },
         {
           property: "og:description",
           content:
-            "Best dentist in Kanpur — My Dentist, Kakadeo. Painless root canal, dental implants, braces, smile makeover & emergency dentistry by MDS specialists.",
+            "Best dentist in Kanpur — Dr Sawhney’s My Dentist, Kakadeo. Painless root canal, dental implants, braces, smile makeover & emergency dentistry by MDS specialists.",
         },
         { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "Dr Sawhney's My Dentist" },
+        { property: "og:site_name", content: "Dr Sawhney’s My Dentist" },
         { property: "og:image", content: `${SITE.url}/og-image.jpg` },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
         {
           property: "og:image:alt",
           content:
-            "Dr Sawhney's My Dentist — Multi Speciality & Advanced Digital Dental Clinic, Kakadeo Kanpur",
+            "Dr Sawhney’s My Dentist — Multi Speciality & Advanced Digital Dental Clinic, Kakadeo Kanpur",
         },
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:image", content: `${SITE.url}/og-image.jpg` },
         {
           name: "twitter:image:alt",
-          content: "Dr Sawhney's My Dentist Kanpur",
+          content: "Dr Sawhney’s My Dentist Kanpur",
         },
       ],
       links: [
@@ -171,8 +171,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
-            name: "My Dentist",
-            alternateName: ["MY DENTIST", "Dr Sawhney's My Dentist"],
+            name: "Dr Sawhney’s My Dentist",
+            alternateName: ["My Dentist", "MY DENTIST"],
             description:
               "Best dental clinic in Kakadeo, Kanpur. Specialist-led dentistry — painless root canal treatment, dental implants, braces, teeth whitening, smile makeover, emergency dentistry, paediatric dentistry. Led by MDS Endodontist & AAID-Certified Implantologist Dr. Asheesh K. Sawhny and MDS Orthodontist Dr. Karuna Singh Sawhny.",
             image: "/og-image.jpg",

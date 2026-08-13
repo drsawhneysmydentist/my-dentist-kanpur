@@ -8,9 +8,9 @@ import { MagneticButton } from "@/components/MagneticButton";
 import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-emergency.webp";
 
-const TITLE = "Emergency Dentist Kanpur | Same-Day Dental Care | Emergency Tooth Pain Treatment | My Dentist Kakadeo";
+const TITLE = "Emergency Dentist Kanpur | Same-Day Dental Care | Emergency Tooth Pain Treatment | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
-  "Emergency dentist in Kanpur — My Dentist, Kakadeo. Same-day urgent care for emergency tooth pain, broken teeth, dental abscess, swelling and lost restorations. Open evenings Mon–Sat & Sundays. MDS specialists available. Call +91 98385 00100 now.";
+  "Emergency dentist in Kanpur — Dr Sawhney’s My Dentist, Kakadeo. Same-day urgent care for emergency tooth pain, broken teeth, dental abscess, swelling and lost restorations. Open evenings Mon–Sat & Sundays. MDS specialists available. Call +91 98385 00100 now.";
 
 const EMERGENCIES = [
   "Severe or escalating toothache",
@@ -27,7 +27,7 @@ const EMERGENCIES = [
 const FIRST_AID = [
   {
     title: "Severe toothache or abscess",
-    desc: "Call My Dentist immediately. Do not take antibiotics without a dental assessment — they treat infection but do not resolve its cause. The tooth requires professional treatment.",
+    desc: "Call Dr Sawhney’s My Dentist immediately. Do not take antibiotics without a dental assessment — they treat infection but do not resolve its cause. The tooth requires professional treatment.",
   },
   {
     title: "Knocked-out tooth",
@@ -39,7 +39,7 @@ const FIRST_AID = [
   },
   {
     title: "Lost crown or filling",
-    desc: "Avoid chewing on the affected tooth. A small amount of sugar-free chewing gum or pharmacy dental cement can temporarily cover it. Book at My Dentist as soon as possible.",
+    desc: "Avoid chewing on the affected tooth. A small amount of sugar-free chewing gum or pharmacy dental cement can temporarily cover it. Book at Dr Sawhney’s My Dentist as soon as possible.",
   },
 ];
 
@@ -63,10 +63,10 @@ const FAQS = [
   { q: "What counts as a dental emergency?", a: "Any condition causing severe pain, facial swelling, active infection, trauma to teeth, or sudden inability to function normally. If unsure, call — it is always better to be assessed." },
   { q: "Can a dental abscess be dangerous?", a: "Yes. An untreated abscess can spread infection to the jaw, neck, and in severe cases the airway — a life-threatening condition. Any facial swelling with dental pain requires same-day attention." },
   { q: "Will I definitely lose the tooth in an emergency?", a: "Not necessarily. Dr. Sawhny's specialist background means extraction is a last resort. Even severely infected or fractured teeth can often be saved with root canal treatment and a crown." },
-  { q: "Can a knocked-out tooth be reimplanted?", a: "Yes — if treated within 30–60 minutes of the injury. Store the tooth correctly (in milk or saliva, never dry) and reach My Dentist as quickly as possible. Prognosis drops significantly with time." },
+  { q: "Can a knocked-out tooth be reimplanted?", a: "Yes — if treated within 30–60 minutes of the injury. Store the tooth correctly (in milk or saliva, never dry) and reach Dr Sawhney’s My Dentist as quickly as possible. Prognosis drops significantly with time." },
   { q: "What if my emergency happens outside OPD hours?", a: "Call the clinic number and follow the recorded instructions. If you are experiencing facial swelling or airway compromise, go to your nearest hospital emergency department immediately." },
   { q: "Is emergency dental treatment more expensive?", a: "Emergency appointments may carry an urgent appointment fee. However, early emergency treatment costs far less than managing a condition that has been allowed to deteriorate further." },
-  { q: "I have had a toothache for weeks — is that an emergency?", a: "Yes. A persistent toothache indicates active infection or pulpal damage. It will not resolve on its own and will worsen. Book an urgent appointment at My Dentist for assessment before it escalates." },
+  { q: "I have had a toothache for weeks — is that an emergency?", a: "Yes. A persistent toothache indicates active infection or pulpal damage. It will not resolve on its own and will worsen. Book an urgent appointment at Dr Sawhney’s My Dentist for assessment before it escalates." },
 ];
 
 const faqJsonLd = {
@@ -88,7 +88,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -125,7 +125,7 @@ function EmergencyDentistPage() {
       <PageHeader
         eyebrow="Emergency Care · Kakadeo, Kanpur"
         title={<>Emergency Dentist in Kanpur — <span className="italic text-aqua-deep">urgent care, same appointment.</span></>}
-        intro="Dental emergencies prioritised at MY DENTIST, Kakadeo. MDS Endodontist on-site for definitive treatment — no referrals, no delays."
+        intro="Dental emergencies prioritised at DR SAWHNEY’S MY DENTIST, Kakadeo. MDS Endodontist on-site for definitive treatment — no referrals, no delays."
       />
 
       {/* What is dental emergency */}
@@ -136,7 +136,7 @@ function EmergencyDentistPage() {
               What is a <span className="italic text-aqua-deep">dental emergency?</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`A dental emergency is any condition causing acute pain, active infection, trauma to teeth or gums, or sudden loss of function that requires prompt professional attention. Delayed treatment almost always results in more complex, more painful, and more costly management.`} /></p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At My Dentist, Kakadeo, Dr. Asheesh Sawhny's specialist endodontic and restorative background means the most common emergencies — infected teeth, fractured teeth, abscesses — are managed definitively at the same clinic, without referral.`} /></p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At Dr Sawhney’s My Dentist, Kakadeo, Dr. Asheesh Sawhny's specialist endodontic and restorative background means the most common emergencies — infected teeth, fractured teeth, abscesses — are managed definitively at the same clinic, without referral.`} /></p>
           </Reveal>
         </div>
       </section>
@@ -170,7 +170,7 @@ function EmergencyDentistPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg}
-                alt="Emergency dental care at MY DENTIST Kanpur"
+                alt="Emergency dental care at DR SAWHNEY’S MY DENTIST Kanpur"
                 className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover object-center"
                 loading="eager"
                 decoding="async"
@@ -230,7 +230,7 @@ function EmergencyDentistPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The emergency dental process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The emergency dental process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -273,7 +273,7 @@ function EmergencyDentistPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your emergency dental specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS · AAID Certified Implantologist) leads emergency and endodontic care at MY DENTIST.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS · AAID Certified Implantologist) leads emergency and endodontic care at DR SAWHNEY’S MY DENTIST.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -332,7 +332,7 @@ function EmergencyDentistPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Call My Dentist for <span className="italic text-aqua-deep">emergency dental care.</span>
+              Call Dr Sawhney’s My Dentist for <span className="italic text-aqua-deep">emergency dental care.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               OPD: Mon–Sat 4–9 PM | Sun 11 AM–2 PM · Kakadeo, Kanpur

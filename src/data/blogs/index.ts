@@ -1,5 +1,5 @@
 // ============================================================
-//  BLOG REGISTRY — MY DENTIST Kanpur
+//  BLOG REGISTRY — DR SAWHNEY’S MY DENTIST Kanpur
 //  Add new entries here. Newest date = shown first automatically.
 //  Each entry maps to a file in src/data/blogs/<slug>.ts
 //  (registered in loader.ts so its content loads on demand)
@@ -27,44 +27,23 @@ export const blogRegistry: BlogMeta[] = [
     slug: "best-dentist-in-kanpur",
     title: "Best Dentist in Kanpur: The Complete 2026 Guide to Choosing the Right Dental Clinic",
     excerpt:
-      "Looking for the best dentist in Kanpur? My Dentist, Kanpur offers painless RCT, implants, braces & smile makeovers. MDS specialists. Book today.",
+      "Looking for the best dentist in Kanpur? Dr Sawhney’s My Dentist, Kanpur offers painless RCT, implants, braces & smile makeovers. MDS specialists. Book today.",
     date: "2026-07-12",
     featuredImage: "/images/blogs/best-dentist-in-kanpur-doctors.jpg",
-    alt: "Dr. Asheesh K. Sawhny and Dr. Karuna Sawhny, MDS dental specialists at My Dentist super speciality dental clinic in Kakadeo, Kanpur",
+    alt: "Dr. Asheesh K. Sawhny and Dr. Karuna Sawhny, MDS dental specialists at Dr Sawhney’s My Dentist super speciality dental clinic in Kakadeo, Kanpur",
     author: "Dr. Asheesh K. Sawhny",
     category: "Dental Tips",
     imagePosition: "50% 8%",
   },
   {
-    slug: "how-to-prevent-tooth-decay",
-    title: "How to Prevent Tooth Decay: A Complete Guide",
+    slug: "root-canal-treatment-kanpur",
+    title:
+      "Root Canal Treatment in Kanpur: The Complete 2026 Guide to Cost, Pain, and Recovery",
     excerpt:
-      "Tooth decay is one of the most common dental problems, but it is almost entirely preventable. Learn the habits that protect your teeth every day.",
-    date: "2025-06-10",
-    featuredImage: "/images/blogs/placeholder.svg",
-    alt: "Woman brushing teeth to prevent tooth decay",
-    author: "Dr. Asheesh K. Sawhny",
-    category: "Oral Health",
-  },
-  {
-    slug: "dental-implants-vs-bridges",
-    title: "Dental Implants vs. Dental Bridges: Which Is Right for You?",
-    excerpt:
-      "Both implants and bridges replace missing teeth, but they work differently. Here is an honest comparison to help you decide with your dentist.",
-    date: "2025-05-20",
-    featuredImage: "/images/blogs/placeholder.svg",
-    alt: "Dental implant model vs dental bridge comparison",
-    author: "Dr. Karuna Singh Sawhny",
-    category: "Treatments",
-  },
-  {
-    slug: "root-canal-myths-debunked",
-    title: "5 Root Canal Myths — Debunked by a Kanpur Dentist",
-    excerpt:
-      "Root canal therapy has an undeserved reputation. Dr. Asheesh explains what actually happens during the procedure and why it is not something to fear.",
-    date: "2025-04-15",
-    featuredImage: "/images/blogs/placeholder.svg",
-    alt: "Dentist explaining root canal procedure to a patient",
+      "Thinking about a root canal in Kanpur? Here is an honest, specialist-written guide to real costs, whether it actually hurts, and how to recover fast — from an MDS Endodontist.",
+    date: "2026-08-03",
+    featuredImage: "/images/blogs/root-canal-treatment-kanpur.webp",
+    alt: "MDS Endodontist Dr. Asheesh K. Sawhny performing painless root canal treatment using rotary endodontics at Dr Sawhney’s My Dentist, Kakadeo, Kanpur",
     author: "Dr. Asheesh K. Sawhny",
     category: "Treatments",
   },

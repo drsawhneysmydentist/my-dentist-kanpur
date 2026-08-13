@@ -7,7 +7,7 @@ export const slug = "best-dentist-in-kanpur";
 export const content = `
 <p>Choosing a dentist is not a small decision. It affects your health, your smile, and how confident you feel every day. If you are searching for the <strong>best dentist in Kanpur</strong>, this guide will help you understand what to look for, what treatments are available near you, and how to avoid common mistakes patients make.</p>
 
-<p><strong>My Dentist – A Super Speciality Dental Clinic</strong> is located at 117/L-1/455A, Naveen Nagar, Near Panacea Hospital, Kakadeo, Kanpur, Uttar Pradesh 208025. Call <strong>+91 98385 00100</strong> or <a href="/contact">Book Appointment Today</a>.</p>
+<p><strong>Dr Sawhney’s My Dentist – A Super Speciality Dental Clinic</strong> is located at 117/L-1/455A, Naveen Nagar, Near Panacea Hospital, Kakadeo, Kanpur, Uttar Pradesh 208025. Call <strong>+91 98385 00100</strong> or <a href="/contact">Book Appointment Today</a>.</p>
 
 <h2 id="how-to-choose">1. How to Choose the Best Dentist in Kanpur</h2>
 <p>Before picking a clinic, check these five things:</p>
@@ -23,9 +23,9 @@ export const content = `
 </tbody>
 </table>
 </div>
-<p>At My Dentist, every treatment is led by MDS-qualified specialists — not general dentists handling every case.</p>
+<p>At Dr Sawhney’s My Dentist, every treatment is led by MDS-qualified specialists — not general dentists handling every case.</p>
 
-<h2 id="why-choose-us">2. Why Patients Across Kanpur Choose My Dentist</h2>
+<h2 id="why-choose-us">2. Why Patients Across Kanpur Choose Dr Sawhney’s My Dentist</h2>
 <ul>
 <li><strong>Specialist-led, not generalist-led.</strong> Every case is treated by a doctor trained specifically in that field — an MDS Endodontist for root canals, an MDS Orthodontist for braces.</li>
 <li><strong>Family-run since 2005</strong> — the same clinic has served grandparents, parents, and children in Kakadeo and across Kanpur for two decades.</li>
@@ -137,7 +137,7 @@ Specializes in braces (metal, ceramic, self-ligating) and clear/invisible aligne
 <p>Patients regularly visit us from Kakadeo, Naveen Nagar, Swaroop Nagar, Govind Nagar, Arya Nagar, Tilak Nagar, Kidwai Nagar, Barra, Juhi, Civil Lines, Sharda Nagar, Naubasta, Kalyanpur, Panki, and the IIT Kanpur area. We're located near Panacea Hospital, Kakadeo — a short drive from most of central Kanpur.</p>
 
 <h2 id="ready-to-book">Ready to Book?</h2>
-<p><strong>My Dentist – A Super Speciality Dental Clinic</strong><br/>
+<p><strong>Dr Sawhney’s My Dentist – A Super Speciality Dental Clinic</strong><br/>
 117/L-1/455A, Naveen Nagar, Near Panacea Hospital, Kakadeo, Kanpur, UP 208025<br/>
 📞 +91 98385 00100 | 🌐 mydentistkanpur.com</p>
 <p><a href="/contact">Book Appointment Today →</a></p>
@@ -149,12 +149,12 @@ export const faqs: { question: string; answer: string }[] = [
   {
     question: "Who is the best dentist in Kanpur?",
     answer:
-      "The right dentist depends on your specific need — for root canals and implants, look for an MDS Endodontist/Implantologist; for braces, an MDS Orthodontist. My Dentist, Kanpur, offers both under one roof.",
+      "The right dentist depends on your specific need — for root canals and implants, look for an MDS Endodontist/Implantologist; for braces, an MDS Orthodontist. Dr Sawhney’s My Dentist, Kanpur, offers both under one roof.",
   },
   {
     question: "Where can I get a painless root canal in Kanpur?",
     answer:
-      "Clinics using rotary endodontics and modern anaesthesia (like My Dentist, Kanpur) offer largely painless RCT.",
+      "Clinics using rotary endodontics and modern anaesthesia (like Dr Sawhney’s My Dentist, Kanpur) offer largely painless RCT.",
   },
   {
     question: "How much does RCT cost in Kanpur?",
@@ -162,7 +162,7 @@ export const faqs: { question: string; answer: string }[] = [
       "Cost depends on the tooth, complexity, and crown material — always ask for a written estimate before treatment.",
   },
   {
-    question: "Is My Dentist open on Sundays?",
+    question: "Is Dr Sawhney’s My Dentist open on Sundays?",
     answer:
       "Please check current clinic timings on our Contact page or call +91 98385 00100.",
   },
@@ -223,7 +223,7 @@ export const faqs: { question: string; answer: string }[] = [
 // Table of Contents entries — id must match the heading ids in `content` above.
 export const toc: { id: string; label: string }[] = [
   { id: "how-to-choose", label: "How to Choose the Best Dentist in Kanpur" },
-  { id: "why-choose-us", label: "Why Patients Across Kanpur Choose My Dentist" },
+  { id: "why-choose-us", label: "Why Patients Across Kanpur Choose Dr Sawhney’s My Dentist" },
   { id: "dental-team", label: "Meet the Dental Team" },
   { id: "technology", label: "Our Technology & Sterilization Standards" },
   { id: "common-problems", label: "Common Dental Problems" },

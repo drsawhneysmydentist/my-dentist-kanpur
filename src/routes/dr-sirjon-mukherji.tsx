@@ -7,8 +7,8 @@ import { Reveal, Stagger, item } from "@/components/Reveal";
 import drS from "@/assets/dr-sirjon-mukherji.webp";
 
 const DOC = SITE.doctors[2];
-const TITLE = `Dr. Sirjon Mukherji — Oral & Maxillofacial Surgeon & Implantologist | MY DENTIST Kakadeo Kanpur`;
-const DESC = `Dr. Sirjon Mukherji is an internationally trained Oral & Maxillofacial Surgeon and Implantologist with 23+ years of experience in advanced implant surgery, facial trauma, reconstructive and craniofacial procedures. Consulting at MY DENTIST, Kakadeo, Kanpur.`;
+const TITLE = `Dr. Sirjon Mukherji — Oral & Maxillofacial Surgeon & Implantologist | DR SAWHNEY’S MY DENTIST Kakadeo Kanpur`;
+const DESC = `Dr. Sirjon Mukherji is an internationally trained Oral & Maxillofacial Surgeon and Implantologist with 23+ years of experience in advanced implant surgery, facial trauma, reconstructive and craniofacial procedures. Consulting at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur.`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -16,7 +16,7 @@ const jsonLd = {
   name: DOC.name,
   medicalSpecialty: ["Oral and Maxillofacial Surgery", "Implantology"],
   jobTitle: "Oral & Maxillofacial Surgeon & Implantologist",
-  worksFor: { "@type": "Dentist", name: "MY DENTIST", url: SITE.url },
+  worksFor: { "@type": "Dentist", name: "DR SAWHNEY’S MY DENTIST", url: SITE.url },
   alumniOf: ["Calcutta University", "Royal College of Surgeons of Edinburgh"],
   url: `${SITE.url}/dr-sirjon-mukherji`,
   image: "/og-image.jpg",
@@ -290,7 +290,7 @@ function DoctorPage() {
               <div>
                 <h3 className="font-display text-3xl">Consult Dr. Sirjon Mukherji</h3>
                 <p className="mt-2 text-sm text-background/70">
-                  Book a specialist consultation at MY DENTIST, Kanpur.
+                  Book a specialist consultation at DR SAWHNEY’S MY DENTIST, Kanpur.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">

@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-restorative.webp";
 import serviceImg2 from "@/assets/service-restorative-2.webp";
 
-const TITLE = "Restorative Dentistry Kanpur | Dental Crowns | Zirconia Crown Kanpur | My Dentist Kakadeo";
+const TITLE = "Restorative Dentistry Kanpur | Dental Crowns | Zirconia Crown Kanpur | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
-  "Restorative dentistry in Kanpur at My Dentist, Kakadeo — tooth-coloured fillings, dental crowns, zirconia crowns, bridges and full-mouth rehabilitation by MDS specialist Dr. Asheesh Sawhny. Trusted dental clinic in Kakadeo, Kanpur.";
+  "Restorative dentistry in Kanpur at Dr Sawhney’s My Dentist, Kakadeo — tooth-coloured fillings, dental crowns, zirconia crowns, bridges and full-mouth rehabilitation by MDS specialist Dr. Asheesh Sawhny. Trusted dental clinic in Kakadeo, Kanpur.";
 
 const SIGNS = [
   "A tooth that is cracked, chipped, or broken",
@@ -77,7 +77,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -114,7 +114,7 @@ function RestorativeDentistryPage() {
       <PageHeader
         eyebrow="Restorative Dentistry · Kakadeo, Kanpur"
         title={<>Restorative Dentistry in Kanpur — <span className="italic text-aqua-deep">rebuild, strengthen, restore.</span></>}
-        intro="Fillings, crowns, bridges and full mouth rehabilitation at MY DENTIST, Kakadeo, led by an MDS specialist in Conservative Dentistry and Endodontics."
+        intro="Fillings, crowns, bridges and full mouth rehabilitation at DR SAWHNEY’S MY DENTIST, Kakadeo, led by an MDS specialist in Conservative Dentistry and Endodontics."
       />
 
       {/* What is restorative dentistry */}
@@ -127,7 +127,7 @@ function RestorativeDentistryPage() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Restorative dentistry encompasses all procedures that repair, rebuild, or replace damaged, decayed, or missing teeth — restoring full function, structural integrity and natural appearance to your smile.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At MY DENTIST, restorative work is led by Dr. Asheesh Sawhny — an MDS specialist in Conservative Dentistry and Endodontics. Every decision prioritises conserving natural tooth structure while achieving a durable, functional, aesthetically sound result.`} /></p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At DR SAWHNEY’S MY DENTIST, restorative work is led by Dr. Asheesh Sawhny — an MDS specialist in Conservative Dentistry and Endodontics. Every decision prioritises conserving natural tooth structure while achieving a durable, functional, aesthetically sound result.`} /></p>
           </Reveal>
         </div>
       </section>
@@ -159,7 +159,7 @@ function RestorativeDentistryPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg} alt="Restorative dentistry at MY DENTIST Kanpur" className="aspect-[3/2] w-full object-cover object-center" loading="lazy" width={750} height={500} />
+              <img src={serviceImg} alt="Restorative dentistry at DR SAWHNEY’S MY DENTIST Kanpur" className="aspect-[3/2] w-full object-cover object-center" loading="lazy" width={750} height={500} />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -184,7 +184,7 @@ function RestorativeDentistryPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Services
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Restorative services at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Restorative services at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -242,7 +242,7 @@ function RestorativeDentistryPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg2} alt="Precision restorative dental care at MY DENTIST Kakadeo" className="aspect-[1080/674] w-full object-cover object-center" loading="lazy" width={1080} height={674} />
+              <img src={serviceImg2} alt="Precision restorative dental care at DR SAWHNEY’S MY DENTIST Kakadeo" className="aspect-[1080/674] w-full object-cover object-center" loading="lazy" width={1080} height={674} />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -267,7 +267,7 @@ function RestorativeDentistryPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The restorative treatment process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The restorative treatment process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -310,7 +310,7 @@ function RestorativeDentistryPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your restorative specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS) leads restorative care at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh Sawhny (BDS, MDS) leads restorative care at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -370,7 +370,7 @@ function RestorativeDentistryPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your restorative consultation at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your restorative consultation at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A precise diagnosis, conservative options, and a result built to last.

@@ -9,16 +9,16 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-paediatric.webp";
 import serviceImg2 from "@/assets/ba-paediatric.webp";
 
-const TITLE = "Pediatric Dentist Kanpur | Children's Dentist Kakadeo | Best Paediatric Dentistry | MY DENTIST";
+const TITLE = "Pediatric Dentist Kanpur | Children's Dentist Kakadeo | Best Paediatric Dentistry | DR SAWHNEY’S MY DENTIST";
 const DESC =
-  "Best paediatric dentist in Kanpur at MY DENTIST, Kakadeo — gentle, child-friendly dental care from the first tooth. Fluoride treatments, cavity fillings, preventive sealants and early orthodontic screening by MDS specialists. Serving Pandu Nagar, Naveen Nagar and all of Kanpur.";
+  "Best paediatric dentist in Kanpur at DR SAWHNEY’S MY DENTIST, Kakadeo — gentle, child-friendly dental care from the first tooth. Fluoride treatments, cavity fillings, preventive sealants and early orthodontic screening by MDS specialists. Serving Pandu Nagar, Naveen Nagar and all of Kanpur.";
 
 const FAQS = [
-  { q: "At what age should my child first visit the dentist?", a: "The Indian Academy of Paediatric Dentistry and the American Academy of Pediatric Dentistry both recommend a child's first dental visit by age 1 or within 6 months of the first tooth erupting — whichever comes first. At MY DENTIST Kanpur, our paediatric specialists make this first visit gentle, informative and positive to build a lifetime of healthy dental habits." },
-  { q: "How do you manage anxious children during dental treatment?", a: "Our paediatric specialists at MY DENTIST Kakadeo use proven behaviour management techniques including tell-show-do (explaining, demonstrating then performing), positive reinforcement, distraction and, when necessary, conscious sedation. Our child-friendly environment, gentle approach and patience ensure even the most anxious children feel safe and comfortable during treatment." },
-  { q: "Are dental sealants safe and necessary for children?", a: "Yes. Dental sealants are a safe, painless and highly effective preventive treatment recommended by paediatric dental specialists worldwide. A thin protective coating is applied to the chewing surfaces of your child's back teeth (molars), sealing the deep grooves where cavities most commonly develop. At MY DENTIST Kanpur, sealants reduce the risk of childhood molar cavities by up to 80% and last for several years." },
-  { q: "What should I do if my child's baby tooth is decaying?", a: "Do not ignore decay in baby teeth. Cavities in primary teeth can cause pain, infection and premature tooth loss — which can lead to alignment problems for the permanent teeth that follow. At MY DENTIST, our paediatric specialists in Kakadeo gently restore decayed baby teeth with tooth-coloured fillings, stainless steel crowns or pulp therapy, depending on the severity, to protect your child's developing smile." },
-  { q: "How much does children's dental treatment cost at MY DENTIST?", a: "Paediatric dental treatment costs at MY DENTIST are affordable and family-friendly. Preventive treatments like fluoride application start from approximately ₹500, dental sealants from ₹800 per tooth and tooth-coloured fillings from ₹1,500. You receive a transparent, written estimate after your child's specialist consultation — there are never any hidden charges." },
+  { q: "At what age should my child first visit the dentist?", a: "The Indian Academy of Paediatric Dentistry and the American Academy of Pediatric Dentistry both recommend a child's first dental visit by age 1 or within 6 months of the first tooth erupting — whichever comes first. At DR SAWHNEY’S MY DENTIST Kanpur, our paediatric specialists make this first visit gentle, informative and positive to build a lifetime of healthy dental habits." },
+  { q: "How do you manage anxious children during dental treatment?", a: "Our paediatric specialists at DR SAWHNEY’S MY DENTIST Kakadeo use proven behaviour management techniques including tell-show-do (explaining, demonstrating then performing), positive reinforcement, distraction and, when necessary, conscious sedation. Our child-friendly environment, gentle approach and patience ensure even the most anxious children feel safe and comfortable during treatment." },
+  { q: "Are dental sealants safe and necessary for children?", a: "Yes. Dental sealants are a safe, painless and highly effective preventive treatment recommended by paediatric dental specialists worldwide. A thin protective coating is applied to the chewing surfaces of your child's back teeth (molars), sealing the deep grooves where cavities most commonly develop. At DR SAWHNEY’S MY DENTIST Kanpur, sealants reduce the risk of childhood molar cavities by up to 80% and last for several years." },
+  { q: "What should I do if my child's baby tooth is decaying?", a: "Do not ignore decay in baby teeth. Cavities in primary teeth can cause pain, infection and premature tooth loss — which can lead to alignment problems for the permanent teeth that follow. At DR SAWHNEY’S MY DENTIST, our paediatric specialists in Kakadeo gently restore decayed baby teeth with tooth-coloured fillings, stainless steel crowns or pulp therapy, depending on the severity, to protect your child's developing smile." },
+  { q: "How much does children's dental treatment cost at DR SAWHNEY’S MY DENTIST?", a: "Paediatric dental treatment costs at DR SAWHNEY’S MY DENTIST are affordable and family-friendly. Preventive treatments like fluoride application start from approximately ₹500, dental sealants from ₹800 per tooth and tooth-coloured fillings from ₹1,500. You receive a transparent, written estimate after your child's specialist consultation — there are never any hidden charges." },
 ];
 
 const faqJsonLd = {
@@ -40,7 +40,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -58,7 +58,7 @@ const SIGNS = [
   "Visible brown, black or white spots on your child's teeth — early signs of tooth decay that need prompt attention",
   "Thumb sucking, finger sucking or mouth breathing habits that persist beyond age 4 and may affect jaw development",
   "Early tooth loss, crowded teeth or irregular eruption patterns that may indicate a need for early orthodontic evaluation",
-  "Your child expresses fear or anxiety about dental visits — our specialists at MY DENTIST specialise in converting nervous children into confident patients",
+  "Your child expresses fear or anxiety about dental visits — our specialists at DR SAWHNEY’S MY DENTIST specialise in converting nervous children into confident patients",
 ];
 
 const CAUSES = [
@@ -71,12 +71,12 @@ const CAUSES = [
 ];
 
 const BENEFITS = [
-  { title: "Gentle, fear-free visits", desc: "Our paediatric specialists at MY DENTIST Kanpur use behaviour management techniques that transform anxious children into confident young patients who actually look forward to their dental appointments." },
-  { title: "Prevention over treatment", desc: "Fluoride therapy, dental sealants and parental guidance at MY DENTIST prevent up to 80% of childhood cavities — keeping your child's teeth healthy without the need for drills or fillings." },
+  { title: "Gentle, fear-free visits", desc: "Our paediatric specialists at DR SAWHNEY’S MY DENTIST Kanpur use behaviour management techniques that transform anxious children into confident young patients who actually look forward to their dental appointments." },
+  { title: "Prevention over treatment", desc: "Fluoride therapy, dental sealants and parental guidance at DR SAWHNEY’S MY DENTIST prevent up to 80% of childhood cavities — keeping your child's teeth healthy without the need for drills or fillings." },
   { title: "Early problem detection", desc: "Regular paediatric check-ups catch cavities, developmental issues and habit-related problems early — when they are simplest and least expensive to treat." },
-  { title: "Tooth-coloured, child-friendly materials", desc: "When fillings or crowns are needed, MY DENTIST uses aesthetically pleasing, mercury-free, tooth-coloured materials that look natural and are safe for growing bodies." },
+  { title: "Tooth-coloured, child-friendly materials", desc: "When fillings or crowns are needed, DR SAWHNEY’S MY DENTIST uses aesthetically pleasing, mercury-free, tooth-coloured materials that look natural and are safe for growing bodies." },
   { title: "Habit counselling for parents", desc: "Our specialists guide parents on nutrition, brushing technique, pacifier use and thumb-sucking cessation — practical advice that protects your child's smile at home between visits." },
-  { title: "Foundation for adult teeth", desc: "Healthy baby teeth guide the correct eruption and alignment of permanent teeth. Paediatric care at MY DENTIST Kakadeo protects this natural guidance system and reduces future orthodontic needs." },
+  { title: "Foundation for adult teeth", desc: "Healthy baby teeth guide the correct eruption and alignment of permanent teeth. Paediatric care at DR SAWHNEY’S MY DENTIST Kakadeo protects this natural guidance system and reduces future orthodontic needs." },
 ];
 
 const PROCESS = [
@@ -100,7 +100,7 @@ export const Route = createFileRoute("/paediatric-dentistry")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "paediatric dentist Kanpur, kids dentist Kakadeo, children dental care Kanpur, dental sealants Kanpur, child dentist MY DENTIST, fluoride treatment Kanpur" },
+      { name: "keywords", content: "paediatric dentist Kanpur, kids dentist Kakadeo, children dental care Kanpur, dental sealants Kanpur, child dentist DR SAWHNEY’S MY DENTIST, fluoride treatment Kanpur" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/paediatric-dentistry` },
@@ -120,7 +120,7 @@ function PaediatricDentistryPage() {
       <PageHeader
         eyebrow="Paediatric Dentistry · Kakadeo, Kanpur"
         title={<>Paediatric Dentistry in Kanpur — <span className="italic text-aqua-deep">gentle care, healthy habits.</span></>}
-        intro="Children's dentistry at MY DENTIST, Kakadeo, Kanpur — from the first tooth through the teenage years. Gentle specialists, preventive treatments and a fun, fear-free environment that builds lifelong healthy dental habits."
+        intro="Children's dentistry at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur — from the first tooth through the teenage years. Gentle specialists, preventive treatments and a fun, fear-free environment that builds lifelong healthy dental habits."
       />
 
       {/* Introduction */}
@@ -130,7 +130,7 @@ function PaediatricDentistryPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg}
-                alt="Gentle paediatric dentistry for children at MY DENTIST Kanpur"
+                alt="Gentle paediatric dentistry for children at DR SAWHNEY’S MY DENTIST Kanpur"
                 className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover object-center"
                 loading="eager"
                 decoding="async"
@@ -149,10 +149,10 @@ function PaediatricDentistryPage() {
               Dentistry designed for <span className="italic text-aqua-deep">little smiles.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Paediatric dentistry focuses on the oral health of infants, children and adolescents. At MY DENTIST in Kakadeo, Kanpur, our paediatric specialists are trained to manage the unique dental needs, behavioural patterns and emotional needs of young patients — making every visit positive, educational and genuinely enjoyable.
+              Paediatric dentistry focuses on the oral health of infants, children and adolescents. At DR SAWHNEY’S MY DENTIST in Kakadeo, Kanpur, our paediatric specialists are trained to manage the unique dental needs, behavioural patterns and emotional needs of young patients — making every visit positive, educational and genuinely enjoyable.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              We believe that a child's early dental experiences shape their attitude toward oral health for life. That is why MY DENTIST prioritises prevention, uses gentle behaviour management techniques and creates an environment where children feel safe, respected and even excited about taking care of their teeth. From the first tooth to the last baby tooth, we are here for every stage of your child's dental journey.
+              We believe that a child's early dental experiences shape their attitude toward oral health for life. That is why DR SAWHNEY’S MY DENTIST prioritises prevention, uses gentle behaviour management techniques and creates an environment where children feel safe, respected and even excited about taking care of their teeth. From the first tooth to the last baby tooth, we are here for every stage of your child's dental journey.
             </p>
           </Reveal>
         </div>
@@ -191,7 +191,7 @@ function PaediatricDentistryPage() {
               What causes dental <span className="italic text-aqua-deep">problems in children.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Childhood dental problems are almost always preventable. Understanding the common causes helps parents take proactive steps — and our paediatric specialists at MY DENTIST Kanpur provide the professional prevention and early intervention that makes the biggest difference.
+              Childhood dental problems are almost always preventable. Understanding the common causes helps parents take proactive steps — and our paediatric specialists at DR SAWHNEY’S MY DENTIST Kanpur provide the professional prevention and early intervention that makes the biggest difference.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -215,7 +215,7 @@ function PaediatricDentistryPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Benefits
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Why paediatric care at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Why paediatric care at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -259,7 +259,7 @@ function PaediatricDentistryPage() {
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
               <img
                 src={serviceImg2}
-                alt="Paediatric dental technology and child-friendly environment at MY DENTIST Kakadeo"
+                alt="Paediatric dental technology and child-friendly environment at DR SAWHNEY’S MY DENTIST Kakadeo"
                 className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-contain bg-white"
                 loading="lazy"
                 decoding="async"
@@ -276,7 +276,7 @@ function PaediatricDentistryPage() {
               Paediatric <span className="italic text-aqua-deep">technology.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              MY DENTIST Kakadeo uses child-safe, modern dental technology that minimises radiation, uses biocompatible materials and keeps every procedure as quick and comfortable as possible for young patients.
+              DR SAWHNEY’S MY DENTIST Kakadeo uses child-safe, modern dental technology that minimises radiation, uses biocompatible materials and keeps every procedure as quick and comfortable as possible for young patients.
             </p>
             <ul className="mt-8 grid gap-3">
               {TECHNOLOGY.map((t) => (
@@ -296,10 +296,10 @@ function PaediatricDentistryPage() {
           <Reveal>
             <div className="rounded-3xl bg-foreground p-8 text-background md:p-14">
               <h2 className="font-display text-4xl md:text-5xl">
-                Why choose MY DENTIST for <span className="italic text-aqua">paediatric dentistry in Kanpur?</span>
+                Why choose DR SAWHNEY’S MY DENTIST for <span className="italic text-aqua">paediatric dentistry in Kanpur?</span>
               </h2>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-background/70">
-                MY DENTIST is one of the few dental clinics in Kanpur with dedicated paediatric dental expertise. Dr. Karuna Singh Sawhny is known for her remarkable, gentle approach with children — building trust, making treatment fun and creating positive associations with dental care that last a lifetime. Combined with our child-friendly environment, mercury-free materials and focus on prevention over treatment, MY DENTIST is the right choice for your child's smile.
+                DR SAWHNEY’S MY DENTIST is one of the few dental clinics in Kanpur with dedicated paediatric dental expertise. Dr. Karuna Singh Sawhny is known for her remarkable, gentle approach with children — building trust, making treatment fun and creating positive associations with dental care that last a lifetime. Combined with our child-friendly environment, mercury-free materials and focus on prevention over treatment, DR SAWHNEY’S MY DENTIST is the right choice for your child's smile.
               </p>
               <div className="mt-10 flex flex-wrap gap-3">
                 {SITE.reasons.map((r) => (
@@ -319,7 +319,7 @@ function PaediatricDentistryPage() {
               <div>
                 <h3 className="font-display text-2xl">Meet your paediatric specialist</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Dr. Karuna Singh Sawhny (BDS, MDS) leads paediatric dental care at MY DENTIST, Kanpur — dedicated to gentle, modern dental care that makes children feel safe and comfortable.
+                  Dr. Karuna Singh Sawhny (BDS, MDS) leads paediatric dental care at DR SAWHNEY’S MY DENTIST, Kanpur — dedicated to gentle, modern dental care that makes children feel safe and comfortable.
                 </p>
               </div>
               <div className="flex gap-3">
@@ -382,7 +382,7 @@ function PaediatricDentistryPage() {
               Your child deserves a <span className="italic text-aqua-deep">healthy smile.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Book a paediatric dental check-up at MY DENTIST, Kakadeo, Kanpur. Our specialists will make it a positive, gentle experience — and give you the guidance to protect your child's smile at home.
+              Book a paediatric dental check-up at DR SAWHNEY’S MY DENTIST, Kakadeo, Kanpur. Our specialists will make it a positive, gentle experience — and give you the guidance to protect your child's smile at home.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <MagneticButton to="/contact" hash="consultation-form" variant="dark">Book Appointment →</MagneticButton>

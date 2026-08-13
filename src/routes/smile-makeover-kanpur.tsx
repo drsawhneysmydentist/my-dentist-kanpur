@@ -9,9 +9,9 @@ import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-smile-makeover.webp";
 import serviceImg2 from "@/assets/service-smile-makeover-2.webp";
 
-const TITLE = "Smile Makeover in Kanpur | Smile Design | Cosmetic Dentist Kanpur | My Dentist Kakadeo";
+const TITLE = "Smile Makeover in Kanpur | Smile Design | Cosmetic Dentist Kanpur | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
-  "Smile makeover and smile design in Kanpur by Dr. Asheesh K. Sawhny — specialist cosmetic dentist Kanpur. Veneers, composite bonding, dental crowns, and zirconia crowns at My Dentist, Kakadeo. Trusted by 226+ patients across Kanpur.";
+  "Smile makeover and smile design in Kanpur by Dr. Asheesh K. Sawhny — specialist cosmetic dentist Kanpur. Veneers, composite bonding, dental crowns, and zirconia crowns at Dr Sawhney’s My Dentist, Kakadeo. Trusted by 226+ patients across Kanpur.";
 
 const SIGNS = [
   "Stained or discoloured teeth that whitening alone cannot correct",
@@ -74,7 +74,7 @@ const serviceJsonLd = {
   bodyLocation: "Mouth, Teeth",
   provider: {
     "@type": "Dentist",
-    name: "MY DENTIST",
+    name: "DR SAWHNEY’S MY DENTIST",
     address: {
       "@type": "PostalAddress",
       streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
@@ -91,7 +91,7 @@ export const Route = createFileRoute("/smile-makeover-kanpur")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "smile makeover Kanpur, cosmetic dentist Kanpur, smile design Kanpur, veneers Kanpur, MY DENTIST" },
+      { name: "keywords", content: "smile makeover Kanpur, cosmetic dentist Kanpur, smile design Kanpur, veneers Kanpur, DR SAWHNEY’S MY DENTIST" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:url", content: `${SITE.url}/smile-makeover-kanpur` },
@@ -111,7 +111,7 @@ function SmileMakeoverPage() {
       <PageHeader
         eyebrow="Smile Makeover · Kakadeo, Kanpur"
         title={<>Smile Makeover in Kanpur — <span className="italic text-aqua-deep">designed by a specialist.</span></>}
-        intro="A coordinated cosmetic and restorative plan at MY DENTIST, Kakadeo, led by Dr. Asheesh K. Sawhny — appearance and function improved together, never at each other's expense."
+        intro="A coordinated cosmetic and restorative plan at DR SAWHNEY’S MY DENTIST, Kakadeo, led by Dr. Asheesh K. Sawhny — appearance and function improved together, never at each other's expense."
       />
 
       {/* What is a smile makeover */}
@@ -124,7 +124,7 @@ function SmileMakeoverPage() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A smile makeover is a carefully planned combination of cosmetic and restorative procedures designed to improve the overall appearance of your smile — addressing colour, shape, size, spacing and symmetry, individually or together.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At MY DENTIST, a smile makeover is not an impulsive cosmetic procedure. Dr. Asheesh K. Sawhny brings endodontic and restorative precision to every cosmetic case.`} /></p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground"><AutoHighlight text={`At DR SAWHNEY’S MY DENTIST, a smile makeover is not an impulsive cosmetic procedure. Dr. Asheesh K. Sawhny brings endodontic and restorative precision to every cosmetic case.`} /></p>
           </Reveal>
         </div>
       </section>
@@ -134,7 +134,7 @@ function SmileMakeoverPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg} alt="Smile makeover consultation at MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
+              <img src={serviceImg} alt="Smile makeover consultation at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[320px] sm:h-[440px] md:h-[540px] w-full object-cover" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -164,7 +164,7 @@ function SmileMakeoverPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Procedures
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              Smile makeover procedures at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              Smile makeover procedures at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -206,7 +206,7 @@ function SmileMakeoverPage() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-luxe">
-              <img src={serviceImg2} alt="Smile makeover before and after results at MY DENTIST Kanpur" className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover object-center" loading="lazy" />
+              <img src={serviceImg2} alt="Smile makeover before and after results at DR SAWHNEY’S MY DENTIST Kanpur" className="h-[300px] sm:h-[400px] md:h-[480px] w-full object-cover object-center" loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={0.1}>
@@ -214,7 +214,7 @@ function SmileMakeoverPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Real Results
             </div>
             <h2 className="mt-6 font-display text-4xl md:text-5xl">
-              A real smile makeover, at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              A real smile makeover, at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
         </div>
@@ -228,7 +228,7 @@ function SmileMakeoverPage() {
               <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Process
             </div>
             <h2 className="mt-6 max-w-3xl font-display text-4xl md:text-5xl">
-              The smile makeover process at <span className="italic text-aqua-deep">MY DENTIST.</span>
+              The smile makeover process at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST.</span>
             </h2>
           </Reveal>
           <Stagger className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -271,7 +271,7 @@ function SmileMakeoverPage() {
             <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-foreground/8 bg-card p-8 shadow-soft">
               <div>
                 <h3 className="font-display text-2xl">Meet your cosmetic specialist</h3>
-                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS) leads smile design at MY DENTIST, Kanpur.`} /></p>
+                <p className="mt-2 text-sm text-muted-foreground"><AutoHighlight text={`Dr. Asheesh K. Sawhny (BDS, MDS) leads smile design at DR SAWHNEY’S MY DENTIST, Kanpur.`} /></p>
               </div>
               <div className="flex gap-3">
                 <Link to="/dr-asheesh-sawhny" className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background">
@@ -330,7 +330,7 @@ function SmileMakeoverPage() {
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl">
-              Book your smile consultation at <span className="italic text-aqua-deep">MY DENTIST, Kakadeo.</span>
+              Book your smile consultation at <span className="italic text-aqua-deep">DR SAWHNEY’S MY DENTIST, Kakadeo.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               A coordinated plan, honest guidance, and a smile designed to suit your face.

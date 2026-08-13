@@ -71,17 +71,20 @@ import ptIpsAtul         from "@/assets/patient-ips-atul-srivastav.webp";
 import ptMpCerec         from "@/assets/patient-mp-ramesh-awasthi-cerec.webp";
 import ptMpChair         from "@/assets/patient-mp-ramesh-awasthi-chair.webp";
 import ptJudgeMishra     from "@/assets/patient-judge-suraj-mishra.webp";
+import ptVcPathak        from "@/assets/patient-vc-vinay-kumar-pathak.webp";
+
+import { patientSmileGalleryTiles } from "@/data/patientSmileGallery";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Before & After Gallery · My Dentist Kanpur" },
+      { title: "Before & After Gallery · Dr Sawhney’s My Dentist Kanpur" },
       {
         name: "description",
         content:
-          "Before and after results for orthodontics, smile makeover, teeth whitening, dental implants, root canal, and gum treatment at My Dentist Kakadeo Kanpur — Dr Asheesh Sawhny and Dr Karuna Singh Sawhny.",
+          "Before and after results for orthodontics, smile makeover, teeth whitening, dental implants, root canal, and gum treatment at Dr Sawhney’s My Dentist Kakadeo Kanpur — Dr Asheesh Sawhny and Dr Karuna Singh Sawhny.",
       },
-      { property: "og:title", content: "Before & After Gallery · My Dentist Kanpur" },
+      { property: "og:title", content: "Before & After Gallery · Dr Sawhney’s My Dentist Kanpur" },
       { property: "og:url", content: `${SITE.url}/gallery` },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/gallery` }],
@@ -89,39 +92,39 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
 });
 
-type Tile = { src: string; alt: string; tag: string; span?: string; objectPosition?: string };
+export type Tile = { src: string; alt: string; tag: string; span?: string; objectPosition?: string };
 
 // ── Section A: Our Specialists ────────────────────────────────────────────────
 const SPECIALIST_TILES: Tile[] = [
   {
     src: drAFormal,
-    alt: "Dr. Asheesh K. Sawhny — MDS Endodontist and AAID-Certified Implantologist, My Dentist Kanpur",
+    alt: "Dr. Asheesh K. Sawhny — MDS Endodontist and AAID-Certified Implantologist, Dr Sawhney’s My Dentist Kanpur",
     tag: "Our Specialist",
     span: "md:col-span-2 md:row-span-2",
     objectPosition: "center 15%",
   },
   {
     src: drKClinical,
-    alt: "Dr. Karuna Singh Sawhny — MDS Orthodontist at My Dentist Kanpur with Zeiss dental operating microscope",
+    alt: "Dr. Karuna Singh Sawhny — MDS Orthodontist at Dr Sawhney’s My Dentist Kanpur with Zeiss dental operating microscope",
     tag: "Our Specialist",
     objectPosition: "center 20%",
   },
   {
     src: drKCerec,
-    alt: "Dr. Karuna Singh Sawhny in the CEREC digital dentistry suite at My Dentist Kakadeo",
+    alt: "Dr. Karuna Singh Sawhny in the CEREC digital dentistry suite at Dr Sawhney’s My Dentist Kakadeo",
     tag: "Our Specialist",
     objectPosition: "center 20%",
   },
   {
     src: drBothDentsply,
-    alt: "Dr. Asheesh Sawhny and Dr. Karuna Singh Sawhny with Dentsply Sirona CEREC system at My Dentist Kanpur",
+    alt: "Dr. Asheesh Sawhny and Dr. Karuna Singh Sawhny with Dentsply Sirona CEREC system at Dr Sawhney’s My Dentist Kanpur",
     tag: "Our Team",
     span: "md:col-span-2",
     objectPosition: "center 10%",
   },
   {
     src: drKTeam,
-    alt: "Dr. Karuna Singh Sawhny with visiting colleagues inside My Dentist clinic, Kakadeo Kanpur",
+    alt: "Dr. Karuna Singh Sawhny with visiting colleagues inside Dr Sawhney’s My Dentist clinic, Kakadeo Kanpur",
     tag: "Our Team",
     objectPosition: "center 20%",
   },
@@ -164,38 +167,44 @@ const AWARD_TILES: Tile[] = [
 const PATIENT_TILES: Tile[] = [
   {
     src: ptMpCerec,
-    alt: "Dr. Asheesh K. Sawhny demonstrating CEREC digital scanner to MP Ramesh Awasthi at My Dentist Kanpur",
+    alt: "Dr. Asheesh K. Sawhny demonstrating CEREC digital scanner to MP Ramesh Awasthi at Dr Sawhney’s My Dentist Kanpur",
     tag: "Ramesh Awasthi · MP, Kanpur",
     span: "md:col-span-2 md:row-span-2",
     objectPosition: "center 20%",
   },
   {
     src: ptMpChair,
-    alt: "MP Ramesh Awasthi with Dr. Asheesh Sawhny at My Dentist Kanpur — Zeiss microscope treatment room",
+    alt: "MP Ramesh Awasthi with Dr. Asheesh Sawhny at Dr Sawhney’s My Dentist Kanpur — Zeiss microscope treatment room",
     tag: "Ramesh Awasthi · MP, Kanpur",
   },
   {
     src: ptShivBeria,
-    alt: "Former Cabinet Minister Shiv Kumar Beria with Dr. Asheesh Sawhny at My Dentist Kanpur",
+    alt: "Former Cabinet Minister Shiv Kumar Beria with Dr. Asheesh Sawhny at Dr Sawhney’s My Dentist Kanpur",
     tag: "Shiv Kumar Beria · Former UP Cabinet Minister",
   },
   {
     src: ptPadmesh,
-    alt: "Renowned astrologer Padmesh Dubey with Dr. Asheesh Sawhny at My Dentist Kakadeo Kanpur",
+    alt: "Renowned astrologer Padmesh Dubey with Dr. Asheesh Sawhny at Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Pt. K. A. Dubey \"Padmesh\" · Astrologer",
     objectPosition: "center 20%",
   },
   {
     src: ptIpsAtul,
-    alt: "IPS Atul Kumar Srivastava, DCP Kanpur, with Dr. Asheesh Sawhny at My Dentist Kakadeo",
+    alt: "IPS Atul Kumar Srivastava, DCP Kanpur, with Dr. Asheesh Sawhny at Dr Sawhney’s My Dentist Kakadeo",
     tag: "Atul Kumar Srivastava, IPS · DCP, Kanpur",
     span: "md:col-span-2",
     objectPosition: "center 10%",
   },
   {
     src: ptJudgeMishra,
-    alt: "Chief Judicial Magistrate Judge Suraj Mishra with the team at My Dentist Kakadeo Kanpur",
+    alt: "Chief Judicial Magistrate Judge Suraj Mishra with the team at Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "CHIEF JUDICIAL MAGISTRATE JUDGE SURAJ MISHRA",
+    objectPosition: "center 15%",
+  },
+  {
+    src: ptVcPathak,
+    alt: "Prof. Vinay Kumar Pathak, Vice Chancellor of C.S.J.M. University, with Dr. Asheesh Sawhny at Dr Sawhney’s My Dentist Kakadeo Kanpur",
+    tag: "PROF. VINAY KUMAR PATHAK · VICE CHANCELLOR · C.S.J.M. UNIVERSITY, KANPUR",
     objectPosition: "center 15%",
   },
 ];
@@ -204,49 +213,49 @@ const PATIENT_TILES: Tile[] = [
 const CLINIC_TILES: Tile[] = [
   {
     src: cercecSuite,
-    alt: "CEREC digital dentistry suite with intraoral scanner, milling unit and treatment chair at My Dentist Kanpur",
+    alt: "CEREC digital dentistry suite with intraoral scanner, milling unit and treatment chair at Dr Sawhney’s My Dentist Kanpur",
     tag: "Digital Dentistry",
     span: "md:col-span-2 md:row-span-2",
   },
   {
     src: treatmentChair,
-    alt: "Modern dental treatment room with advanced dental unit at My Dentist Kanpur",
+    alt: "Modern dental treatment room with advanced dental unit at Dr Sawhney’s My Dentist Kanpur",
     tag: "Treatment Room",
   },
   {
     src: cercecScanner,
-    alt: "CEREC Primescan intraoral scanner and milling unit for same-day ceramic restorations at My Dentist Kanpur",
+    alt: "CEREC Primescan intraoral scanner and milling unit for same-day ceramic restorations at Dr Sawhney’s My Dentist Kanpur",
     tag: "CEREC Technology",
   },
   {
     src: cercecMilling,
-    alt: "CEREC Speedio milling unit for precision same-day crowns at My Dentist Kanpur",
+    alt: "CEREC Speedio milling unit for precision same-day crowns at Dr Sawhney’s My Dentist Kanpur",
     tag: "CEREC Technology",
   },
   {
     src: exteriorSign,
-    alt: "My Dentist — Multi Superspeciality Dental Clinic landmark signage at Kakadeo Kanpur",
+    alt: "Dr Sawhney’s My Dentist — Multi Superspeciality Dental Clinic landmark signage at Kakadeo Kanpur",
     tag: "Clinic Exterior",
     span: "md:col-span-2",
   },
   {
     src: reception,
-    alt: "My Dentist reception desk and patient waiting lounge, Kakadeo Kanpur",
+    alt: "Dr Sawhney’s My Dentist reception desk and patient waiting lounge, Kakadeo Kanpur",
     tag: "Reception",
   },
   {
     src: waitingArea,
-    alt: "Comfortable patient waiting area at My Dentist dental clinic, Kakadeo Kanpur",
+    alt: "Comfortable patient waiting area at Dr Sawhney’s My Dentist dental clinic, Kakadeo Kanpur",
     tag: "Waiting Area",
   },
   {
     src: exterior1,
-    alt: "My Dentist clinic entrance with Dr. Asheesh Sawhny and Dr. Karuna Singh Sawhny nameboards, Kakadeo Kanpur",
+    alt: "Dr Sawhney’s My Dentist clinic entrance with Dr. Asheesh Sawhny and Dr. Karuna Singh Sawhny nameboards, Kakadeo Kanpur",
     tag: "Clinic Entrance",
   },
   {
     src: exterior2,
-    alt: "My Dentist dental clinic exterior street view, Kakadeo Kanpur",
+    alt: "Dr Sawhney’s My Dentist dental clinic exterior street view, Kakadeo Kanpur",
     tag: "Clinic Entrance",
   },
 ];
@@ -255,29 +264,29 @@ const CLINIC_TILES: Tile[] = [
 const BA_ORTHO_TILES: Tile[] = [
   {
     src: baOrtho1,
-    alt: "Before and after braces treatment — severely crowded teeth corrected by Dr. Karuna Singh Sawhny, Orthodontist, My Dentist Kanpur",
+    alt: "Before and after braces treatment — severely crowded teeth corrected by Dr. Karuna Singh Sawhny, Orthodontist, Dr Sawhney’s My Dentist Kanpur",
     tag: "Orthodontics",
     span: "md:col-span-2",
   },
   {
     src: baOrtho2,
-    alt: "Orthodontic before and after — crooked teeth aligned with braces by Dr. Karuna Singh Sawhny at My Dentist Kakadeo",
+    alt: "Orthodontic before and after — crooked teeth aligned with braces by Dr. Karuna Singh Sawhny at Dr Sawhney’s My Dentist Kakadeo",
     tag: "Orthodontics",
   },
   {
     src: baOrtho3,
-    alt: "Before and after smile transformation — braces treatment result by Dr. Karuna Singh Sawhny, My Dentist Kanpur",
+    alt: "Before and after smile transformation — braces treatment result by Dr. Karuna Singh Sawhny, Dr Sawhney’s My Dentist Kanpur",
     tag: "Orthodontics",
   },
   {
     src: baOrtho4,
-    alt: "Orthodontic case before and after — teeth alignment result by Dr. Karuna Singh Sawhny at My Dentist Kakadeo Kanpur",
+    alt: "Orthodontic case before and after — teeth alignment result by Dr. Karuna Singh Sawhny at Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Orthodontics",
     span: "md:col-span-2",
   },
   {
     src: baOrthoB,
-    alt: "Metal braces close-up — orthodontic treatment with ceramic and metal brackets at My Dentist Kanpur",
+    alt: "Metal braces close-up — orthodontic treatment with ceramic and metal brackets at Dr Sawhney’s My Dentist Kanpur",
     tag: "Braces",
     span: "md:col-span-2",
   },
@@ -287,24 +296,24 @@ const BA_ORTHO_TILES: Tile[] = [
 const BA_SMILE_TILES: Tile[] = [
   {
     src: baSmile,
-    alt: "Complete smile makeover before and after — veneers and crowns by Dr. Karuna Singh Sawhny at My Dentist Kanpur",
+    alt: "Complete smile makeover before and after — veneers and crowns by Dr. Karuna Singh Sawhny at Dr Sawhney’s My Dentist Kanpur",
     tag: "Smile Makeover",
     span: "md:col-span-2 md:row-span-2",
   },
   {
     src: baProstho,
-    alt: "Prosthodontic smile restoration before and after — crowns and bridges at My Dentist Kakadeo Kanpur",
+    alt: "Prosthodontic smile restoration before and after — crowns and bridges at Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Prosthodontics",
     span: "md:col-span-2",
   },
   {
     src: baRestorative,
-    alt: "Restorative dentistry before and after — missing tooth replaced with bridge at My Dentist Kanpur",
+    alt: "Restorative dentistry before and after — missing tooth replaced with bridge at Dr Sawhney’s My Dentist Kanpur",
     tag: "Restorative",
   },
   {
     src: baRct2,
-    alt: "Smile close-up before and after cosmetic treatment — My Dentist Kakadeo Kanpur",
+    alt: "Smile close-up before and after cosmetic treatment — Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Smile Makeover",
   },
 ];
@@ -313,28 +322,28 @@ const BA_SMILE_TILES: Tile[] = [
 const BA_HYGIENE_TILES: Tile[] = [
   {
     src: baWhitening,
-    alt: "Teeth whitening before and after — professional in-office whitening result at My Dentist Kanpur",
+    alt: "Teeth whitening before and after — professional in-office whitening result at Dr Sawhney’s My Dentist Kanpur",
     tag: "Teeth Whitening",
     span: "md:col-span-2 md:row-span-2",
   },
   {
     src: baGen2,
-    alt: "Teeth whitening before and after result — brighter smile at My Dentist Kakadeo Kanpur",
+    alt: "Teeth whitening before and after result — brighter smile at Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Teeth Whitening",
   },
   {
     src: baGen3,
-    alt: "Professional teeth whitening before and after — My Dentist Kakadeo Kanpur",
+    alt: "Professional teeth whitening before and after — Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Teeth Whitening",
   },
   {
     src: baGum1,
-    alt: "Gum treatment before and after — bleeding inflamed gums treated at My Dentist Kakadeo Kanpur",
+    alt: "Gum treatment before and after — bleeding inflamed gums treated at Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Gum Treatment",
   },
   {
     src: baGum2,
-    alt: "Periodontics before and after — healthy gums restored after scaling and root planing at My Dentist Kanpur",
+    alt: "Periodontics before and after — healthy gums restored after scaling and root planing at Dr Sawhney’s My Dentist Kanpur",
     tag: "Periodontics",
   },
 ];
@@ -343,26 +352,32 @@ const BA_HYGIENE_TILES: Tile[] = [
 const BA_ADVANCED_TILES: Tile[] = [
   {
     src: baImplants,
-    alt: "Dental implant before and after — missing teeth replaced with titanium implants at My Dentist Naveen Nagar Kanpur",
+    alt: "Dental implant before and after — missing teeth replaced with titanium implants at Dr Sawhney’s My Dentist Naveen Nagar Kanpur",
     tag: "Dental Implants",
     span: "md:col-span-2 md:row-span-2",
   },
   {
     src: baRct1,
-    alt: "Root canal treatment before and after — pain-free RCT at My Dentist Kakadeo Kanpur",
+    alt: "Root canal treatment before and after — pain-free RCT at Dr Sawhney’s My Dentist Kakadeo Kanpur",
     tag: "Root Canal",
   },
   {
     src: baPaediatric,
-    alt: "Paediatric dentistry case — neonatal natal teeth management at My Dentist Kanpur by Dr. Karuna Singh Sawhny",
+    alt: "Paediatric dentistry case — neonatal natal teeth management at Dr Sawhney’s My Dentist Kanpur by Dr. Karuna Singh Sawhny",
     tag: "Paediatric",
   },
 ];
 
-const SECTIONS = [
+const SECTIONS: { id: string; label: string; tiles: Tile[]; subheading?: string }[] = [
   { id: "specialists", label: "Our Specialists",                            tiles: SPECIALIST_TILES  },
   { id: "recognition", label: "Awards & Academic",                         tiles: AWARD_TILES       },
   { id: "patients",    label: "Distinguished Patients",                     tiles: PATIENT_TILES     },
+  {
+    id: "smile-gallery",
+    label: "Patient Smile Gallery",
+    tiles: patientSmileGalleryTiles,
+    subheading: "Showcasing successful treatments and happy smiles.",
+  },
   { id: "clinic",      label: "Clinic & Technology",                       tiles: CLINIC_TILES      },
   { id: "ba-ortho",    label: "Before & After: Orthodontics",              tiles: BA_ORTHO_TILES    },
   { id: "ba-smile",    label: "Before & After: Smile Makeover",            tiles: BA_SMILE_TILES    },
@@ -389,7 +404,7 @@ function GalleryPage() {
             Real results, <span className="italic text-aqua-deep">real smiles.</span>
           </>
         }
-        intro="Before & after transformations, our specialists, clinic spaces, technology, and the patients who trust My Dentist Kakadeo."
+        intro="Before & after transformations, our specialists, clinic spaces, technology, and the patients who trust Dr Sawhney’s My Dentist Kakadeo."
       />
 
       <section className="px-6 pb-24">
@@ -420,6 +435,11 @@ function GalleryPage() {
                   <h2 className="mb-6 font-display text-2xl font-semibold text-foreground/80">
                     {sec.label}
                   </h2>
+                  {sec.subheading && (
+                    <p className="-mt-3 mb-6 text-sm text-muted-foreground">
+                      {sec.subheading}
+                    </p>
+                  )}
                   <TileGrid tiles={sec.tiles} onOpen={setOpen} />
                 </div>
               ))}
