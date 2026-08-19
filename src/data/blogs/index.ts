@@ -47,6 +47,17 @@ export const blogRegistry: BlogMeta[] = [
     author: "Dr. Asheesh K. Sawhny",
     category: "Treatments",
   },
+  {
+    slug: "best-orthodontist-invisalign-provider-kanpur",
+    title: "Best Orthodontist and Invisalign Provider in Kanpur – Dr. Karuna Sawhny",
+    excerpt:
+      "Weighing up braces or Invisalign in Kanpur? Here's an honest, specialist-written guide to choosing the right orthodontist — from an MDS Orthodontist and certified Invisalign provider.",
+    date: "2026-08-16",
+    featuredImage: "/images/blogs/best-orthodontist-invisalign-provider-kanpur.webp",
+    alt: "Dr. Karuna Singh Sawhny, MDS Orthodontist and Invisalign Provider at Dr Sawhney’s My Dentist, Kakadeo, Kanpur",
+    author: "Dr. Karuna Singh Sawhny",
+    category: "Treatments",
+  },
 ];
 
 // Sorted newest-first — used by the listing page so future posts

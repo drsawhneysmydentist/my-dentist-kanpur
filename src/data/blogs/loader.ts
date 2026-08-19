@@ -13,6 +13,8 @@ const contentMap: Record<
   "best-dentist-in-kanpur": () => import("./best-dentist-in-kanpur"),
   "root-canal-treatment-kanpur": () =>
     import("./root-canal-treatment-kanpur"),
+  "best-orthodontist-invisalign-provider-kanpur": () =>
+    import("./best-orthodontist-invisalign-provider-kanpur"),
 };
 
 export async function loadBlogContent(slug: string): Promise<string | null> {

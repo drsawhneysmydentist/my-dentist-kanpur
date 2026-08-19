@@ -56,6 +56,7 @@ import drKClinical       from "@/assets/dr-karuna-clinical-portrait.webp";
 import drKCerec          from "@/assets/dr-karuna-cerec-suite.webp";
 import drBothDentsply    from "@/assets/dr-asheesh-karuna-dentsply.webp";
 import drKTeam           from "@/assets/dr-karuna-clinic-team.webp";
+import drKPortraitNew1   from "@/assets/dr-karuna-portrait-new-1.jpg";
 
 // ── Doctors: Awards & Academic ────────────────────────────────────────────────
 import drKAlign          from "@/assets/dr-karuna-align-certificate.webp";
@@ -126,6 +127,12 @@ const SPECIALIST_TILES: Tile[] = [
     src: drKTeam,
     alt: "Dr. Karuna Singh Sawhny with visiting colleagues inside Dr Sawhney’s My Dentist clinic, Kakadeo Kanpur",
     tag: "Our Team",
+    objectPosition: "center 20%",
+  },
+  {
+    src: drKPortraitNew1,
+    alt: "Dr. Karuna Singh Sawhny — Orthodontist at Dr Sawhney’s My Dentist Kanpur",
+    tag: "Our Specialist",
     objectPosition: "center 20%",
   },
 ];
