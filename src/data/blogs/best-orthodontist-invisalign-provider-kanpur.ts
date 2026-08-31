@@ -16,7 +16,7 @@ export const content = `
 <img src="/images/blogs/dr-karuna-sawhny-orthodontist-portrait.jpg" alt="Dr. Karuna Sawhny – Orthodontist and Invisalign Provider in Kanpur" width="1200" height="1536" loading="lazy" class="h-auto w-full object-cover" />
 </figure>
 
-<p>Dr. Karuna Singh Sawhny completed her BDS at Rama Dental College in 2008, followed by an <strong>MDS in Orthodontics and Dentofacial Orthopaedics</strong> from the same institution in 2012. She now holds a dual role — treating patients in clinical practice and teaching as a Professor in the Department of Orthodontics at <strong>Rama Dental College, Hospital &amp; Research Centre, Kanpur</strong>.</p>
+<p>Dr. Karuna Singh Sawhny completed her BDS in 2008. After her graduation, she followed her passion to pursue her Masters, <strong>MDS in Orthodontics and Dentofacial Orthopedics</strong> in 2012, with a Gold Medal. She presently holds a dual role — treating patients in clinical practice and teaching as a Professor in the Department of Orthodontics at <strong>Rama Dental College, Hospital &amp; Research Centre, Kanpur</strong>.</p>
 <p>That combination matters more than it might first appear. An orthodontist who also teaches the subject tends to stay closely engaged with current diagnostic thinking and treatment planning, rather than relying on older habits picked up early in practice. She is a member of the <strong>Indian Dental Association and the Indian Orthodontic Society</strong>, and over <strong>14 years</strong> of practice she has worked with children, teenagers, and adults on everything from mild crowding to more involved bite corrections.</p>
 
 <h3>Invisalign Training &amp; Certification</h3>

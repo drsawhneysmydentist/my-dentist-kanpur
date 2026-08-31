@@ -24,6 +24,18 @@ export interface BlogMeta {
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
   {
+    slug: "best-endodontist-implantologist-kanpur-dr-asheesh-sawhny",
+    title: "Best Endodontist & Implantologist in Kanpur – Dr. Asheesh Sawhny",
+    excerpt:
+      "Looking for the best endodontist or implantologist in Kanpur? Read this specialist-written guide to root canal treatment and dental implants at Dr Sawhney's My Dentist, Kakadeo.",
+    date: "2026-08-31",
+    featuredImage:
+      "/images/blogs/dr-asheesh-sawhny-hero.jpg",
+    alt: "Dr. Asheesh Sawhny – Endodontist and Implantologist in Kanpur",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Treatments",
+  },
+  {
     slug: "best-dentist-in-kanpur",
     title: "Best Dentist in Kanpur: The Complete 2026 Guide to Choosing the Right Dental Clinic",
     excerpt:
