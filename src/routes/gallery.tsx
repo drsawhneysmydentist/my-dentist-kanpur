@@ -57,6 +57,9 @@ import drKCerec          from "@/assets/dr-karuna-cerec-suite.webp";
 import drBothDentsply    from "@/assets/dr-asheesh-karuna-dentsply.webp";
 import drKTeam           from "@/assets/dr-karuna-clinic-team.webp";
 import drKPortraitNew1   from "@/assets/dr-karuna-portrait-new-1.jpg";
+import drKYellowBlazer1  from "@/assets/dr-karuna-clinic-yellow-blazer-1.webp";
+import drKYellowBlazer2  from "@/assets/dr-karuna-clinic-yellow-blazer-2.webp";
+import drKYellowBlazer3  from "@/assets/dr-karuna-clinic-yellow-blazer-3.webp";
 
 // ── Doctors: Awards & Academic ────────────────────────────────────────────────
 import drKAlign          from "@/assets/dr-karuna-align-certificate.webp";
@@ -132,6 +135,23 @@ const SPECIALIST_TILES: Tile[] = [
   {
     src: drKPortraitNew1,
     alt: "Dr. Karuna Singh Sawhny — Orthodontist at Dr Sawhney’s My Dentist Kanpur",
+    tag: "Our Specialist",
+    objectPosition: "center 20%",
+  },
+  {
+    src: drKYellowBlazer1,
+    alt: "Dr. Karuna Singh Sawhny in the treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur",
+    tag: "Our Specialist",
+    objectPosition: "center 20%",
+  },
+  {
+    src: drKYellowBlazer2,
+    alt: "Dr. Karuna Singh Sawhny holding dental models at Dr Sawhney’s My Dentist, Kakadeo, Kanpur",
+    tag: "Our Specialist",
+  },
+  {
+    src: drKYellowBlazer3,
+    alt: "Dr. Karuna Singh Sawhny seated in the treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur",
     tag: "Our Specialist",
     objectPosition: "center 20%",
   },

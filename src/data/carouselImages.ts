@@ -39,6 +39,9 @@ import clinic15 from "@/assets/carousel/clinic-15.webp";
 import clinic16 from "@/assets/carousel/clinic-16.webp";
 import clinic17 from "@/assets/carousel/clinic-17.webp";
 import clinicDrKarunaNew1 from "@/assets/carousel/clinic-dr-karuna-new-1.jpg";
+import drKarunaYellowBlazer1 from "@/assets/carousel/dr-karuna-clinic-yellow-blazer-1.webp";
+import drKarunaYellowBlazer2 from "@/assets/carousel/dr-karuna-clinic-yellow-blazer-2.webp";
+import drKarunaYellowBlazer3 from "@/assets/carousel/dr-karuna-clinic-yellow-blazer-3.webp";
 
 export interface CarouselImage {
   /** Unique, stable key — used for React keys & infinite-loop cloning */
@@ -75,4 +78,7 @@ export const carouselImages: CarouselImage[] = [
   { id: "c16", src: clinic16, alt: "Dr. Asheesh K. Sawhny with a visiting dental colleague at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
   { id: "c17", src: clinic17, alt: "Dr. Asheesh K. Sawhny with a visiting guest at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
   { id: "c18", src: clinicDrKarunaNew1, alt: "Dr. Karuna Singh Sawhny at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
+  { id: "c19", src: drKarunaYellowBlazer1, alt: "Dr. Karuna Singh Sawhny in the treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur", objectPosition: "center 20%" },
+  { id: "c20", src: drKarunaYellowBlazer2, alt: "Dr. Karuna Singh Sawhny holding dental models at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
+  { id: "c21", src: drKarunaYellowBlazer3, alt: "Dr. Karuna Singh Sawhny seated in the treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur", objectPosition: "center 20%" },
 ];

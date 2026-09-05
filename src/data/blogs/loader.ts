@@ -17,6 +17,8 @@ const contentMap: Record<
     import("./best-orthodontist-invisalign-provider-kanpur"),
   "best-endodontist-implantologist-kanpur-dr-asheesh-sawhny": () =>
     import("./best-endodontist-implantologist-kanpur-dr-asheesh-sawhny"),
+  "dental-implants-vs-dentures-kanpur": () =>
+    import("./dental-implants-vs-dentures-kanpur"),
 };
 
 export async function loadBlogContent(slug: string): Promise<string | null> {

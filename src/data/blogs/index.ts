@@ -24,6 +24,17 @@ export interface BlogMeta {
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
   {
+    slug: "dental-implants-vs-dentures-kanpur",
+    title: "Dental Implants vs Dentures in Kanpur: Which Is Better for Missing Teeth?",
+    excerpt:
+      "Comparing dental implants vs dentures in Kanpur? Get a clear, specialist-written comparison of cost, durability, comfort and suitability before you decide.",
+    date: "2026-09-06",
+    featuredImage: "/images/blogs/dental-implants-vs-dentures-kanpur.webp",
+    alt: "Comparison of dental implants and dentures for missing teeth treatment at Dr Sawhney's My Dentist, Kakadeo, Kanpur",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Treatments",
+  },
+  {
     slug: "best-endodontist-implantologist-kanpur-dr-asheesh-sawhny",
     title: "Best Endodontist & Implantologist in Kanpur – Dr. Asheesh Sawhny",
     excerpt:
