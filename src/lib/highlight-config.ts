@@ -89,6 +89,13 @@ export const HIGHLIGHT_TERMS: Record<HighlightCategory, string[]> = {
     "zygomatic implants",
     "pterygoid implants",
     "camlog implants",
+    "implant maintenance",
+    "tmj photodynamic treatment",
+    "bad breath treatment",
+    "halitosis treatment",
+    "dental spa",
+    "bloodless surgery",
+    "suture-free",
   ],
 
   credential: [
@@ -140,6 +147,9 @@ export const HIGHLIGHT_TERMS: Record<HighlightCategory, string[]> = {
     "intraoral scanner",
     "panoramic x-ray",
     "opg",
+    "photodynamic therapy",
+    "photobiomodulation",
+    "novolase gold",
   ],
 
   outcome: [
@@ -160,6 +170,8 @@ export const HIGHLIGHT_TERMS: Record<HighlightCategory, string[]> = {
     "confident smile",
     "improved oral health",
     "permanent",
+    "accelerated healing",
+    "faster recovery",
   ],
 
   trust: [

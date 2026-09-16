@@ -30,12 +30,13 @@ const BENEFITS = [
   "Long-lasting result when followed by an appropriate crown",
   "Preserves your natural smile and facial structure",
   "Microscope-assisted precision (Carl Zeiss) for complex or narrow canals",
+  "Thorough canal disinfection to control infection-causing bacteria at the source",
 ];
 
 const PROCESS = [
   { title: "Diagnosis & assessment", desc: "X-rays and clinical examination assess the tooth, bone and pulp. You receive a clear explanation of sittings and care before anything begins." },
   { title: "Local anaesthesia", desc: "The area is numbed with effective local anaesthesia — most patients feel far less discomfort than expected." },
-  { title: "Canal cleaning & shaping", desc: "Infected pulp is removed; canals are cleaned, shaped and disinfected using specialist rotary endodontic instruments." },
+  { title: "Canal cleaning & shaping", desc: "Infected pulp is removed; canals are cleaned, shaped and thoroughly disinfected using specialist rotary endodontic instruments and our NovoLase Gold dental laser to control infection-causing bacteria at the source." },
   { title: "Filling & sealing", desc: "Canals are filled with biocompatible gutta-percha and sealed to prevent future bacterial entry." },
   { title: "Crown placement", desc: "For most posterior teeth, a crown restores strength and protects the tooth from fracture long-term." },
 ];

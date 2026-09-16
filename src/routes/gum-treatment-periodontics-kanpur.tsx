@@ -32,7 +32,7 @@ const STAGES = [
 
 const SERVICES = [
   { title: "Scaling and Root Planing", desc: "The primary non-surgical treatment — tartar, bacteria and infected tissue removed above and below the gum line, under local anaesthesia." },
-  { title: "Subgingival Debridement", desc: "Thorough cleaning of deep periodontal pockets where standard scaling cannot reach — essential for moderate to advanced disease." },
+  { title: "Subgingival Debridement", desc: "Thorough cleaning of deep periodontal pockets where standard scaling cannot reach. For select cases, this is supported by our NovoLase Gold dental laser for flap-less, minimally invasive pocket decontamination — essential for moderate to advanced disease." },
   { title: "Supportive Periodontal Therapy", desc: "Regular maintenance appointments, typically every three to four months, maintain stability and prevent recurrence." },
   { title: "Gummy Smile Correction", desc: "Excess gum tissue covering teeth can be conservatively reduced to improve the proportion of your smile." },
 ];

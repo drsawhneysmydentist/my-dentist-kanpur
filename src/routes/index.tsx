@@ -338,6 +338,8 @@ function Highlights() {
     { img: iconVeneer, title: "Ceramic Veneer", desc: "Natural-looking smile enhancement." },
     { img: iconZoom, title: "ZOOM Tooth Whitening", desc: "Professional whitening in one appointment." },
     { img: iconSmileDesign, title: "Smile Design", desc: "Digital smile planning customized for you." },
+    { img: iconMicroscope, title: "TMJ Photodynamic Treatment", desc: "Light-based therapy for jaw joint pain and restricted movement." },
+    { img: iconImplant, title: "Implant Maintenance", desc: "Scheduled review to protect your implant long-term." },
   ];
 
   return (

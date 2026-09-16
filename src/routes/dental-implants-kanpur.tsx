@@ -40,6 +40,7 @@ const PROCESS = [
   { title: "Implant placement", desc: "The titanium implant is surgically placed under local anaesthesia — precise and typically well-tolerated." },
   { title: "Osseointegration", desc: "Over 8–12 weeks, the implant fuses with the surrounding bone — the foundation of long-term stability." },
   { title: "Crown placement", desc: "Once integrated, an abutment and a custom crown matched to your natural teeth complete the restoration." },
+  { title: "Implant maintenance & review", desc: "Scheduled check-ups to monitor gum health around the implant, screen for early signs of peri-implantitis and keep your implant functioning for the long term." },
 ];
 
 const FAQS = [

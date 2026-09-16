@@ -19,6 +19,10 @@ const contentMap: Record<
     import("./best-endodontist-implantologist-kanpur-dr-asheesh-sawhny"),
   "dental-implants-vs-dentures-kanpur": () =>
     import("./dental-implants-vs-dentures-kanpur"),
+  "preventive-dental-care-oral-hygiene-kanpur": () =>
+    import("./preventive-dental-care-oral-hygiene-kanpur"),
+  "family-kids-dentistry-kanpur": () =>
+    import("./family-kids-dentistry-kanpur"),
 };
 
 export async function loadBlogContent(slug: string): Promise<string | null> {

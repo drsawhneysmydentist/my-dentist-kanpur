@@ -33,7 +33,7 @@ const BENEFITS = [
 const PROCESS = [
   { title: "Suitability assessment", desc: "Teeth and gums are examined. Active cavities, gum issues or sensitivity concerns are identified and addressed first." },
   { title: "Shade assessment", desc: "Your current tooth shade is recorded as a baseline to measure the whitening outcome against." },
-  { title: "Whitening procedure", desc: "A professional Philips Zoom whitening system or custom take-home trays are used under controlled conditions, as suited to your case." },
+  { title: "Whitening procedure", desc: "A professional Philips Zoom whitening system, PDT-assisted laser whitening using our NovoLase Gold system, or custom take-home trays are used under controlled conditions, as suited to your case." },
   { title: "Post-whitening guidance", desc: "Specific instructions on foods, drinks and habits to protect and maintain your results." },
 ];
 

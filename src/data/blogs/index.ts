@@ -24,6 +24,28 @@ export interface BlogMeta {
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
   {
+    slug: "preventive-dental-care-oral-hygiene-kanpur",
+    title: "Preventive Dental Care in Kanpur: The Complete Oral Hygiene Guide for Every Age",
+    excerpt:
+      "A specialist-written guide to preventing cavities, gum disease and dental problems — daily oral hygiene habits, when to get a check-up, and expert tips from Dr Sawhney's My Dentist, Kakadeo.",
+    date: "2026-09-15",
+    featuredImage: "/images/blogs/preventive-dental-care-oral-hygiene-kanpur.webp",
+    alt: "Close-up of correct tooth brushing technique — preventive dental care and oral hygiene guide by Dr Sawhney's My Dentist, Kakadeo, Kanpur",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Dental Tips",
+  },
+  {
+    slug: "family-kids-dentistry-kanpur",
+    title: "Family & Kids Dentistry in Kanpur: A Parent's Guide to Your Child's Dental Health",
+    excerpt:
+      "A parent's guide to children's dental care in Kanpur — first visits, cavity prevention, sealants and choosing the right family dentist, from MDS specialists at Kakadeo.",
+    date: "2026-09-16",
+    featuredImage: "/images/blogs/family-kids-dentistry-kanpur.webp",
+    alt: "Child smiling during a comfortable dental checkup — kids and family dentistry at Dr Sawhney's My Dentist, Kakadeo, Kanpur",
+    author: "Dr. Karuna Singh Sawhny",
+    category: "Dental Tips",
+  },
+  {
     slug: "dental-implants-vs-dentures-kanpur",
     title: "Dental Implants vs Dentures in Kanpur: Which Is Better for Missing Teeth?",
     excerpt:

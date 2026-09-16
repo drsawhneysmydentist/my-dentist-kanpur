@@ -7,6 +7,7 @@ import { Reveal, Stagger, item } from "@/components/Reveal";
 import { MagneticButton } from "@/components/MagneticButton";
 import { SITE } from "@/lib/site";
 import serviceImg from "@/assets/service-specialized.webp";
+import novolaseImg from "@/assets/novolase-laser-device.webp";
 
 const TITLE = "Specialized Dental Care in Kanpur | MDS Specialist Clinic | Dr Sawhney’s My Dentist Kakadeo";
 const DESC =
@@ -29,6 +30,9 @@ const SERVICES = [
   { title: "Second Opinion Consultations", desc: "Honest, evidence-based second opinions before proceeding with major treatment — without commercial bias toward any particular procedure." },
   { title: "Medically Complex Patients", desc: "Patients on anticoagulants, bisphosphonates, or with uncontrolled systemic conditions require modified protocols. Dr Sawhney’s My Dentist coordinates with the patient's physician where needed." },
   { title: "Full Mouth Rehabilitation", desc: "Complete restoration of oral health and function for patients with multiple failing, missing, or damaged teeth. A phased plan combining the expertise of our specialist team." },
+  { title: "TMJ Photodynamic Treatment", desc: "Light-based therapy delivered via our NovoLase Gold dental laser for jaw joint (TMJ) pain, clicking and restricted movement — a comfortable, non-invasive option alongside conventional TMJ management at Dr Sawhney’s My Dentist." },
+  { title: "Bad Breath (Halitosis) Treatment", desc: "A thorough evaluation to identify the underlying cause of persistent bad breath — gum disease, tongue coating, decay or dryness — followed by targeted treatment, including laser-assisted oral detoxification, rather than temporary masking." },
+  { title: "Dental Spa", desc: "A calmer, more comfortable visit for patients needing extended or multiple procedures in one sitting — combining specialist treatment with a relaxed, unhurried clinical experience." },
 ];
 
 const BENEFITS = [
@@ -64,6 +68,9 @@ const FAQS = [
   { q: "I was told my tooth cannot be saved. Is that always true?", a: "Not always. Dr. Sawhny's endodontic expertise means teeth considered unsaveable at a general practice level can sometimes be retained with specialist root canal or restorative treatment. A second opinion is always worthwhile before consenting to extraction." },
   { q: "Are specialist dental treatments more expensive?", a: "Specialist treatment is priced to reflect the qualification and expertise involved. However, the cost of a correctly executed specialist procedure is almost always lower than the long-term cost of managing a poorly treated or misdiagnosed condition." },
   { q: "Can I bring my previous dental records and X-rays?", a: "Yes. Bringing existing X-rays, treatment records, and previous specialist reports helps Dr. Sawhny assess your case more accurately and avoids duplication of investigations." },
+  { q: "What is TMJ photodynamic treatment?", a: "It is a light-based therapy, delivered using our NovoLase Gold dental laser, used alongside conventional care to help manage jaw joint (TMJ) pain, clicking and restricted movement — a comfortable, non-invasive addition to your treatment plan." },
+  { q: "Can persistent bad breath be treated permanently?", a: "In most cases, yes. Persistent bad breath usually has an identifiable cause — gum disease, tongue coating, decay or dryness. Once diagnosed and treated at the source, results are lasting rather than temporary." },
+  { q: "What is the Dental Spa experience?", a: "For patients needing extended or multiple procedures in one visit, the Dental Spa approach combines specialist treatment with a calmer, unhurried, more comfortable clinical experience." },
 ];
 
 const faqJsonLd = {
@@ -198,6 +205,38 @@ function SpecializedCarePage() {
                 height={1280}
                 style={{ imageRendering: "auto" }}
               />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Technology */}
+      <section className="px-6 pb-4">
+        <div className="mx-auto max-w-7xl">
+          <Reveal>
+            <div className="flex flex-col items-center gap-6 rounded-3xl border border-[#EAF5FB] bg-card p-6 shadow-soft sm:flex-row sm:items-center sm:p-8">
+              <div className="h-28 w-20 shrink-0 overflow-hidden rounded-2xl bg-white ring-1 ring-aqua/20 sm:h-36 sm:w-28">
+                <img
+                  src={novolaseImg}
+                  alt="NovoLase Gold dual-wavelength dental laser at DR SAWHNEY’S MY DENTIST Kanpur"
+                  className="h-full w-full object-cover object-top"
+                  loading="lazy"
+                  decoding="async"
+                  width={699}
+                  height={806}
+                />
+              </div>
+              <div>
+                <div className="pill border border-foreground/10 bg-white">
+                  <span className="h-1.5 w-1.5 rounded-full bg-aqua" /> Technology
+                </div>
+                <h3 className="mt-4 font-display text-2xl font-bold text-foreground">
+                  Powered by <span className="italic text-aqua-deep">NovoLase Gold.</span>
+                </h3>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                  Our clinic uses the NovoLase Gold dual-wavelength dental laser to support several of the treatments above — including root canal disinfection, bloodless soft-tissue surgery, TMJ photodynamic treatment, and flap-less periodontal therapy. Its photobiomodulation (PBM) capability is also used as supportive care for burning mouth syndrome, oral submucous fibrosis (OSMF), non-healing mouth ulcers and radiation/chemotherapy-related oral mucositis, alongside pain management and accelerated wound healing.
+                </p>
+              </div>
             </div>
           </Reveal>
         </div>
