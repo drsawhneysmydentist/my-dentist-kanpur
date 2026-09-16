@@ -7,30 +7,29 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { AnimatePresence, motion } from "framer-motion";
-import { type ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { SITE } from "@/lib/site";
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
-import { MobileCallFab } from "@/components/MobileCallFab";
+import { reportLovableError } from "../lib/lovable-error-reporting";
+import { Toaster } from "@/components/ui/sonner";
+import { buildOrganizationSchema, buildWebsiteSchema, jsonLdScript } from "@/lib/seo-schema";
+import { initClickTracking, trackPageView } from "@/lib/analytics";
 
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="font-display text-8xl">404</h1>
-        <h2 className="mt-4 text-xl font-medium">Page not found</h2>
+        <h1 className="text-7xl font-bold text-foreground">404</h1>
+        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           The page you're looking for doesn't exist or has been moved.
         </p>
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-full bg-foreground px-6 py-3 text-sm text-background"
+            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
-            Back home
+            Go home
           </Link>
         </div>
       </div>
@@ -39,14 +38,20 @@ function NotFoundComponent() {
 }
 
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+  console.error(error);
   const router = useRouter();
+  useEffect(() => {
+    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="font-display text-3xl">This page didn't load</h1>
-        <p className="mt-3 text-sm text-muted-foreground">
-          Something went wrong. Try again or head back home.
+        <h1 className="text-xl font-semibold tracking-tight text-foreground">
+          This page didn't load
+        </h1>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Something went wrong on our end. You can try refreshing or head back home.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
@@ -54,13 +59,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
               router.invalidate();
               reset();
             }}
-            className="rounded-full bg-foreground px-5 py-2.5 text-sm text-background"
+            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Try again
           </button>
           <a
             href="/"
-            className="rounded-full border border-foreground/15 bg-background px-5 py-2.5 text-sm"
+            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
             Go home
           </a>
@@ -70,296 +75,182 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
-  {
-    head: () => ({
-      meta: [
-        { charSet: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "referrer", content: "strict-origin-when-cross-origin" },
-        { name: "robots", content: "index, follow, max-image-preview:large" },
-        ...(SITE.gscVerification
-          ? [{ name: "google-site-verification", content: SITE.gscVerification }]
-          : []),
-        {
-          title:
-            "Dr Sawhney’s My Dentist, Kakadeo — Best Dentist in Kanpur | Specialists",
-        },
-        {
-          name: "description",
-          content:
-            "Trusted dentist in Kanpur for dental implants, root canal treatment & braces. Dr Sawhney’s My Dentist, Kakadeo — specialist care with evening & Sunday appointments.",
-        },
-        { name: "author", content: "Dr Sawhney’s My Dentist" },
-        { name: "theme-color", content: "#1a1a1a" },
-        { name: "msapplication-TileColor", content: "#1a1a1a" },
-        {
-          name: "msapplication-TileImage",
-          content: "/android-chrome-192x192.png",
-        },
-        {
-          property: "og:title",
-          content:
-            "Dr Sawhney’s My Dentist · Best Dental Clinic in Kanpur | MDS Specialists",
-        },
-        {
-          property: "og:description",
-          content:
-            "Best dentist in Kanpur — Dr Sawhney’s My Dentist, Kakadeo. Painless root canal, dental implants, braces, smile makeover & emergency dentistry by MDS specialists.",
-        },
-        { property: "og:type", content: "website" },
-        { property: "og:site_name", content: "Dr Sawhney’s My Dentist" },
-        { property: "og:image", content: `${SITE.url}/og-image.jpg` },
-        { property: "og:image:width", content: "1200" },
-        { property: "og:image:height", content: "630" },
-        {
-          property: "og:image:alt",
-          content:
-            "Dr Sawhney’s My Dentist — Multi Speciality & Advanced Digital Dental Clinic, Kakadeo Kanpur",
-        },
-        { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:image", content: `${SITE.url}/og-image.jpg` },
-        {
-          name: "twitter:image:alt",
-          content: "Dr Sawhney’s My Dentist Kanpur",
-        },
-      ],
-      links: [
-        { rel: "stylesheet", href: appCss },
-        // ── Favicon & PWA icons ──────────────────────────────────────────────
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "16x16",
-          href: "/favicon-16x16.png",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "32x32",
-          href: "/favicon-32x32.png",
-        },
-        {
-          rel: "icon",
-          type: "image/png",
-          sizes: "48x48",
-          href: "/favicon-48x48.png",
-        },
-        {
-          rel: "apple-touch-icon",
-          sizes: "180x180",
-          href: "/apple-touch-icon.png",
-        },
-        { rel: "manifest", href: "/site.webmanifest" },
-        // ── Fonts ────────────────────────────────────────────────────────────
-        { rel: "preconnect", href: "https://fonts.googleapis.com" },
-        {
-          rel: "preconnect",
-          href: "https://fonts.gstatic.com",
-          crossOrigin: "anonymous",
-        },
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..700,0..100,0..1&family=Inter+Tight:wght@300;400;500;600&display=swap",
-        },
-        { rel: "sitemap", type: "application/xml", href: "/sitemap.xml" },
-      ],
-      scripts: [
-        {
-          type: "application/ld+json",
-          children: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": ["Dentist", "LocalBusiness", "MedicalBusiness"],
-            name: "Dr Sawhney’s My Dentist",
-            alternateName: ["My Dentist", "MY DENTIST"],
-            description:
-              "Best dental clinic in Kakadeo, Kanpur. Specialist-led dentistry — painless root canal treatment, dental implants, braces, teeth whitening, smile makeover, emergency dentistry, paediatric dentistry. Led by MDS Endodontist & AAID-Certified Implantologist Dr. Asheesh K. Sawhny and MDS Orthodontist Dr. Karuna Singh Sawhny.",
-            image: "/og-image.jpg",
-            telephone: "+91 98385 00100",
-            email: "drsawhneysmydentist@gmail.com",
-            url: SITE.url,
-            sameAs: [SITE.googleReviewsUrl],
-            priceRange: "₹₹",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "117/L-1/455-A, Naveen Nagar, Kakadeo",
-              addressLocality: "Kanpur",
-              addressRegion: "Uttar Pradesh",
-              postalCode: "208025",
-              addressCountry: "IN",
+export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
+  head: () => ({
+    meta: [
+      { charSet: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { title: "Best Event Planner in Kanpur | SD Event & Photography" },
+      {
+        name: "description",
+        content:
+          "SD Event & Photography offers wedding planning, event management, decoration, photography and corporate event services in Kanpur.",
+      },
+      { name: "author", content: "SD Event & Photography" },
+      { name: "robots", content: "index,follow,max-image-preview:large" },
+      { name: "theme-color", content: "#f7f2ea" },
+      { property: "og:title", content: "Best Event Planner in Kanpur | SD Event & Photography" },
+      {
+        property: "og:description",
+        content:
+          "SD Event & Photography offers wedding planning, event management, decoration, photography and corporate event services in Kanpur.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://sdeventkanpur.in/" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "SD Event & Photography" },
+      {
+        name: "twitter:description",
+        content: "Luxury wedding planning, event management & cinematic photography in Kanpur.",
+      },
+    ],
+    links: [
+      {
+        rel: "stylesheet",
+        href: appCss,
+      },
+      { rel: "icon", href: "/favicon.jpg", type: "image/jpeg" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&display=swap",
+      },
+    ],
+    scripts: [
+      // Google Analytics 4 — recommended global site tag (gtag.js) snippet.
+      // send_page_view is disabled here because page views are tracked
+      // manually on every client-side route change (see RootComponent
+      // below), which avoids double-counting on this single-page app.
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-HPHYXJJ7H6",
+        async: true,
+      },
+      {
+        children:
+          "window.dataLayer = window.dataLayer || [];\n" +
+          "function gtag(){dataLayer.push(arguments);}\n" +
+          "gtag('js', new Date());\n" +
+          "gtag('config', 'G-HPHYXJJ7H6', { send_page_view: false });",
+      },
+      jsonLdScript(buildOrganizationSchema()),
+      jsonLdScript(buildWebsiteSchema()),
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": ["LocalBusiness", "EventPlanner"],
+          name: "SD Event & Photography",
+          image: "https://sdeventphotography.com/logo.png",
+          telephone: "+91-88878-11248",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Barra 2",
+            addressLocality: "Kanpur",
+            addressRegion: "Uttar Pradesh",
+            postalCode: "208027",
+            addressCountry: "IN",
+          },
+          areaServed: [
+            "Kanpur",
+            "Kakadev",
+            "Civil Lines",
+            "Swaroop Nagar",
+            "Shyam Nagar",
+            "Lajpat Nagar",
+            "Kalyanpur",
+            "Govind Nagar",
+            "Ratan Lal Nagar",
+            "Panki",
+          ],
+          priceRange: "₹₹",
+          url: "https://sdeventphotography.com",
+          sameAs: [
+            "https://www.instagram.com/sd_event_kanpur191",
+            "https://www.facebook.com/share/1C3CpXrqZ2/",
+          ],
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Does SD Event & Photography handle corporate events?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes — end-to-end corporate event planning and photography across Kanpur.",
+              },
             },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 26.4499,
-              longitude: 80.3319,
+            {
+              "@type": "Question",
+              name: "Do you offer wedding photography and videography together?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, combined photo + video packages with album design are available.",
+              },
             },
-            areaServed: [
-              { "@type": "Place", name: "Kakadeo, Kanpur" },
-              { "@type": "Place", name: "Naveen Nagar, Kanpur" },
-              { "@type": "Place", name: "Pandu Nagar, Kanpur" },
-              { "@type": "Place", name: "Sharda Nagar, Kanpur" },
-              { "@type": "Place", name: "Swaroop Nagar, Kanpur" },
-              { "@type": "Place", name: "Civil Lines, Kanpur" },
-              { "@type": "Place", name: "Sarvodaya Nagar, Kanpur" },
-              { "@type": "Place", name: "Kaushalpuri, Kanpur" },
-              { "@type": "Place", name: "Lajpat Nagar, Kanpur" },
-              { "@type": "Place", name: "RS Puram, Kanpur" },
-            ],
-            openingHoursSpecification: [
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                ],
-                opens: "16:00",
-                closes: "21:00",
+            {
+              "@type": "Question",
+              name: "Do you provide pre-wedding shoots?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, at creative locations in and around Kanpur with quick-turnaround editing.",
               },
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: "Sunday",
-                opens: "11:00",
-                closes: "14:00",
-              },
-            ],
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "5.0",
-              reviewCount: "226",
             },
-            medicalSpecialty: [
-              "Endodontics",
-              "Orthodontics",
-              "Implantology",
-              "Prosthodontics",
-              "Periodontics",
-              "Pediatric Dentistry",
-              "Cosmetic Dentistry",
-            ],
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Dental Services Kanpur",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Root Canal Treatment Kanpur",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Dental Implants Kanpur",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Braces in Kanpur",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Teeth Whitening Kanpur",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Smile Makeover Kanpur",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Emergency Dentist Kanpur",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Gum Treatment Kanpur",
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "MedicalProcedure",
-                    name: "Dental Crowns Kanpur",
-                  },
-                },
-              ],
+            {
+              "@type": "Question",
+              name: "How far in advance should I book your services?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "For weddings, 2–3 months in advance is ideal; for birthdays and small events, 2–3 weeks is usually enough.",
+              },
             },
-            employee: [
-              {
-                "@type": "Physician",
-                name: "Dr. Asheesh Sawhny",
-                alternateName: "Dr. Asheesh K. Sawhny",
-                jobTitle: "MDS Endodontist and AAID-Certified Implantologist",
-                hasCredential: [
-                  "MDS Conservative Dentistry and Endodontics — KLE Institute of Dental Sciences, Belgaum",
-                  "Certificate in Dental Implants — American Academy of Implant Dentistry (AAID), 2010",
-                  "Principal & Professor — Rama Dental College, Kanpur",
-                ],
+            {
+              "@type": "Question",
+              name: "Do you provide services outside Kanpur?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, on request, with additional travel arrangements.",
               },
-              {
-                "@type": "Physician",
-                name: "Dr. Karuna Singh Sawhny",
-                jobTitle:
-                  "MDS Orthodontist and Dentofacial Orthopaedics Specialist",
-                hasCredential: [
-                  "MDS Orthodontics and Dentofacial Orthopaedics — Rama Dental College, Kanpur",
-                  "Member — Indian Orthodontic Society (IOS)",
-                ],
+            },
+            {
+              "@type": "Question",
+              name: "Do you offer combo packages for planning + photography together?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, combo packages are available at a discounted rate.",
               },
-              {
-                "@type": "Physician",
-                name: "Dr. Sirjon Mukherji",
-                jobTitle: "Oral & Maxillofacial Surgeon and Implantologist",
-                hasCredential: [
-                  "BDS — Calcutta University, 1997, Dr. R. Ahmed Memorial Gold Medal",
-                  "FDS RCS England, 2000",
-                  "FDS RCS Edinburgh, 2018",
-                  "FIBOMS, 2010",
-                ],
+            },
+            {
+              "@type": "Question",
+              name: "Do you provide a written agreement after booking?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, a formal agreement is shared once the date is confirmed.",
               },
-            ],
-          }),
-        },
-        // GA4 — only loaded once a real Measurement ID is configured via
-        // VITE_GA4_MEASUREMENT_ID, so no placeholder tracking ID ever ships.
-        ...(SITE.ga4MeasurementId
-          ? [
-              {
-                src: `https://www.googletagmanager.com/gtag/js?id=${SITE.ga4MeasurementId}`,
-                async: true,
+            },
+            {
+              "@type": "Question",
+              name: "Can I customize a package to my budget?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, all packages are customizable.",
               },
-              {
-                children: `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', '${SITE.ga4MeasurementId}');`,
-              },
-            ]
-          : []),
-      ],
-    }),
-    shellComponent: RootShell,
-    component: RootComponent,
-    notFoundComponent: NotFoundComponent,
-    errorComponent: ErrorComponent,
-  },
-);
+            },
+          ],
+        }),
+      },
+    ],
+  }),
+  shellComponent: RootShell,
+  component: RootComponent,
+  notFoundComponent: NotFoundComponent,
+  errorComponent: ErrorComponent,
+});
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
@@ -378,24 +269,23 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   const router = useRouter();
-  const pathname = router.state.location.pathname;
+
+  useEffect(() => {
+    initClickTracking();
+    trackPageView(router.state.location.pathname);
+
+    const unsubscribe = router.subscribe("onResolved", (event) => {
+      trackPageView(event.toLocation.pathname);
+    });
+    return unsubscribe;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteHeader />
-      <AnimatePresence mode="wait">
-        <motion.main
-          key={pathname}
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -8 }}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <Outlet />
-        </motion.main>
-      </AnimatePresence>
-      <SiteFooter />
-      <MobileCallFab />
+      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      <Outlet />
+      <Toaster position="top-center" richColors />
     </QueryClientProvider>
   );
 }

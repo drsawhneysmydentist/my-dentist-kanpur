@@ -7,22 +7,14 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  vite: {
-    server: {
-      // Only allow localhost in development — never commit tunnel/preview hostnames
-      allowedHosts: ["localhost", "127.0.0.1"],
-    },
-  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  // Outside Lovable's sandbox (e.g. a Netlify CI build) the deploy plugin only runs
-  // nitro when a `nitro` option is explicitly provided — otherwise it's skipped and
-  // `vite build` emits a client-only bundle with no SSR function, which is why every
-  // route 404s on Netlify. Pin the preset explicitly so the build always produces a
-  // proper Netlify Function for SSR, in dev and on every deploy target.
+  // Without this, the wrapper defaults Nitro to the "cloudflare-module" preset,
+  // which produces a Cloudflare Worker bundle instead of a Netlify Function —
+  // that mismatch is what caused Netlify's 404 page instead of SSR output.
   nitro: {
     preset: "netlify",
   },

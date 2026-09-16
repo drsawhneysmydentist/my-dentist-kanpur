@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mydentistkanpur.com/sitemap.xml
+Sitemap: https://sdeventkanpur.in/sitemap.xml
