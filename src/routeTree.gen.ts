@@ -9,39 +9,50 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as WeddingsRouteImport } from './routes/weddings'
-import { Route as WeddingPlannerKanpurRouteImport } from './routes/wedding-planner-kanpur'
-import { Route as WeddingPhotographyKanpurRouteImport } from './routes/wedding-photography-kanpur'
-import { Route as WeddingDecorationKanpurRouteImport } from './routes/wedding-decoration-kanpur'
+import { Route as TeethWhiteningKanpurRouteImport } from './routes/teeth-whitening-kanpur'
+import { Route as SpecializedDentalCareKanpurRouteImport } from './routes/specialized-dental-care-kanpur'
+import { Route as SmileMakeoverKanpurRouteImport } from './routes/smile-makeover-kanpur'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as PreWeddingPhotographyKanpurRouteImport } from './routes/pre-wedding-photography-kanpur'
-import { Route as EventsRouteImport } from './routes/events'
-import { Route as EventPlannerKanpurRouteImport } from './routes/event-planner-kanpur'
-import { Route as CorporateEventManagementKanpurRouteImport } from './routes/corporate-event-management-kanpur'
-import { Route as BirthdayEventPlannerKanpurRouteImport } from './routes/birthday-event-planner-kanpur'
+import { Route as ServicesRouteImport } from './routes/services'
+import { Route as RootCanalTreatmentKanpurRouteImport } from './routes/root-canal-treatment-kanpur'
+import { Route as RestorativeDentistryKanpurRouteImport } from './routes/restorative-dentistry-kanpur'
+import { Route as ProsthodonticsRouteImport } from './routes/prosthodontics'
+import { Route as PreventiveDentistryKanpurRouteImport } from './routes/preventive-dentistry-kanpur'
+import { Route as PaediatricDentistryRouteImport } from './routes/paediatric-dentistry'
+import { Route as PaediatricDentistKanpurRouteImport } from './routes/paediatric-dentist-kanpur'
+import { Route as OrthodontistKanpurRouteImport } from './routes/orthodontist-kanpur'
+import { Route as OralAndMaxillofacialSurgeryRouteImport } from './routes/oral-and-maxillofacial-surgery'
+import { Route as GumTreatmentPeriodonticsKanpurRouteImport } from './routes/gum-treatment-periodontics-kanpur'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as EmergencyDentistKanpurRouteImport } from './routes/emergency-dentist-kanpur'
+import { Route as DrSirjonMukherjiRouteImport } from './routes/dr-sirjon-mukherji'
+import { Route as DrKarunaSawhnyRouteImport } from './routes/dr-karuna-sawhny'
+import { Route as DrAsheeshSawhnyRouteImport } from './routes/dr-asheesh-sawhny'
+import { Route as DoctorsRouteImport } from './routes/doctors'
+import { Route as DentalImplantsKanpurRouteImport } from './routes/dental-implants-kanpur'
+import { Route as CosmeticDentistryRouteImport } from './routes/cosmetic-dentistry'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BlogRouteImport } from './routes/blog'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as BlogIndexRouteImport } from './routes/blog/index'
-import { Route as BlogSlugRouteImport } from './routes/blog/$slug'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 
-const WeddingsRoute = WeddingsRouteImport.update({
-  id: '/weddings',
-  path: '/weddings',
+const TeethWhiteningKanpurRoute = TeethWhiteningKanpurRouteImport.update({
+  id: '/teeth-whitening-kanpur',
+  path: '/teeth-whitening-kanpur',
   getParentRoute: () => rootRouteImport,
 } as any)
-const WeddingPlannerKanpurRoute = WeddingPlannerKanpurRouteImport.update({
-  id: '/wedding-planner-kanpur',
-  path: '/wedding-planner-kanpur',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const WeddingPhotographyKanpurRoute =
-  WeddingPhotographyKanpurRouteImport.update({
-    id: '/wedding-photography-kanpur',
-    path: '/wedding-photography-kanpur',
+const SpecializedDentalCareKanpurRoute =
+  SpecializedDentalCareKanpurRouteImport.update({
+    id: '/specialized-dental-care-kanpur',
+    path: '/specialized-dental-care-kanpur',
     getParentRoute: () => rootRouteImport,
   } as any)
-const WeddingDecorationKanpurRoute = WeddingDecorationKanpurRouteImport.update({
-  id: '/wedding-decoration-kanpur',
-  path: '/wedding-decoration-kanpur',
+const SmileMakeoverKanpurRoute = SmileMakeoverKanpurRouteImport.update({
+  id: '/smile-makeover-kanpur',
+  path: '/smile-makeover-kanpur',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -49,93 +60,227 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PreWeddingPhotographyKanpurRoute =
-  PreWeddingPhotographyKanpurRouteImport.update({
-    id: '/pre-wedding-photography-kanpur',
-    path: '/pre-wedding-photography-kanpur',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const EventsRoute = EventsRouteImport.update({
-  id: '/events',
-  path: '/events',
+const ServicesRoute = ServicesRouteImport.update({
+  id: '/services',
+  path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
-const EventPlannerKanpurRoute = EventPlannerKanpurRouteImport.update({
-  id: '/event-planner-kanpur',
-  path: '/event-planner-kanpur',
+const RootCanalTreatmentKanpurRoute =
+  RootCanalTreatmentKanpurRouteImport.update({
+    id: '/root-canal-treatment-kanpur',
+    path: '/root-canal-treatment-kanpur',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const RestorativeDentistryKanpurRoute =
+  RestorativeDentistryKanpurRouteImport.update({
+    id: '/restorative-dentistry-kanpur',
+    path: '/restorative-dentistry-kanpur',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProsthodonticsRoute = ProsthodonticsRouteImport.update({
+  id: '/prosthodontics',
+  path: '/prosthodontics',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CorporateEventManagementKanpurRoute =
-  CorporateEventManagementKanpurRouteImport.update({
-    id: '/corporate-event-management-kanpur',
-    path: '/corporate-event-management-kanpur',
+const PreventiveDentistryKanpurRoute =
+  PreventiveDentistryKanpurRouteImport.update({
+    id: '/preventive-dentistry-kanpur',
+    path: '/preventive-dentistry-kanpur',
     getParentRoute: () => rootRouteImport,
   } as any)
-const BirthdayEventPlannerKanpurRoute =
-  BirthdayEventPlannerKanpurRouteImport.update({
-    id: '/birthday-event-planner-kanpur',
-    path: '/birthday-event-planner-kanpur',
+const PaediatricDentistryRoute = PaediatricDentistryRouteImport.update({
+  id: '/paediatric-dentistry',
+  path: '/paediatric-dentistry',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaediatricDentistKanpurRoute = PaediatricDentistKanpurRouteImport.update({
+  id: '/paediatric-dentist-kanpur',
+  path: '/paediatric-dentist-kanpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OrthodontistKanpurRoute = OrthodontistKanpurRouteImport.update({
+  id: '/orthodontist-kanpur',
+  path: '/orthodontist-kanpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OralAndMaxillofacialSurgeryRoute =
+  OralAndMaxillofacialSurgeryRouteImport.update({
+    id: '/oral-and-maxillofacial-surgery',
+    path: '/oral-and-maxillofacial-surgery',
     getParentRoute: () => rootRouteImport,
   } as any)
+const GumTreatmentPeriodonticsKanpurRoute =
+  GumTreatmentPeriodonticsKanpurRouteImport.update({
+    id: '/gum-treatment-periodontics-kanpur',
+    path: '/gum-treatment-periodontics-kanpur',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyDentistKanpurRoute = EmergencyDentistKanpurRouteImport.update({
+  id: '/emergency-dentist-kanpur',
+  path: '/emergency-dentist-kanpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrSirjonMukherjiRoute = DrSirjonMukherjiRouteImport.update({
+  id: '/dr-sirjon-mukherji',
+  path: '/dr-sirjon-mukherji',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrKarunaSawhnyRoute = DrKarunaSawhnyRouteImport.update({
+  id: '/dr-karuna-sawhny',
+  path: '/dr-karuna-sawhny',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DrAsheeshSawhnyRoute = DrAsheeshSawhnyRouteImport.update({
+  id: '/dr-asheesh-sawhny',
+  path: '/dr-asheesh-sawhny',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DoctorsRoute = DoctorsRouteImport.update({
+  id: '/doctors',
+  path: '/doctors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DentalImplantsKanpurRoute = DentalImplantsKanpurRouteImport.update({
+  id: '/dental-implants-kanpur',
+  path: '/dental-implants-kanpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CosmeticDentistryRoute = CosmeticDentistryRouteImport.update({
+  id: '/cosmetic-dentistry',
+  path: '/cosmetic-dentistry',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => BlogRoute,
 } as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/blog/$slug',
-  path: '/blog/$slug',
-  getParentRoute: () => rootRouteImport,
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => BlogRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/birthday-event-planner-kanpur': typeof BirthdayEventPlannerKanpurRoute
-  '/corporate-event-management-kanpur': typeof CorporateEventManagementKanpurRoute
-  '/event-planner-kanpur': typeof EventPlannerKanpurRoute
-  '/events': typeof EventsRoute
-  '/pre-wedding-photography-kanpur': typeof PreWeddingPhotographyKanpurRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/contact': typeof ContactRoute
+  '/cosmetic-dentistry': typeof CosmeticDentistryRoute
+  '/dental-implants-kanpur': typeof DentalImplantsKanpurRoute
+  '/doctors': typeof DoctorsRoute
+  '/dr-asheesh-sawhny': typeof DrAsheeshSawhnyRoute
+  '/dr-karuna-sawhny': typeof DrKarunaSawhnyRoute
+  '/dr-sirjon-mukherji': typeof DrSirjonMukherjiRoute
+  '/emergency-dentist-kanpur': typeof EmergencyDentistKanpurRoute
+  '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
+  '/gum-treatment-periodontics-kanpur': typeof GumTreatmentPeriodonticsKanpurRoute
+  '/oral-and-maxillofacial-surgery': typeof OralAndMaxillofacialSurgeryRoute
+  '/orthodontist-kanpur': typeof OrthodontistKanpurRoute
+  '/paediatric-dentist-kanpur': typeof PaediatricDentistKanpurRoute
+  '/paediatric-dentistry': typeof PaediatricDentistryRoute
+  '/preventive-dentistry-kanpur': typeof PreventiveDentistryKanpurRoute
+  '/prosthodontics': typeof ProsthodonticsRoute
+  '/restorative-dentistry-kanpur': typeof RestorativeDentistryKanpurRoute
+  '/root-canal-treatment-kanpur': typeof RootCanalTreatmentKanpurRoute
+  '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/wedding-decoration-kanpur': typeof WeddingDecorationKanpurRoute
-  '/wedding-photography-kanpur': typeof WeddingPhotographyKanpurRoute
-  '/wedding-planner-kanpur': typeof WeddingPlannerKanpurRoute
-  '/weddings': typeof WeddingsRoute
+  '/smile-makeover-kanpur': typeof SmileMakeoverKanpurRoute
+  '/specialized-dental-care-kanpur': typeof SpecializedDentalCareKanpurRoute
+  '/teeth-whitening-kanpur': typeof TeethWhiteningKanpurRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/birthday-event-planner-kanpur': typeof BirthdayEventPlannerKanpurRoute
-  '/corporate-event-management-kanpur': typeof CorporateEventManagementKanpurRoute
-  '/event-planner-kanpur': typeof EventPlannerKanpurRoute
-  '/events': typeof EventsRoute
-  '/pre-wedding-photography-kanpur': typeof PreWeddingPhotographyKanpurRoute
+  '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
+  '/cosmetic-dentistry': typeof CosmeticDentistryRoute
+  '/dental-implants-kanpur': typeof DentalImplantsKanpurRoute
+  '/doctors': typeof DoctorsRoute
+  '/dr-asheesh-sawhny': typeof DrAsheeshSawhnyRoute
+  '/dr-karuna-sawhny': typeof DrKarunaSawhnyRoute
+  '/dr-sirjon-mukherji': typeof DrSirjonMukherjiRoute
+  '/emergency-dentist-kanpur': typeof EmergencyDentistKanpurRoute
+  '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
+  '/gum-treatment-periodontics-kanpur': typeof GumTreatmentPeriodonticsKanpurRoute
+  '/oral-and-maxillofacial-surgery': typeof OralAndMaxillofacialSurgeryRoute
+  '/orthodontist-kanpur': typeof OrthodontistKanpurRoute
+  '/paediatric-dentist-kanpur': typeof PaediatricDentistKanpurRoute
+  '/paediatric-dentistry': typeof PaediatricDentistryRoute
+  '/preventive-dentistry-kanpur': typeof PreventiveDentistryKanpurRoute
+  '/prosthodontics': typeof ProsthodonticsRoute
+  '/restorative-dentistry-kanpur': typeof RestorativeDentistryKanpurRoute
+  '/root-canal-treatment-kanpur': typeof RootCanalTreatmentKanpurRoute
+  '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/wedding-decoration-kanpur': typeof WeddingDecorationKanpurRoute
-  '/wedding-photography-kanpur': typeof WeddingPhotographyKanpurRoute
-  '/wedding-planner-kanpur': typeof WeddingPlannerKanpurRoute
-  '/weddings': typeof WeddingsRoute
+  '/smile-makeover-kanpur': typeof SmileMakeoverKanpurRoute
+  '/specialized-dental-care-kanpur': typeof SpecializedDentalCareKanpurRoute
+  '/teeth-whitening-kanpur': typeof TeethWhiteningKanpurRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/birthday-event-planner-kanpur': typeof BirthdayEventPlannerKanpurRoute
-  '/corporate-event-management-kanpur': typeof CorporateEventManagementKanpurRoute
-  '/event-planner-kanpur': typeof EventPlannerKanpurRoute
-  '/events': typeof EventsRoute
-  '/pre-wedding-photography-kanpur': typeof PreWeddingPhotographyKanpurRoute
+  '/about': typeof AboutRoute
+  '/blog': typeof BlogRouteWithChildren
+  '/contact': typeof ContactRoute
+  '/cosmetic-dentistry': typeof CosmeticDentistryRoute
+  '/dental-implants-kanpur': typeof DentalImplantsKanpurRoute
+  '/doctors': typeof DoctorsRoute
+  '/dr-asheesh-sawhny': typeof DrAsheeshSawhnyRoute
+  '/dr-karuna-sawhny': typeof DrKarunaSawhnyRoute
+  '/dr-sirjon-mukherji': typeof DrSirjonMukherjiRoute
+  '/emergency-dentist-kanpur': typeof EmergencyDentistKanpurRoute
+  '/faqs': typeof FaqsRoute
+  '/gallery': typeof GalleryRoute
+  '/gum-treatment-periodontics-kanpur': typeof GumTreatmentPeriodonticsKanpurRoute
+  '/oral-and-maxillofacial-surgery': typeof OralAndMaxillofacialSurgeryRoute
+  '/orthodontist-kanpur': typeof OrthodontistKanpurRoute
+  '/paediatric-dentist-kanpur': typeof PaediatricDentistKanpurRoute
+  '/paediatric-dentistry': typeof PaediatricDentistryRoute
+  '/preventive-dentistry-kanpur': typeof PreventiveDentistryKanpurRoute
+  '/prosthodontics': typeof ProsthodonticsRoute
+  '/restorative-dentistry-kanpur': typeof RestorativeDentistryKanpurRoute
+  '/root-canal-treatment-kanpur': typeof RootCanalTreatmentKanpurRoute
+  '/services': typeof ServicesRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
-  '/wedding-decoration-kanpur': typeof WeddingDecorationKanpurRoute
-  '/wedding-photography-kanpur': typeof WeddingPhotographyKanpurRoute
-  '/wedding-planner-kanpur': typeof WeddingPlannerKanpurRoute
-  '/weddings': typeof WeddingsRoute
+  '/smile-makeover-kanpur': typeof SmileMakeoverKanpurRoute
+  '/specialized-dental-care-kanpur': typeof SpecializedDentalCareKanpurRoute
+  '/teeth-whitening-kanpur': typeof TeethWhiteningKanpurRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
 }
@@ -143,94 +288,148 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/birthday-event-planner-kanpur'
-    | '/corporate-event-management-kanpur'
-    | '/event-planner-kanpur'
-    | '/events'
-    | '/pre-wedding-photography-kanpur'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/cosmetic-dentistry'
+    | '/dental-implants-kanpur'
+    | '/doctors'
+    | '/dr-asheesh-sawhny'
+    | '/dr-karuna-sawhny'
+    | '/dr-sirjon-mukherji'
+    | '/emergency-dentist-kanpur'
+    | '/faqs'
+    | '/gallery'
+    | '/gum-treatment-periodontics-kanpur'
+    | '/oral-and-maxillofacial-surgery'
+    | '/orthodontist-kanpur'
+    | '/paediatric-dentist-kanpur'
+    | '/paediatric-dentistry'
+    | '/preventive-dentistry-kanpur'
+    | '/prosthodontics'
+    | '/restorative-dentistry-kanpur'
+    | '/root-canal-treatment-kanpur'
+    | '/services'
     | '/sitemap.xml'
-    | '/wedding-decoration-kanpur'
-    | '/wedding-photography-kanpur'
-    | '/wedding-planner-kanpur'
-    | '/weddings'
+    | '/smile-makeover-kanpur'
+    | '/specialized-dental-care-kanpur'
+    | '/teeth-whitening-kanpur'
     | '/blog/$slug'
     | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/birthday-event-planner-kanpur'
-    | '/corporate-event-management-kanpur'
-    | '/event-planner-kanpur'
-    | '/events'
-    | '/pre-wedding-photography-kanpur'
+    | '/about'
+    | '/contact'
+    | '/cosmetic-dentistry'
+    | '/dental-implants-kanpur'
+    | '/doctors'
+    | '/dr-asheesh-sawhny'
+    | '/dr-karuna-sawhny'
+    | '/dr-sirjon-mukherji'
+    | '/emergency-dentist-kanpur'
+    | '/faqs'
+    | '/gallery'
+    | '/gum-treatment-periodontics-kanpur'
+    | '/oral-and-maxillofacial-surgery'
+    | '/orthodontist-kanpur'
+    | '/paediatric-dentist-kanpur'
+    | '/paediatric-dentistry'
+    | '/preventive-dentistry-kanpur'
+    | '/prosthodontics'
+    | '/restorative-dentistry-kanpur'
+    | '/root-canal-treatment-kanpur'
+    | '/services'
     | '/sitemap.xml'
-    | '/wedding-decoration-kanpur'
-    | '/wedding-photography-kanpur'
-    | '/wedding-planner-kanpur'
-    | '/weddings'
+    | '/smile-makeover-kanpur'
+    | '/specialized-dental-care-kanpur'
+    | '/teeth-whitening-kanpur'
     | '/blog/$slug'
     | '/blog'
   id:
     | '__root__'
     | '/'
-    | '/birthday-event-planner-kanpur'
-    | '/corporate-event-management-kanpur'
-    | '/event-planner-kanpur'
-    | '/events'
-    | '/pre-wedding-photography-kanpur'
+    | '/about'
+    | '/blog'
+    | '/contact'
+    | '/cosmetic-dentistry'
+    | '/dental-implants-kanpur'
+    | '/doctors'
+    | '/dr-asheesh-sawhny'
+    | '/dr-karuna-sawhny'
+    | '/dr-sirjon-mukherji'
+    | '/emergency-dentist-kanpur'
+    | '/faqs'
+    | '/gallery'
+    | '/gum-treatment-periodontics-kanpur'
+    | '/oral-and-maxillofacial-surgery'
+    | '/orthodontist-kanpur'
+    | '/paediatric-dentist-kanpur'
+    | '/paediatric-dentistry'
+    | '/preventive-dentistry-kanpur'
+    | '/prosthodontics'
+    | '/restorative-dentistry-kanpur'
+    | '/root-canal-treatment-kanpur'
+    | '/services'
     | '/sitemap.xml'
-    | '/wedding-decoration-kanpur'
-    | '/wedding-photography-kanpur'
-    | '/wedding-planner-kanpur'
-    | '/weddings'
+    | '/smile-makeover-kanpur'
+    | '/specialized-dental-care-kanpur'
+    | '/teeth-whitening-kanpur'
     | '/blog/$slug'
     | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  BirthdayEventPlannerKanpurRoute: typeof BirthdayEventPlannerKanpurRoute
-  CorporateEventManagementKanpurRoute: typeof CorporateEventManagementKanpurRoute
-  EventPlannerKanpurRoute: typeof EventPlannerKanpurRoute
-  EventsRoute: typeof EventsRoute
-  PreWeddingPhotographyKanpurRoute: typeof PreWeddingPhotographyKanpurRoute
+  AboutRoute: typeof AboutRoute
+  BlogRoute: typeof BlogRouteWithChildren
+  ContactRoute: typeof ContactRoute
+  CosmeticDentistryRoute: typeof CosmeticDentistryRoute
+  DentalImplantsKanpurRoute: typeof DentalImplantsKanpurRoute
+  DoctorsRoute: typeof DoctorsRoute
+  DrAsheeshSawhnyRoute: typeof DrAsheeshSawhnyRoute
+  DrKarunaSawhnyRoute: typeof DrKarunaSawhnyRoute
+  DrSirjonMukherjiRoute: typeof DrSirjonMukherjiRoute
+  EmergencyDentistKanpurRoute: typeof EmergencyDentistKanpurRoute
+  FaqsRoute: typeof FaqsRoute
+  GalleryRoute: typeof GalleryRoute
+  GumTreatmentPeriodonticsKanpurRoute: typeof GumTreatmentPeriodonticsKanpurRoute
+  OralAndMaxillofacialSurgeryRoute: typeof OralAndMaxillofacialSurgeryRoute
+  OrthodontistKanpurRoute: typeof OrthodontistKanpurRoute
+  PaediatricDentistKanpurRoute: typeof PaediatricDentistKanpurRoute
+  PaediatricDentistryRoute: typeof PaediatricDentistryRoute
+  PreventiveDentistryKanpurRoute: typeof PreventiveDentistryKanpurRoute
+  ProsthodonticsRoute: typeof ProsthodonticsRoute
+  RestorativeDentistryKanpurRoute: typeof RestorativeDentistryKanpurRoute
+  RootCanalTreatmentKanpurRoute: typeof RootCanalTreatmentKanpurRoute
+  ServicesRoute: typeof ServicesRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
-  WeddingDecorationKanpurRoute: typeof WeddingDecorationKanpurRoute
-  WeddingPhotographyKanpurRoute: typeof WeddingPhotographyKanpurRoute
-  WeddingPlannerKanpurRoute: typeof WeddingPlannerKanpurRoute
-  WeddingsRoute: typeof WeddingsRoute
-  BlogSlugRoute: typeof BlogSlugRoute
-  BlogIndexRoute: typeof BlogIndexRoute
+  SmileMakeoverKanpurRoute: typeof SmileMakeoverKanpurRoute
+  SpecializedDentalCareKanpurRoute: typeof SpecializedDentalCareKanpurRoute
+  TeethWhiteningKanpurRoute: typeof TeethWhiteningKanpurRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/weddings': {
-      id: '/weddings'
-      path: '/weddings'
-      fullPath: '/weddings'
-      preLoaderRoute: typeof WeddingsRouteImport
+    '/teeth-whitening-kanpur': {
+      id: '/teeth-whitening-kanpur'
+      path: '/teeth-whitening-kanpur'
+      fullPath: '/teeth-whitening-kanpur'
+      preLoaderRoute: typeof TeethWhiteningKanpurRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/wedding-planner-kanpur': {
-      id: '/wedding-planner-kanpur'
-      path: '/wedding-planner-kanpur'
-      fullPath: '/wedding-planner-kanpur'
-      preLoaderRoute: typeof WeddingPlannerKanpurRouteImport
+    '/specialized-dental-care-kanpur': {
+      id: '/specialized-dental-care-kanpur'
+      path: '/specialized-dental-care-kanpur'
+      fullPath: '/specialized-dental-care-kanpur'
+      preLoaderRoute: typeof SpecializedDentalCareKanpurRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/wedding-photography-kanpur': {
-      id: '/wedding-photography-kanpur'
-      path: '/wedding-photography-kanpur'
-      fullPath: '/wedding-photography-kanpur'
-      preLoaderRoute: typeof WeddingPhotographyKanpurRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/wedding-decoration-kanpur': {
-      id: '/wedding-decoration-kanpur'
-      path: '/wedding-decoration-kanpur'
-      fullPath: '/wedding-decoration-kanpur'
-      preLoaderRoute: typeof WeddingDecorationKanpurRouteImport
+    '/smile-makeover-kanpur': {
+      id: '/smile-makeover-kanpur'
+      path: '/smile-makeover-kanpur'
+      fullPath: '/smile-makeover-kanpur'
+      preLoaderRoute: typeof SmileMakeoverKanpurRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -240,39 +439,158 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/pre-wedding-photography-kanpur': {
-      id: '/pre-wedding-photography-kanpur'
-      path: '/pre-wedding-photography-kanpur'
-      fullPath: '/pre-wedding-photography-kanpur'
-      preLoaderRoute: typeof PreWeddingPhotographyKanpurRouteImport
+    '/services': {
+      id: '/services'
+      path: '/services'
+      fullPath: '/services'
+      preLoaderRoute: typeof ServicesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/events': {
-      id: '/events'
-      path: '/events'
-      fullPath: '/events'
-      preLoaderRoute: typeof EventsRouteImport
+    '/root-canal-treatment-kanpur': {
+      id: '/root-canal-treatment-kanpur'
+      path: '/root-canal-treatment-kanpur'
+      fullPath: '/root-canal-treatment-kanpur'
+      preLoaderRoute: typeof RootCanalTreatmentKanpurRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/event-planner-kanpur': {
-      id: '/event-planner-kanpur'
-      path: '/event-planner-kanpur'
-      fullPath: '/event-planner-kanpur'
-      preLoaderRoute: typeof EventPlannerKanpurRouteImport
+    '/restorative-dentistry-kanpur': {
+      id: '/restorative-dentistry-kanpur'
+      path: '/restorative-dentistry-kanpur'
+      fullPath: '/restorative-dentistry-kanpur'
+      preLoaderRoute: typeof RestorativeDentistryKanpurRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/corporate-event-management-kanpur': {
-      id: '/corporate-event-management-kanpur'
-      path: '/corporate-event-management-kanpur'
-      fullPath: '/corporate-event-management-kanpur'
-      preLoaderRoute: typeof CorporateEventManagementKanpurRouteImport
+    '/prosthodontics': {
+      id: '/prosthodontics'
+      path: '/prosthodontics'
+      fullPath: '/prosthodontics'
+      preLoaderRoute: typeof ProsthodonticsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/birthday-event-planner-kanpur': {
-      id: '/birthday-event-planner-kanpur'
-      path: '/birthday-event-planner-kanpur'
-      fullPath: '/birthday-event-planner-kanpur'
-      preLoaderRoute: typeof BirthdayEventPlannerKanpurRouteImport
+    '/preventive-dentistry-kanpur': {
+      id: '/preventive-dentistry-kanpur'
+      path: '/preventive-dentistry-kanpur'
+      fullPath: '/preventive-dentistry-kanpur'
+      preLoaderRoute: typeof PreventiveDentistryKanpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/paediatric-dentistry': {
+      id: '/paediatric-dentistry'
+      path: '/paediatric-dentistry'
+      fullPath: '/paediatric-dentistry'
+      preLoaderRoute: typeof PaediatricDentistryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/paediatric-dentist-kanpur': {
+      id: '/paediatric-dentist-kanpur'
+      path: '/paediatric-dentist-kanpur'
+      fullPath: '/paediatric-dentist-kanpur'
+      preLoaderRoute: typeof PaediatricDentistKanpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/orthodontist-kanpur': {
+      id: '/orthodontist-kanpur'
+      path: '/orthodontist-kanpur'
+      fullPath: '/orthodontist-kanpur'
+      preLoaderRoute: typeof OrthodontistKanpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/oral-and-maxillofacial-surgery': {
+      id: '/oral-and-maxillofacial-surgery'
+      path: '/oral-and-maxillofacial-surgery'
+      fullPath: '/oral-and-maxillofacial-surgery'
+      preLoaderRoute: typeof OralAndMaxillofacialSurgeryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gum-treatment-periodontics-kanpur': {
+      id: '/gum-treatment-periodontics-kanpur'
+      path: '/gum-treatment-periodontics-kanpur'
+      fullPath: '/gum-treatment-periodontics-kanpur'
+      preLoaderRoute: typeof GumTreatmentPeriodonticsKanpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency-dentist-kanpur': {
+      id: '/emergency-dentist-kanpur'
+      path: '/emergency-dentist-kanpur'
+      fullPath: '/emergency-dentist-kanpur'
+      preLoaderRoute: typeof EmergencyDentistKanpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dr-sirjon-mukherji': {
+      id: '/dr-sirjon-mukherji'
+      path: '/dr-sirjon-mukherji'
+      fullPath: '/dr-sirjon-mukherji'
+      preLoaderRoute: typeof DrSirjonMukherjiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dr-karuna-sawhny': {
+      id: '/dr-karuna-sawhny'
+      path: '/dr-karuna-sawhny'
+      fullPath: '/dr-karuna-sawhny'
+      preLoaderRoute: typeof DrKarunaSawhnyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dr-asheesh-sawhny': {
+      id: '/dr-asheesh-sawhny'
+      path: '/dr-asheesh-sawhny'
+      fullPath: '/dr-asheesh-sawhny'
+      preLoaderRoute: typeof DrAsheeshSawhnyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/doctors': {
+      id: '/doctors'
+      path: '/doctors'
+      fullPath: '/doctors'
+      preLoaderRoute: typeof DoctorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dental-implants-kanpur': {
+      id: '/dental-implants-kanpur'
+      path: '/dental-implants-kanpur'
+      fullPath: '/dental-implants-kanpur'
+      preLoaderRoute: typeof DentalImplantsKanpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cosmetic-dentistry': {
+      id: '/cosmetic-dentistry'
+      path: '/cosmetic-dentistry'
+      fullPath: '/cosmetic-dentistry'
+      preLoaderRoute: typeof CosmeticDentistryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -284,35 +602,61 @@ declare module '@tanstack/react-router' {
     }
     '/blog/': {
       id: '/blog/'
-      path: '/blog'
+      path: '/'
       fullPath: '/blog/'
       preLoaderRoute: typeof BlogIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof BlogRoute
     }
     '/blog/$slug': {
       id: '/blog/$slug'
-      path: '/blog/$slug'
+      path: '/$slug'
       fullPath: '/blog/$slug'
       preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof BlogRoute
     }
   }
 }
 
-const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  BirthdayEventPlannerKanpurRoute: BirthdayEventPlannerKanpurRoute,
-  CorporateEventManagementKanpurRoute: CorporateEventManagementKanpurRoute,
-  EventPlannerKanpurRoute: EventPlannerKanpurRoute,
-  EventsRoute: EventsRoute,
-  PreWeddingPhotographyKanpurRoute: PreWeddingPhotographyKanpurRoute,
-  SitemapDotxmlRoute: SitemapDotxmlRoute,
-  WeddingDecorationKanpurRoute: WeddingDecorationKanpurRoute,
-  WeddingPhotographyKanpurRoute: WeddingPhotographyKanpurRoute,
-  WeddingPlannerKanpurRoute: WeddingPlannerKanpurRoute,
-  WeddingsRoute: WeddingsRoute,
+interface BlogRouteChildren {
+  BlogSlugRoute: typeof BlogSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
+}
+
+const BlogRouteChildren: BlogRouteChildren = {
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
+}
+
+const BlogRouteWithChildren = BlogRoute._addFileChildren(BlogRouteChildren)
+
+const rootRouteChildren: RootRouteChildren = {
+  IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  BlogRoute: BlogRouteWithChildren,
+  ContactRoute: ContactRoute,
+  CosmeticDentistryRoute: CosmeticDentistryRoute,
+  DentalImplantsKanpurRoute: DentalImplantsKanpurRoute,
+  DoctorsRoute: DoctorsRoute,
+  DrAsheeshSawhnyRoute: DrAsheeshSawhnyRoute,
+  DrKarunaSawhnyRoute: DrKarunaSawhnyRoute,
+  DrSirjonMukherjiRoute: DrSirjonMukherjiRoute,
+  EmergencyDentistKanpurRoute: EmergencyDentistKanpurRoute,
+  FaqsRoute: FaqsRoute,
+  GalleryRoute: GalleryRoute,
+  GumTreatmentPeriodonticsKanpurRoute: GumTreatmentPeriodonticsKanpurRoute,
+  OralAndMaxillofacialSurgeryRoute: OralAndMaxillofacialSurgeryRoute,
+  OrthodontistKanpurRoute: OrthodontistKanpurRoute,
+  PaediatricDentistKanpurRoute: PaediatricDentistKanpurRoute,
+  PaediatricDentistryRoute: PaediatricDentistryRoute,
+  PreventiveDentistryKanpurRoute: PreventiveDentistryKanpurRoute,
+  ProsthodonticsRoute: ProsthodonticsRoute,
+  RestorativeDentistryKanpurRoute: RestorativeDentistryKanpurRoute,
+  RootCanalTreatmentKanpurRoute: RootCanalTreatmentKanpurRoute,
+  ServicesRoute: ServicesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  SmileMakeoverKanpurRoute: SmileMakeoverKanpurRoute,
+  SpecializedDentalCareKanpurRoute: SpecializedDentalCareKanpurRoute,
+  TeethWhiteningKanpurRoute: TeethWhiteningKanpurRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

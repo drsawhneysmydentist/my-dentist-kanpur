@@ -10,6 +10,8 @@ const contentMap: Record<
   string,
   () => Promise<{ slug: string; content: string }>
 > = {
+  "best-dental-clinic-in-kanpur-choosing-right-specialist": () =>
+    import("./best-dental-clinic-in-kanpur-choosing-right-specialist"),
   "best-dentist-in-kanpur": () => import("./best-dentist-in-kanpur"),
   "root-canal-treatment-kanpur": () =>
     import("./root-canal-treatment-kanpur"),

@@ -24,6 +24,17 @@ export interface BlogMeta {
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
   {
+    slug: "best-dental-clinic-in-kanpur-choosing-right-specialist",
+    title: "Best Dental Clinic in Kanpur: Matching the Right Specialist to Your Smile",
+    excerpt:
+      "Choosing a dental clinic in Kanpur is easier when you start with your problem. Learn how specialist care, modern technology and preventive habits fit together, and what to ask before your first visit.",
+    date: "2026-09-25",
+    featuredImage: "/images/blogs/best-dental-clinic-in-kanpur-choosing-right-specialist.webp",
+    alt: "Dentist seated in a treatment room with CEREC Primemill and digital scanner at Dr Sawhney's My Dentist, dental clinic in Kakadeo, Kanpur",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Dental Tips",
+  },
+  {
     slug: "preventive-dental-care-oral-hygiene-kanpur",
     title: "Preventive Dental Care in Kanpur: The Complete Oral Hygiene Guide for Every Age",
     excerpt:

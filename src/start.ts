@@ -9,7 +9,10 @@ const errorMiddleware = createMiddleware().server(async ({ next }) => {
     if (error != null && typeof error === "object" && "statusCode" in error) {
       throw error;
     }
-    console.error(error);
+    // Server-side only — never expose stack traces in responses
+    if (process.env.NODE_ENV !== "production") {
+      console.error("[middleware]", error);
+    }
     return new Response(renderErrorPage(), {
       status: 500,
       headers: { "content-type": "text/html; charset=utf-8" },
