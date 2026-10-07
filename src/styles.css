@@ -225,6 +225,7 @@
     border: 1px solid oklch(1 0 0 / 0.12);
   }
 
+
   .shadow-luxe { box-shadow: var(--shadow-luxe); }
   .shadow-soft { box-shadow: var(--shadow-soft); }
 

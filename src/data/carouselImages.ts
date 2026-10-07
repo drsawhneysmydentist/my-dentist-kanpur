@@ -42,6 +42,8 @@ import clinicDrKarunaNew1 from "@/assets/carousel/clinic-dr-karuna-new-1.jpg";
 import drKarunaYellowBlazer1 from "@/assets/carousel/dr-karuna-clinic-yellow-blazer-1.webp";
 import drKarunaYellowBlazer2 from "@/assets/carousel/dr-karuna-clinic-yellow-blazer-2.webp";
 import drKarunaYellowBlazer3 from "@/assets/carousel/dr-karuna-clinic-yellow-blazer-3.webp";
+import drKarunaCerecRoom2 from "@/assets/carousel/dr-karuna-cerec-treatment-room-2.webp";
+import clinicTeamVisitorMoment from "@/assets/carousel/clinic-team-visitor-moment.webp";
 
 export interface CarouselImage {
   /** Unique, stable key — used for React keys & infinite-loop cloning */
@@ -81,4 +83,6 @@ export const carouselImages: CarouselImage[] = [
   { id: "c19", src: drKarunaYellowBlazer1, alt: "Dr. Karuna Singh Sawhny in the treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur", objectPosition: "center 20%" },
   { id: "c20", src: drKarunaYellowBlazer2, alt: "Dr. Karuna Singh Sawhny holding dental models at Dr Sawhney’s My Dentist, Kakadeo, Kanpur" },
   { id: "c21", src: drKarunaYellowBlazer3, alt: "Dr. Karuna Singh Sawhny seated in the treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur", objectPosition: "center 20%" },
+  { id: "c22", src: drKarunaCerecRoom2, alt: "Dr. Karuna Singh Sawhny in the CEREC digital treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur", objectPosition: "center 15%" },
+  { id: "c23", src: clinicTeamVisitorMoment, alt: "Dr. Asheesh K. Sawhny with a visiting guest at Dr Sawhney’s My Dentist, Kakadeo, Kanpur", objectPosition: "center 12%" },
 ];

@@ -24,6 +24,39 @@ export interface BlogMeta {
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
   {
+    slug: "digital-smile-design-kanpur",
+    title: "Digital Smile Design in Kanpur: How Modern Technology Plans Your Smile",
+    excerpt:
+      "Digital Smile Design lets you see a preview of your proposed smile before treatment begins. Here's how it works at Dr Sawhney's My Dentist, and which treatments it can help plan.",
+    date: "2026-10-07",
+    featuredImage: "/images/blogs/digital-smile-design-kanpur.webp",
+    alt: "Close-up of a woman's smiling teeth with a dental mirror and explorer tool held near her mouth",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Dental Technology",
+  },
+  {
+    slug: "cerec-crowns-kanpur-same-day-dental-crowns",
+    title: "CEREC Crowns in Kanpur: How You Can Get Dental Crowns in One Visit",
+    excerpt:
+      "Same-day CEREC crowns use digital scanning, in-house milling and ceramic finishing to complete a dental crown in one visit. Here's how it works at Dr Sawhney's My Dentist.",
+    date: "2026-10-06",
+    featuredImage: "/images/blogs/cerec-crowns-kanpur-same-day-dental-crowns.webp",
+    alt: "CEREC milling machine fabricating a dental crown, with text reading 'We make crowns in 1 hour with CEREC'",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Dental Technology",
+  },
+  {
+    slug: "laser-dentistry-kanpur-novolase-gold",
+    title: "Laser Dentistry in Kanpur: How NovoLase Gold Is Used at Dr Sawhney's My Dentist",
+    excerpt:
+      "A plain-language guide to laser dentistry in Kanpur: what a dental laser is, where NovoLase Gold is used at Dr Sawhney's My Dentist, and what it can and cannot do.",
+    date: "2026-10-05",
+    featuredImage: "/images/blogs/laser-dentistry-kanpur-novolase-gold.webp",
+    alt: "NovoLase Gold dual-wavelength dental laser used at Dr Sawhney's My Dentist, Kakadeo, Kanpur",
+    author: "Dr. Karuna Singh Sawhny",
+    category: "Dental Technology",
+  },
+  {
     slug: "best-dental-clinic-in-kanpur-choosing-right-specialist",
     title: "Best Dental Clinic in Kanpur: Matching the Right Specialist to Your Smile",
     excerpt:

@@ -60,6 +60,9 @@ import drKPortraitNew1   from "@/assets/dr-karuna-portrait-new-1.jpg";
 import drKYellowBlazer1  from "@/assets/dr-karuna-clinic-yellow-blazer-1.webp";
 import drKYellowBlazer2  from "@/assets/dr-karuna-clinic-yellow-blazer-2.webp";
 import drKYellowBlazer3  from "@/assets/dr-karuna-clinic-yellow-blazer-3.webp";
+import drKCerecRoom2     from "@/assets/dr-karuna-cerec-treatment-room-2.webp";
+import drKTreatmentSeated from "@/assets/dr-karuna-treatment-room-seated.webp";
+import clinicTeamVisitor from "@/assets/clinic-team-visitor-moment.webp";
 
 // ── Doctors: Awards & Academic ────────────────────────────────────────────────
 import drKAlign          from "@/assets/dr-karuna-align-certificate.webp";
@@ -67,6 +70,8 @@ import drKSciForum       from "@/assets/dr-karuna-scientific-forum.webp";
 import drARootCanalDay   from "@/assets/dr-asheesh-root-canal-day.webp";
 import drAMdsOrientation from "@/assets/dr-asheesh-mds-orientation.webp";
 import drACmYogiConvo    from "@/assets/dr-asheesh-cm-yogi-convocation.webp";
+import drKLaserCertPresentation from "@/assets/dr-karuna-laser-certificate-presentation.webp";
+import drKLaserCertBanner       from "@/assets/dr-karuna-laser-certificate-banner.webp";
 
 // ── Distinguished Patients & Notable Visitors ─────────────────────────────────
 import ptPadmesh         from "@/assets/patient-padmesh-dubey.webp";
@@ -155,6 +160,19 @@ const SPECIALIST_TILES: Tile[] = [
     tag: "Our Specialist",
     objectPosition: "center 20%",
   },
+  {
+    src: drKCerecRoom2,
+    alt: "Dr. Karuna Singh Sawhny in the CEREC digital treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur",
+    tag: "Our Specialist",
+    objectPosition: "center 15%",
+  },
+  {
+    src: drKTreatmentSeated,
+    alt: "Dr. Karuna Singh Sawhny seated in the digital treatment room at Dr Sawhney’s My Dentist, Kakadeo, Kanpur",
+    tag: "Our Specialist",
+    span: "md:col-span-2",
+    objectPosition: "center 25%",
+  },
 ];
 
 // ── Section B: Awards & Academic ─────────────────────────────────────────────
@@ -187,6 +205,18 @@ const AWARD_TILES: Tile[] = [
     tag: "Academic",
     span: "md:col-span-2",
     objectPosition: "center 30%",
+  },
+  {
+    src: drKLaserCertPresentation,
+    alt: "Dr. Karuna Singh Sawhny receiving a Certificate of Standard Proficiency at a laser dentistry workshop hosted by AALT",
+    tag: "Recognition",
+    objectPosition: "center 15%",
+  },
+  {
+    src: drKLaserCertBanner,
+    alt: "Dr. Karuna Singh Sawhny with a Certificate of Standard Proficiency from a laser dentistry workshop, International Laser Specialists and AALT",
+    tag: "Recognition",
+    objectPosition: "center 15%",
   },
 ];
 
@@ -284,6 +314,12 @@ const CLINIC_TILES: Tile[] = [
     src: exterior2,
     alt: "Dr Sawhney’s My Dentist dental clinic exterior street view, Kakadeo Kanpur",
     tag: "Clinic Entrance",
+  },
+  {
+    src: clinicTeamVisitor,
+    alt: "Clinic visit moment at Dr Sawhney’s My Dentist, Kakadeo, Kanpur, with CEREC Primescan equipment in the background",
+    tag: "Clinic Visit",
+    objectPosition: "center 15%",
   },
 ];
 

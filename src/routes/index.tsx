@@ -29,6 +29,7 @@ import g5 from "@/assets/gallery-5.webp";
 import drA from "@/assets/dr-asheesh.webp";
 import drK from "@/assets/dr-karuna.webp";
 import { AboutVideoCard } from "@/components/AboutVideoCard";
+import { AdvancedDentistrySection } from "@/components/AdvancedDentistrySection";
 import { DENTAL_ICONS } from "@/components/icons/dental-icons";
 
 // Below-the-fold, homepage-only carousels — code-split so their JS (embla-style
@@ -176,6 +177,7 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <AdvancedDentistrySection />
       <Suspense fallback={null}>
         <ImageCarousel />
       </Suspense>
