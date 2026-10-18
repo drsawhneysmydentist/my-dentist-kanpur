@@ -10,6 +10,8 @@ const contentMap: Record<
   string,
   () => Promise<{ slug: string; content: string }>
 > = {
+  "wedding-smile-dental-treatment-kanpur": () =>
+    import("./wedding-smile-dental-treatment-kanpur"),
   "digital-smile-design-kanpur": () =>
     import("./digital-smile-design-kanpur"),
   "cerec-crowns-kanpur-same-day-dental-crowns": () =>

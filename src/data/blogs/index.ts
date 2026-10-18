@@ -24,6 +24,18 @@ export interface BlogMeta {
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
   {
+    slug: "wedding-smile-dental-treatment-kanpur",
+    title: "Wedding or Special Event Coming Up? Get Your Picture-Perfect Smile Ready in Kanpur",
+    excerpt:
+      "Planning a wedding or special event in Kanpur? Here's your complete pre-wedding dental guide — teeth whitening, composite bonding, clear aligners and smile makeovers, explained by specialists.",
+    date: "2026-10-17",
+    featuredImage: "/images/blogs/wedding-smile-dental-treatment-kanpur.webp",
+    alt: "Indian bride in bridal lehenga smiling confidently — pre-wedding smile makeover at Dr Sawhney's My Dentist, Kakadeo, Kanpur",
+    author: "Dr. Karuna Singh Sawhny",
+    category: "Treatments",
+    imagePosition: "50% 20%",
+  },
+  {
     slug: "digital-smile-design-kanpur",
     title: "Digital Smile Design in Kanpur: How Modern Technology Plans Your Smile",
     excerpt:
@@ -117,12 +129,12 @@ export const blogRegistry: BlogMeta[] = [
     title: "Best Dentist in Kanpur: The Complete 2026 Guide to Choosing the Right Dental Clinic",
     excerpt:
       "Looking for the best dentist in Kanpur? Dr Sawhney’s My Dentist, Kanpur offers painless RCT, implants, braces & smile makeovers. MDS specialists. Book today.",
-    date: "2026-07-12",
-    featuredImage: "/images/blogs/best-dentist-in-kanpur-doctors.jpg",
-    alt: "Dr. Asheesh K. Sawhny and Dr. Karuna Sawhny, MDS dental specialists at Dr Sawhney’s My Dentist super speciality dental clinic in Kakadeo, Kanpur",
+    date: "2026-10-18",
+    featuredImage: "/images/blogs/best-dentist-in-kanpur.webp",
+    alt: "My Dentist — Multi Super Speciality Dental Clinic signboard at Swaroop Nagar and Kakadeo, Kanpur",
     author: "Dr. Asheesh K. Sawhny",
     category: "Dental Tips",
-    imagePosition: "50% 8%",
+    imagePosition: "50% 75%",
   },
   {
     slug: "root-canal-treatment-kanpur",
