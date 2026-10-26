@@ -60,14 +60,17 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) return {};
     const { meta, faqs } = loaderData;
-    const title = `${meta.title} | Dr Sawhney’s My Dentist Kanpur`;
+    const title = meta.seoTitle
+      ? `${meta.seoTitle} | My Dentist Kanpur`
+      : `${meta.title} | Dr Sawhney’s My Dentist Kanpur`;
+    const description = meta.metaDescription ?? meta.excerpt;
     const pageUrl = `${SITE.url}/blog/${meta.slug}`;
 
     const articleSchema = {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: meta.title,
-      description: meta.excerpt,
+      description,
       datePublished: meta.date,
       dateModified: meta.date,
       image: `${SITE.url}${meta.featuredImage}`,
@@ -110,9 +113,9 @@ export const Route = createFileRoute("/blog/$slug")({
     return {
       meta: [
         { title },
-        { name: "description", content: meta.excerpt },
+        { name: "description", content: description },
         { property: "og:title", content: title },
-        { property: "og:description", content: meta.excerpt },
+        { property: "og:description", content: description },
         { property: "og:url", content: pageUrl },
         { property: "og:type", content: "article" },
         { property: "og:image", content: `${SITE.url}${meta.featuredImage}` },

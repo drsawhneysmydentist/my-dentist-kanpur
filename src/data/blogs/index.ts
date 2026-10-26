@@ -14,6 +14,8 @@ export interface BlogMeta {
   alt: string; // image alt text (SEO + a11y)
   author?: string; // defaults to "Dr. Asheesh K. Sawhny" if omitted
   category?: string; // e.g. "Dental Tips", "Treatments", "Oral Health"
+  seoTitle?: string; // optional <title> override (site suffix is appended); falls back to title
+  metaDescription?: string; // optional meta description override; falls back to excerpt
   imagePosition?: string; // CSS object-position override for the card thumbnail, e.g. "50% 8%" — use only when the default center crop hides a face; omit to keep default centering
 }
 
@@ -23,6 +25,34 @@ export interface BlogMeta {
 // so the newest post appears first on /blog without any reordering.
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
+  {
+    slug: "sleep-apnea-jaw-dental-health",
+    title: "Sleep Apnea and Your Jaw: Dental Signs, Causes, and Treatment Options",
+    excerpt:
+      "How jaw position and airway shape relate to obstructive sleep apnea, which dental signs may be worth mentioning to a doctor, and why diagnosis needs a sleep test.",
+    seoTitle: "Sleep Apnea and Your Jaw: Dental Signs and Treatment Options",
+    metaDescription:
+      "How jaw position and airway shape relate to obstructive sleep apnea, which dental signs to notice, and why diagnosis needs a sleep test.",
+    date: "2026-10-26",
+    featuredImage: "/images/blogs/sleep-apnea-and-jaw-snoring-partner-bedroom.webp",
+    alt: "Woman covering her ears with a pillow while her partner sleeps with his mouth open and snores",
+    author: "Dr. Karuna Singh Sawhny",
+    category: "Oral Health",
+  },
+  {
+    slug: "best-foods-for-healthy-teeth",
+    title: "Best Foods for Healthy Teeth: A Dentist's Guide to Strong Teeth and Gums",
+    excerpt:
+      "Which foods protect teeth and gums? A dentist's guide to calcium-rich foods, crunchy fruit, water, sugar timing and enamel-safe habits, with practical Indian examples.",
+    seoTitle: "Best Foods for Healthy Teeth and Gums: A Dentist's Guide",
+    metaDescription:
+      "Which foods protect teeth and gums? A Kanpur dentist explains calcium-rich foods, crunchy fruit, water, sugar timing and enamel-safe habits.",
+    date: "2026-10-26",
+    featuredImage: "/images/blogs/foods-for-healthy-teeth-tooth-friendly-vs-sugary-foods.webp",
+    alt: "Tooth-friendly foods such as yoghurt, cheese, almonds, carrots, broccoli and strawberries beside sugary foods and drinks that raise the risk of tooth decay",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Dental Tips",
+  },
   {
     slug: "wedding-smile-dental-treatment-kanpur",
     title: "Wedding or Special Event Coming Up? Get Your Picture-Perfect Smile Ready in Kanpur",

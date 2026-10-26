@@ -10,6 +10,10 @@ const contentMap: Record<
   string,
   () => Promise<{ slug: string; content: string }>
 > = {
+  "sleep-apnea-jaw-dental-health": () =>
+    import("./sleep-apnea-jaw-dental-health"),
+  "best-foods-for-healthy-teeth": () =>
+    import("./best-foods-for-healthy-teeth"),
   "wedding-smile-dental-treatment-kanpur": () =>
     import("./wedding-smile-dental-treatment-kanpur"),
   "digital-smile-design-kanpur": () =>
