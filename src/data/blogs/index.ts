@@ -26,6 +26,21 @@ export interface BlogMeta {
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
   {
+    slug: "orthodontic-check-up-camp-kanpur-school-invisalign-open-day",
+    title: "Free School Orthodontic Camp & Invisalign Open Day in Kanpur: COMFEST x My Dentist",
+    excerpt:
+      "A look inside our free school orthodontic camp and Invisalign Open Day in Kanpur on 18 October 2026, led by Dr. Karuna Singh Sawhny, plus why early orthodontic screening matters.",
+    seoTitle: "Free School Orthodontic Camp in Kanpur | My Dentist x COMFEST",
+    metaDescription:
+      "Inside our free school orthodontic camp and Invisalign Open Day in Kanpur with Dr. Karuna Singh Sawhny, and why early orthodontic screening matters.",
+    date: "2026-10-30",
+    featuredImage: "/images/blogs/orthodontic-check-up-camp-kanpur-school-invisalign-open-day-dr-karuna-sawhny-at-school-camp.webp",
+    alt: "Dr. Karuna Singh Sawhny, orthodontist, beside the My Dentist Scan Your Smile Digitally banner at the school orthodontic camp in Kanpur",
+    author: "Dr. Karuna Singh Sawhny",
+    category: "Community",
+    imagePosition: "50% 25%",
+  },
+  {
     slug: "sleep-apnea-jaw-dental-health",
     title: "Sleep Apnea and Your Jaw: Dental Signs, Causes, and Treatment Options",
     excerpt:
