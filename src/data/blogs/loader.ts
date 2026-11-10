@@ -10,6 +10,10 @@ const contentMap: Record<
   string,
   () => Promise<{ slug: string; content: string }>
 > = {
+  "early-cavity-detection-kanpur-dentist": () =>
+    import("./early-cavity-detection-kanpur-dentist"),
+  "clear-aligners-vs-traditional-braces-kanpur": () =>
+    import("./clear-aligners-vs-traditional-braces-kanpur"),
   "orthodontic-check-up-camp-kanpur-school-invisalign-open-day": () =>
     import("./orthodontic-check-up-camp-kanpur-school-invisalign-open-day"),
   "sleep-apnea-jaw-dental-health": () =>

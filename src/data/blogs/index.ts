@@ -16,6 +16,8 @@ export interface BlogMeta {
   category?: string; // e.g. "Dental Tips", "Treatments", "Oral Health"
   seoTitle?: string; // optional <title> override (site suffix is appended); falls back to title
   metaDescription?: string; // optional meta description override; falls back to excerpt
+  schemaType?: "Article" | "BlogPosting"; // JSON-LD @type for the post; omit to keep the default "Article"
+  keywords?: string[]; // optional SEO keywords; emitted in BlogPosting JSON-LD and not shown on the page
   imagePosition?: string; // CSS object-position override for the card thumbnail, e.g. "50% 8%" — use only when the default center crop hides a face; omit to keep default centering
 }
 
@@ -25,6 +27,56 @@ export interface BlogMeta {
 // so the newest post appears first on /blog without any reordering.
 // ----------------------------------------------------------------
 export const blogRegistry: BlogMeta[] = [
+  {
+    slug: "early-cavity-detection-kanpur-dentist",
+    title: "Can Dentists Detect Cavities Before Tooth Pain? The Future of Early Cavity Detection in 2026",
+    excerpt:
+      "Cavities are often painless in the early stages. Learn how dentists use examination and digital X-rays for early cavity detection, where AI-assisted tools help and fall short, and why early diagnosis matters.",
+    seoTitle: "Early Cavity Detection in Kanpur 2026",
+    metaDescription:
+      "Can dentists detect cavities before tooth pain? Learn how check-ups, digital X-rays and AI-assisted tools spot early decay and why it matters.",
+    date: "2026-11-09",
+    featuredImage: "/images/blogs/early-cavity-detection-kanpur-dentist-digital-xray.webp",
+    alt: "Dentist in blue gloves pointing at a digital dental X-ray on a tablet to review for early signs of tooth decay with a patient at Dr Sawhney's My Dentist, Kanpur",
+    author: "Dr. Asheesh K. Sawhny",
+    category: "Dental Tips",
+    schemaType: "BlogPosting",
+    keywords: [
+      "best dentist in Kanpur",
+      "dental cavity treatment in Kanpur",
+      "tooth decay treatment in Kanpur",
+      "dental clinic in Kanpur",
+      "dentist near me",
+      "early cavity detection",
+      "dental checkup in Kanpur",
+      "painless dental treatment in Kanpur",
+    ],
+  },
+  {
+    slug: "clear-aligners-vs-traditional-braces-kanpur",
+    title: "Clear Aligners vs Traditional Braces in 2026: Which Is Better for Your Smile?",
+    excerpt:
+      "Clear aligners or traditional braces? A specialist-written 2026 comparison of benefits, limitations, treatment time, upkeep and which conditions may need braces, from Dr Sawhney's My Dentist, Kanpur.",
+    seoTitle: "Clear Aligners in Kanpur vs Braces 2026",
+    metaDescription:
+      "Clear aligners in Kanpur or traditional braces in 2026? Compare comfort, duration, upkeep and suitability, and learn which cases need braces.",
+    date: "2026-11-04",
+    featuredImage: "/images/blogs/clear-aligners-vs-traditional-braces-kanpur.webp",
+    alt: "Clear aligner tray held beside a smile with traditional metal braces, comparing clear aligners and braces at Dr Sawhney's My Dentist, Kakadeo, Kanpur",
+    author: "Dr. Karuna Singh Sawhny",
+    category: "Treatments",
+    schemaType: "BlogPosting",
+    keywords: [
+      "best dentist in Kanpur",
+      "best orthodontist in Kanpur",
+      "clear aligners in Kanpur",
+      "Invisalign dentist in Kanpur",
+      "braces treatment in Kanpur",
+      "invisible braces in Kanpur",
+      "dental clinic in Kanpur",
+      "orthodontic treatment in Kanpur",
+    ],
+  },
   {
     slug: "orthodontic-check-up-camp-kanpur-school-invisalign-open-day",
     title: "Free School Orthodontic Camp & Invisalign Open Day in Kanpur: COMFEST x My Dentist",

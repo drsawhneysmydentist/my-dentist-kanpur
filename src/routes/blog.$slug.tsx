@@ -66,9 +66,13 @@ export const Route = createFileRoute("/blog/$slug")({
     const description = meta.metaDescription ?? meta.excerpt;
     const pageUrl = `${SITE.url}/blog/${meta.slug}`;
 
+    const isPosting = meta.schemaType === "BlogPosting";
+    const authorName = meta.author ?? "Dr. Asheesh K. Sawhny";
+    const authorDoctor = SITE.doctors.find((d) => d.name === authorName);
+
     const articleSchema = {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": meta.schemaType ?? "Article",
       headline: meta.title,
       description,
       datePublished: meta.date,
@@ -76,10 +80,22 @@ export const Route = createFileRoute("/blog/$slug")({
       image: `${SITE.url}${meta.featuredImage}`,
       author: {
         "@type": "Person",
-        name: meta.author ?? "Dr. Asheesh K. Sawhny",
+        name: authorName,
+        ...(isPosting && authorDoctor
+          ? { url: `${SITE.url}/${authorDoctor.slug}` }
+          : {}),
       },
       publisher: { "@type": "Dentist", name: "Dr Sawhney’s My Dentist", url: SITE.url },
       mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+      ...(isPosting
+        ? {
+            inLanguage: "en-IN",
+            isPartOf: { "@type": "Blog", "@id": `${SITE.url}/blog` },
+            ...(meta.keywords?.length
+              ? { keywords: meta.keywords.join(", ") }
+              : {}),
+          }
+        : {}),
     };
 
     const breadcrumbSchema = {
@@ -120,6 +136,15 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:type", content: "article" },
         { property: "og:image", content: `${SITE.url}${meta.featuredImage}` },
         { property: "article:published_time", content: meta.date },
+        ...(isPosting
+          ? [
+              { property: "og:image:alt", content: meta.alt },
+              { name: "twitter:title", content: title },
+              { name: "twitter:description", content: description },
+              { name: "twitter:image", content: `${SITE.url}${meta.featuredImage}` },
+              { name: "twitter:image:alt", content: meta.alt },
+            ]
+          : []),
       ],
       links: [{ rel: "canonical", href: pageUrl }],
       scripts: [
